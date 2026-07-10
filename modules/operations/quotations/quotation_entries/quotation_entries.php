@@ -14,7 +14,10 @@
             <button type="button" class="btn btn-warning" @click="onCancel">Cancel</button>
             <button type="button" class="btn btn-danger" @click="onClose">Close</button>
           </div>
-          <button type="button" class="btn btn-outline-secondary btn-sm ms-auto module-help-btn" title="Help">
+          <button type="button" class="btn btn-outline-success btn-sm ms-auto" @click="onWhatsApp" title="Send via WhatsApp">
+            <i class="bi bi-whatsapp me-1"></i>WhatsApp
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm module-help-btn" title="Help">
             <i class="bi bi-question-circle me-1"></i>Help
           </button>
         </div>
@@ -122,13 +125,23 @@
             <div class="row mb-3">
               <label for="quotations-payment-terms" class="col-sm-4 col-form-label">Payment Terms</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="quotations-payment-terms" v-model="form.payment_terms" />
+                <div class="input-group">
+                  <input type="text" class="form-control" id="quotations-payment-terms" v-model="form.payment_terms" />
+                  <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#qtPaymentTermsPickerModal" title="Insert from Payment Terms Library">
+                    <i class="bi bi-journal-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="row mb-3">
               <label for="quotations-delivery-period" class="col-sm-4 col-form-label">Delivery / Completion Period</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="quotations-delivery-period" v-model="form.delivery_period" />
+                <div class="input-group">
+                  <input type="text" class="form-control" id="quotations-delivery-period" v-model="form.delivery_period" />
+                  <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#qtDeliveryPeriodPickerModal" title="Insert from Delivery Periods Library">
+                    <i class="bi bi-journal-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="row mb-3">
@@ -151,11 +164,21 @@
 
         <div class="row g-4 mt-0">
           <div class="col-md-4">
-            <label for="quotations-notes" class="form-label">Notes</label>
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <label for="quotations-notes" class="form-label mb-0">Notes</label>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#qtNotesPickerModal" title="Insert from Notes Library">
+                <i class="bi bi-journal-plus"></i>
+              </button>
+            </div>
             <textarea class="form-control" id="quotations-notes" rows="3" v-model="form.notes"></textarea>
           </div>
           <div class="col-md-4">
-            <label for="quotations-terms-conditions" class="form-label">Terms &amp; Conditions</label>
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <label for="quotations-terms-conditions" class="form-label mb-0">Terms &amp; Conditions</label>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#qtTermsPickerModal" title="Insert from Terms &amp; Conditions Library">
+                <i class="bi bi-journal-plus"></i>
+              </button>
+            </div>
             <textarea class="form-control" id="quotations-terms-conditions" rows="3" v-model="form.terms_conditions"></textarea>
           </div>
           <div class="col-md-4">
@@ -166,50 +189,66 @@
 
         <hr class="my-4" />
 
-        <div class="d-flex align-items-center justify-content-between mb-2">
-          <h6 class="mb-0">Quotation Lines</h6>
-          <button type="button" class="btn btn-outline-primary btn-sm" @click="addLine">
-            <i class="bi bi-plus-lg me-1"></i>Add Line
-          </button>
+        <h6 class="mb-2">Quotation Lines</h6>
+
+        <div class="border rounded p-2 mb-2" v-for="(line, i) in form.lines" :key="i">
+          <div class="d-flex align-items-end gap-2 flex-wrap justify-content-between mb-2">
+            <div class="d-flex align-items-end gap-2 flex-wrap flex-grow-1">
+              <span class="badge bg-secondary mb-2">{{ i + 1 }}</span>
+              <div style="flex:2 1 160px">
+                <label class="form-label small text-muted mb-0">Item / Service</label>
+                <input type="text" class="form-control form-control-sm" v-model="line.item_name" />
+              </div>
+              <div style="flex:3 1 200px">
+                <label class="form-label small text-muted mb-0">Description</label>
+                <textarea class="form-control form-control-sm" rows="1" v-model="line.description"></textarea>
+              </div>
+            </div>
+            <div style="width:90px">
+              <label class="form-label small text-muted mb-0">Qty</label>
+              <input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.qty" />
+            </div>
+            <div style="width:90px">
+              <label class="form-label small text-muted mb-0">Unit</label>
+              <input type="text" class="form-control form-control-sm" v-model="line.unit" />
+            </div>
+          </div>
+          <div class="d-flex align-items-end gap-2 flex-wrap justify-content-between">
+            <div class="d-flex align-items-end gap-2 flex-wrap flex-grow-1">
+              <div style="flex:1 1 140px;max-width:220px">
+                <label class="form-label small text-muted mb-0">Image</label>
+                <input type="text" class="form-control form-control-sm" v-model="line.image" placeholder="File name / URL…" />
+              </div>
+              <div style="flex:1 1 180px">
+                <label class="form-label small text-muted mb-0">Fresh Varieties / Foliage</label>
+                <textarea class="form-control form-control-sm" rows="1" v-model="line.flora_notes"></textarea>
+              </div>
+            </div>
+            <div style="width:110px">
+              <label class="form-label small text-muted mb-0">Unit Price</label>
+              <input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.unit_price" />
+            </div>
+            <div style="width:100px">
+              <label class="form-label small text-muted mb-0">Discount</label>
+              <input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.discount" />
+            </div>
+            <div style="width:100px">
+              <label class="form-label small text-muted mb-0">Tax</label>
+              <input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.tax" />
+            </div>
+            <div style="min-width:100px">
+              <label class="form-label small text-muted mb-0">Amount</label>
+              <div class="text-end font-monospace fw-semibold">{{ lineAmount(line).toFixed(2) }}</div>
+            </div>
+            <button type="button" class="btn btn-outline-danger btn-sm" @click="removeLine(i)" :disabled="form.lines.length === 1" title="Remove line">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
         </div>
-        <div class="table-responsive">
-          <table class="table table-bordered table-sm align-middle">
-            <thead class="table-light">
-              <tr>
-                <th style="width:36px">#</th>
-                <th style="min-width:160px">Item / Service</th>
-                <th style="min-width:160px">Description</th>
-                <th style="min-width:140px">Image</th>
-                <th style="width:90px">Qty</th>
-                <th style="width:100px">Unit</th>
-                <th style="width:110px">Unit Price</th>
-                <th style="width:100px">Discount</th>
-                <th style="width:100px">Tax</th>
-                <th style="width:110px">Amount</th>
-                <th style="width:36px"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(line, i) in form.lines" :key="i">
-                <td class="text-center">{{ i + 1 }}</td>
-                <td><input type="text" class="form-control form-control-sm" v-model="line.item_name" /></td>
-                <td><input type="text" class="form-control form-control-sm" v-model="line.description" /></td>
-                <td><input type="text" class="form-control form-control-sm" v-model="line.image" placeholder="File name / URL…" /></td>
-                <td><input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.qty" /></td>
-                <td><input type="text" class="form-control form-control-sm" v-model="line.unit" /></td>
-                <td><input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.unit_price" /></td>
-                <td><input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.discount" /></td>
-                <td><input type="number" step="0.01" class="form-control form-control-sm" v-model.number="line.tax" /></td>
-                <td class="text-end font-monospace">{{ lineAmount(line).toFixed(2) }}</td>
-                <td class="text-center">
-                  <button type="button" class="btn btn-outline-danger btn-sm" @click="removeLine(i)" :disabled="form.lines.length === 1" title="Remove line">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+        <button type="button" class="btn btn-outline-primary btn-sm w-100" @click="addLine">
+          <i class="bi bi-plus-lg me-1"></i>Add Line
+        </button>
 
         <div class="row justify-content-end mt-3">
           <div class="col-md-5 col-lg-4">

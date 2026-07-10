@@ -20,7 +20,7 @@
     // Operations
     trip_running_chart: 'Operations',
     fuel_entry: 'Operations', vehicle_expense_entry: 'Operations',
-    driver_advance: 'Operations', deduction: 'Operations', loan: 'Operations',
+    employee_advance: 'Operations', deduction: 'Operations', loan: 'Operations',
     payment_salary_disburse: 'Operations', driver_salary_settlement: 'Operations',
     cleaner_salary_settlement: 'Operations', cash_flow: 'Operations',
     general_expense_entry: 'Operations',
@@ -63,7 +63,7 @@
     // Staff Reports
     cleaner_advance_report: 'Staff Reports', cleaner_loan_report: 'Staff Reports',
     cleaner_performance: 'Staff Reports', cleaner_salary_report: 'Staff Reports',
-    driver_advance_report: 'Staff Reports', driver_deduction_report: 'Staff Reports',
+    employee_advance_report: 'Staff Reports', driver_deduction_report: 'Staff Reports',
     driver_earnings: 'Staff Reports', driver_loan_report: 'Staff Reports',
     driver_performance: 'Staff Reports', driver_salary_sheet: 'Staff Reports',
 
@@ -260,11 +260,10 @@
       'gex-entry-selected':           'general_expense_entry',
       'trip-running-chart-selected':  'trip_running_chart',
       'vex-entry-selected':           'vehicle_expense_entry',
-      'adv-entry-selected':           'driver_advance',
+      'adv-entry-selected':           'employee_advance',
 
       // Related-record lookups within forms (driver/vehicle/etc picked inside another form)
-      'adv-driver-selected':          'driver_master_file',
-      'adv-cleaner-selected':         'cleaner_master_file',
+      'adv-employee-selected':        'employee_master',
       'deduction-driver-selected':    'driver_master_file',
       'deduction-cleaner-selected':   'cleaner_master_file',
       'fuel-vehicle-selected':        'vehicle_master_file',

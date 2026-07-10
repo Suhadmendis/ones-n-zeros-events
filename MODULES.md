@@ -1,7 +1,7 @@
 # sys_tms_modules
 
 Source: Supabase project `oncenzeros-transport` — tables `sys_tms_modules`, `sys_tms_sections`, `sys_tms_subsections`, `sys_tms_module_number_series`
-Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
+Regenerated: 2026-07-10 17:54:22 via `php scripts/regenerate_modules_md.php`
 
 | id | section | subsection | module | ref | folder | prefix | flag | web_status | app_status |
 |----|---------|------------|--------|-----|--------|--------|------|------------|------------|
@@ -11,6 +11,7 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 3 | Company Management | User Management | User permissions | MO-000003 | user_permissions | — | 0 | 1 | — |
 | 4 | Company Management | User Management | Password change | MO-000004 | password_change | — | 0 | 1 | — |
 | 5 | Company Management | User Management | Edit / deactivate user | MO-000005 | edit_deactivate_user | — | 0 | 1 | — |
+| 212 | Company Management | User Management | User Role Assignment (system) | MO-000205 | user_roles | UXR | 1 | — | — |
 | 6 | Master Files | Staff & Fleet | Driver master file | MO-000006 | driver_master_file | DRV | 1 | 1 | — |
 | 7 | Master Files | Staff & Fleet | Vehicle master file | MO-000007 | vehicle_master_file | VEH | 1 | 1 | — |
 | 8 | Master Files | Staff & Fleet | Cleaner master file | MO-000008 | cleaner_master_file | CLN | 1 | 1 | — |
@@ -19,7 +20,7 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 11 | Operations | Trip Management | Trip / running chart | MO-000011 | trip_running_chart | TRP | 1 | 1 | — |
 | 13 | Operations | Expenses | Fuel entry | MO-000012 | fuel_entry | FUL | 1 | 1 | — |
 | 14 | Operations | Expenses | Vehicle expense entry | MO-000013 | vehicle_expense_entry | VEX | 1 | 1 | — |
-| 15 | Operations | Staff & Payroll | Driver advance | MO-000014 | driver_advance | ADV | 1 | 1 | — |
+| 15 | Operations | Staff & Payroll | Employee Advance | MO-000014 | employee_advance | EMA | 1 | 1 | — |
 | 16 | Operations | Staff & Payroll | Deduction | MO-000015 | deduction | DED | 1 | 1 | — |
 | 17 | Operations | Staff & Payroll | Loan | MO-000016 | loan | LON | 1 | 1 | — |
 | 18 | Operations | Staff & Payroll | Payment / salary disburse | MO-000017 | payment_salary_disburse | PAY | 1 | 1 | — |
@@ -61,7 +62,7 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 55 | Reports | Operations Reports | Item type revenue report | MO-000053 | item_type_revenue | — | 0 | 1 | — |
 | 56 | Reports | Staff Reports | Driver performance report | MO-000054 | driver_performance | — | 0 | 1 | — |
 | 57 | Reports | Staff Reports | Driver earnings report | MO-000055 | driver_earnings | — | 0 | 1 | — |
-| 58 | Reports | Staff Reports | Driver advance report | MO-000056 | driver_advance_report | — | 0 | 1 | — |
+| 58 | Reports | Staff Reports | Employee advance report | MO-000056 | employee_advance_report | — | 0 | 1 | — |
 | 59 | Reports | Staff Reports | Driver loan report | MO-000057 | driver_loan_report | — | 0 | 1 | — |
 | 60 | Reports | Staff Reports | Driver deduction report | MO-000058 | driver_deduction_report | — | 0 | 1 | — |
 | 61 | Reports | Staff Reports | Driver salary sheet | MO-000059 | driver_salary_sheet | — | 0 | 1 | — |
@@ -104,7 +105,7 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 99 | Finance | Compliance | Approval Workflow | MO-000096 | approval_workflow | APW | 1 | 1 | — |
 | 100 | Finance | Compliance | Financial Settings | MO-000097 | financial_settings | FST | 1 | 1 | — |
 | 101 | Settings | Company Settings | Company Profile | MO-000098 | stg_company_profile | — | 0 | 1 | — |
-| 102 | Settings | Company Settings | Branches | MO-000099 | stg_branches | — | 0 | 1 | — |
+| 102 | Settings | Company Settings | Branches | MO-000099 | stg_branches | BR | 1 | 1 | — |
 | 103 | Settings | Company Settings | Departments | MO-000100 | stg_departments | — | 0 | 1 | — |
 | 104 | Settings | Company Settings | Financial Year | MO-000101 | stg_financial_year | — | 0 | 1 | — |
 | 105 | Settings | Company Settings | Currency | MO-000102 | stg_currency | SCUR | 1 | 1 | — |
@@ -124,8 +125,8 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 119 | Settings | Approval Workflow | Payroll | MO-000116 | stg_approval_payroll | — | 0 | 1 | — |
 | 120 | Settings | Approval Workflow | Journal | MO-000117 | stg_approval_journal | — | 0 | 1 | — |
 | 121 | Settings | Approval Workflow | Purchase | MO-000118 | stg_approval_purchase | — | 0 | 1 | — |
-| 122 | Settings | Notifications | Vehicle Alerts | MO-000119 | stg_vehicle_alerts | — | 0 | 1 | — |
-| 123 | Settings | Notifications | Financial Alerts | MO-000120 | stg_financial_alerts | — | 0 | 1 | — |
+| 122 | Settings | Notifications | Vehicle Alerts | MO-000119 | stg_vehicle_alerts | VAL | 1 | 1 | — |
+| 123 | Settings | Notifications | Financial Alerts | MO-000120 | stg_financial_alerts | FAL | 1 | 1 | — |
 | 124 | Settings | Notifications | Staff Alerts | MO-000121 | stg_staff_alerts | — | 0 | 1 | — |
 | 125 | Settings | Notifications | Email/SMS Alerts | MO-000122 | stg_email_sms_alerts | — | 0 | 1 | — |
 | 126 | Settings | Email / SMS | SMTP | MO-000123 | stg_smtp | — | 0 | 1 | — |
@@ -166,7 +167,7 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 171 | Master Files | Vehicle | Fleet Statuses | MO-000171 | fleet_statuses | FST | 1 | 1 | — |
 | 172 | Operations | Fleet Maintenance | Vehicle Documents | MO-000172 | vehicle_documents | VDOC | 1 | 1 | — |
 | 173 | Master Files | References | Customer Types | MO-000173 | customer_types | CTYPE | 1 | 1 | — |
-| 174 | Master Files | References | Quotation Statuses | MO-000174 | quotation_statuses | QSTAT | 1 | 1 | — |
+| 174 | Master Files | Quotation | Quotation Statuses | MO-000174 | quotation_statuses | QSTAT | 1 | 1 | — |
 | 175 | Master Files | References | Work Order Types | MO-000175 | work_order_types | WOTYP | 1 | 1 | — |
 | 176 | Master Files | References | Work Order Statuses | MO-000176 | work_order_statuses | WOSTAT | 1 | 1 | — |
 | 177 | Operations | Fleet Maintenance | Vehicle Odometer Readings | MO-000177 | vehicle_odometer_readings | VODO | 1 | 1 | — |
@@ -189,3 +190,7 @@ Regenerated: 2026-07-09 02:32:24 via `php scripts/regenerate_modules_md.php`
 | 201 | HR & Payroll | Salary Setup | Salary Assignments | MO-000201 | salary_assignments | SAS | 1 | 1 | — |
 | 203 | HR & Payroll | Payroll Inquiry | Payroll Summary | MO-000203 | payroll_summary | — | 0 | 1 | — |
 | 204 | HR & Payroll | Customer-Specific Reports | CS Payroll Summary | MO-000204 | cs_payroll_summary | — | 0 | 1 | — |
+| 214 | Master Files | Quotation | Quotation Terms and Conditions | MO-000214 | quotation_terms_and_conditions | QTC | 1 | 1 | — |
+| 215 | Master Files | Quotation | Quotation Payment Terms | MO-000215 | quotation_payment_terms | QPT | 1 | 1 | — |
+| 216 | Master Files | Quotation | Quotation Delivery Periods | MO-000216 | quotation_delivery_periods | QDP | 1 | 1 | — |
+| 217 | Master Files | Quotation | Quotation Notes Templates | MO-000217 | quotation_notes_templates | QNT | 1 | 1 | — |

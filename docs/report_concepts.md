@@ -1,4 +1,4 @@
-AMT Transport Management System - Proposed
+Ones n Zeros ERP - Proposed
 Reports Catalog
 Based on Master Files and Operational Modules (excluding existing SRD report analysis).
 
@@ -511,32 +511,31 @@ Total driver earnings from trip allocations.
   
   Tables: trips, drivers
 
-17. Driver Advance Report
-Advance payments issued to drivers.
+17. Employee Advance Report
+Advance payments issued to employees.
 
-  Files: reports/driver_advance_report/ → .php, .js, _data.php
+  Files: reports/employee_advance_report/ → .php, .js, _data.php
   
   Filters:
     - Date From / Date To (default: current month)
-    - Driver (optional dropdown, default: All)
+    - Employee (optional dropdown, default: All)
   
-  API ?action=report&from=&to=&driver_id=:
+  API ?action=report&from=&to=&employee_ref=:
     SELECT
-      d.ref AS driver_ref, d.name AS driver_name,
+      e.ref AS employee_ref, e.full_name AS employee_name,
       ap.ref AS advance_ref, ap.date, ap.amount
-    FROM advance_payments ap
-    JOIN drivers d ON d.id = ap.driver_id
-    WHERE ap.recipient_type = 'driver'
-      AND ap.date BETWEEN :from AND :to
-      AND (:driver_id IS NULL OR ap.driver_id = :driver_id)
-    ORDER BY d.name ASC, ap.date ASC
+    FROM m_advance_payments ap
+    JOIN m_employees e ON e.ref = ap.employee_ref
+    WHERE ap.date BETWEEN :from AND :to
+      AND (:employee_ref IS NULL OR ap.employee_ref = :employee_ref)
+    ORDER BY e.full_name ASC, ap.date ASC
   
-  Output columns: Driver Ref | Driver Name | Advance Ref | Date | Amount (LKR)
-  Grouped by driver with subtotal per driver, grand total at bottom
+  Output columns: Employee Ref | Employee Name | Advance Ref | Date | Amount (LKR)
+  Grouped by employee with subtotal per employee, grand total at bottom
   
-  UI: DataTable grouped by driver. Export: Excel, PDF, Print
+  UI: DataTable grouped by employee. Export: Excel, PDF, Print
   
-  Tables: advance_payments, drivers
+  Tables: m_advance_payments, m_employees
 
 18. Driver Loan Report
 Outstanding loan balances per driver.

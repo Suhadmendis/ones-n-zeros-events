@@ -4,7 +4,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="reportInfoModalLabel">
-          <i class="bi bi-info-circle me-2 text-primary"></i>About: Driver Advance Report
+          <i class="bi bi-info-circle me-2 text-primary"></i>About: Employee Advance Report
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -12,9 +12,9 @@
 
         <h6 class="fw-bold text-primary mb-2"><i class="bi bi-bullseye me-1"></i>Purpose</h6>
         <p class="mb-3">
-          The <strong>Driver Advance Report</strong> lists all advance payments made to drivers for a selected
-          date range, optionally filtered to a single driver. It answers:
-          <em>"Which drivers have received advances and how much?"</em> — useful for payroll reconciliation
+          The <strong>Employee Advance Report</strong> lists all advance payments made to employees for a selected
+          date range, optionally filtered to a single employee. It answers:
+          <em>"Which employees have received advances and how much?"</em> — useful for payroll reconciliation
           and tracking outstanding advance balances.
         </p>
 
@@ -27,8 +27,8 @@
             <tr><th>Table</th><th>Column</th><th>Type</th><th>Role in this report</th></tr>
           </thead>
           <tbody>
-            <tr><td><code>advance_payments</code></td><td><code>id, ref, date, driver_id, amount, recipient_type</code></td><td>Various</td><td>Individual advance records filtered by recipient_type = driver</td></tr>
-            <tr><td><code>drivers</code></td><td><code>id, ref, name</code></td><td>Various</td><td>Joined to show driver reference and name</td></tr>
+            <tr><td><code>m_advance_payments</code></td><td><code>id, ref, date, employee_ref, amount</code></td><td>Various</td><td>Individual advance records</td></tr>
+            <tr><td><code>m_employees</code></td><td><code>id, ref, full_name</code></td><td>Various</td><td>Joined to show employee reference and name</td></tr>
           </tbody>
         </table>
 
@@ -36,15 +36,15 @@
 
         <h6 class="fw-bold text-primary mb-2"><i class="bi bi-gear me-1"></i>How Data Is Gathered</h6>
         <ol class="mb-3">
-          <li class="mb-1"><strong>Filter by date and driver</strong> — Advance payment records with <code>recipient_type = driver</code> are fetched for the selected period; optionally filtered to one driver.</li>
-          <li class="mb-1"><strong>Join drivers</strong> — The drivers table is fetched and joined by <code>driver_id</code> to display driver name and reference.</li>
-          <li class="mb-1"><strong>Sort by driver name and date</strong> — Results are grouped by driver and then chronologically within each driver.</li>
+          <li class="mb-1"><strong>Filter by date and employee</strong> — Advance payment records are fetched for the selected period; optionally filtered to one employee.</li>
+          <li class="mb-1"><strong>Join employees</strong> — The employees table is fetched and joined by <code>employee_ref</code> to display employee name and reference.</li>
+          <li class="mb-1"><strong>Sort by employee name and date</strong> — Results are grouped by employee and then chronologically within each employee.</li>
           <li class="mb-1"><strong>Footer totals</strong> — Entry count and total advance amount are shown in the table footer.</li>
         </ol>
 
         <div class="alert alert-info mb-0 py-2">
           <i class="bi bi-lightbulb me-1"></i>
-          <strong>Tip:</strong> Use the Driver filter to quickly see the advance history for a specific driver before processing their monthly salary settlement.
+          <strong>Tip:</strong> Use the Employee filter to quickly see the advance history for a specific employee before processing their monthly salary settlement.
         </div>
 
       </div>
@@ -55,7 +55,7 @@
   </div>
 </div>
 
-<div id="driver-advance-app" v-cloak>
+<div id="employee-advance-app" v-cloak>
   <div class="card mb-3">
     <div class="card-body">
       <div class="row g-2 align-items-end">
@@ -68,10 +68,10 @@
           <input type="date" class="form-control form-control-sm" v-model="to" />
         </div>
         <div class="col-auto">
-          <label class="form-label mb-1">Driver</label>
-          <select class="form-select form-select-sm" v-model="driver_id" style="min-width:160px">
-            <option value="">All Drivers</option>
-            <option v-for="d in drivers" :key="d.id" :value="d.id">{{ d.name }} ({{ d.ref }})</option>
+          <label class="form-label mb-1">Employee</label>
+          <select class="form-select form-select-sm" v-model="employee_id" style="min-width:160px">
+            <option value="">All Employees</option>
+            <option v-for="e in employees" :key="e.ref" :value="e.ref">{{ e.full_name }} ({{ e.ref }})</option>
           </select>
         </div>
         <div class="col-auto">
@@ -111,8 +111,8 @@
       <table class="table table-sm table-bordered table-striped table-hover mb-0">
         <thead class="table-dark">
           <tr>
-            <th>Driver Ref</th>
-            <th>Driver Name</th>
+            <th>Employee Ref</th>
+            <th>Employee Name</th>
             <th>Advance Ref</th>
             <th>Date</th>
             <th class="text-end">Amount (LKR)</th>
@@ -120,8 +120,8 @@
         </thead>
         <tbody>
           <tr v-for="r in rows" :key="r.advance_ref">
-            <td>{{ r.driver_ref }}</td>
-            <td>{{ r.driver_name }}</td>
+            <td>{{ r.employee_ref }}</td>
+            <td>{{ r.employee_name }}</td>
             <td>{{ r.advance_ref }}</td>
             <td>{{ r.date }}</td>
             <td class="text-end">{{ fmt(r.amount) }}</td>
@@ -143,4 +143,4 @@
 
   <div class="alert alert-danger mt-2" v-if="error">{{ error }}</div>
 </div>
-<script src="/modules/reports/staff_reports/driver_advance_report/driver_advance_report.js"></script>
+<script src="/modules/reports/staff_reports/employee_advance_report/employee_advance_report.js"></script>

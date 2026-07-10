@@ -1,4 +1,4 @@
-<?php /* entries/driver_advance/driver_advance.php — Driver advance form, included by home.php */ ?>
+<?php /* modules/operations/staff_payroll/employee_advance/employee_advance.php — Employee advance form, included by home.php */ ?>
 
 <div id="adv-app" class="row g-4">
 
@@ -86,27 +86,12 @@
               </div>
             </div>
             <div class="row mb-3">
-              <label class="col-sm-4 col-form-label">Recipient Type</label>
-              <div class="col-sm-8 d-flex align-items-center gap-4">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" id="adv-type-driver" value="driver" v-model="form.recipient_type" @change="onTypeChange" />
-                  <label class="form-check-label" for="adv-type-driver">Driver</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" id="adv-type-cleaner" value="cleaner" v-model="form.recipient_type" @change="onTypeChange" />
-                  <label class="form-check-label" for="adv-type-cleaner">Cleaner</label>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="adv-recipient" class="col-sm-4 col-form-label">
-                {{ form.recipient_type === 'driver' ? 'Driver' : 'Cleaner' }}
-              </label>
+              <label for="adv-recipient" class="col-sm-4 col-form-label">Employee</label>
               <div class="col-sm-8">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="adv-recipient" v-model="form.recipient_display" placeholder="Select recipient…" readonly />
+                  <input type="text" class="form-control" id="adv-recipient" v-model="form.employee_display" placeholder="Select employee…" readonly />
                   <button class="btn btn-outline-secondary" type="button"
-                    :data-bs-target="form.recipient_type === 'driver' ? '#advDriverPickerModal' : '#advCleanerPickerModal'"
+                    data-bs-target="#advEmployeePickerModal"
                     data-bs-toggle="modal">
                     <i class="bi bi-search"></i>
                   </button>
@@ -150,10 +135,10 @@
 
 </div>
 
-<?php include __DIR__ . '/driver_advance_search.php'; ?>
+<?php include __DIR__ . '/employee_advance_search.php'; ?>
 
 <script>const SYSTEM_NAME = '<?= htmlspecialchars($page) ?>';</script>
-<script src="/modules/operations/staff_payroll/driver_advance/driver_advance.js"></script>
+<script src="/modules/operations/staff_payroll/employee_advance/employee_advance.js"></script>
 
 <style>
 .je-preview {

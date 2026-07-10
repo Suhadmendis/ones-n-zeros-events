@@ -5,8 +5,8 @@ createApp({
     return {
       from,
       to,
-      driver_id: '',
-      drivers: [],
+      employee_id: '',
+      employees: [],
       loading: false,
       ran: false,
       error: '',
@@ -16,8 +16,8 @@ createApp({
     };
   },
   mounted() {
-    axios.get('/modules/reports/staff_reports/driver_advance_report/driver_advance_report_data.php?action=list_drivers')
-      .then(r => { this.drivers = r.data; })
+    axios.get('/modules/reports/staff_reports/employee_advance_report/employee_advance_report_data.php?action=list_employees')
+      .then(r => { this.employees = r.data; })
       .catch(() => {});
     this.load();
   },
@@ -33,11 +33,11 @@ createApp({
       this.loading = true;
       this.error = '';
       const params = new URLSearchParams({ action: 'report', from: this.from, to: this.to });
-      if (this.driver_id) params.set('driver_ref', this.driver_id);
-      axios.get('/modules/reports/staff_reports/driver_advance_report/driver_advance_report_data.php?' + params.toString())
+      if (this.employee_id) params.set('employee_ref', this.employee_id);
+      axios.get('/modules/reports/staff_reports/employee_advance_report/employee_advance_report_data.php?' + params.toString())
         .then(r => { this.rows = r.data.rows; this.summary = r.data.summary; this.ran = true; })
         .catch(() => { this.error = 'Failed to load report.'; })
         .finally(() => { this.loading = false; });
     },
   },
-}).mount('#driver-advance-app');
+}).mount('#employee-advance-app');

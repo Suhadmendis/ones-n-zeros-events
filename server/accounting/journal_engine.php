@@ -26,7 +26,7 @@ require_once __DIR__ . '/../general/number_series.php';
  *     each: [ account_code, debit_amount, credit_amount, description? ]
  *   source_type   string   optional  'manual'|'trip'|'trip_expense'|'fuel_entry'|
  *                                    'general_expense'|'vehicle_expense'|'cash_flow'|
- *                                    'driver_advance'|'loan'|'driver_settlement'|
+ *                                    'employee_advance'|'loan'|'driver_settlement'|
  *                                    'cleaner_settlement'|'payment'|'deduction'|
  *                                    'accounts_payable'|'accounts_receivable'|'cash_bank'
  *   source_ref    string   optional  ref of originating record e.g. 'TRP-0000001'

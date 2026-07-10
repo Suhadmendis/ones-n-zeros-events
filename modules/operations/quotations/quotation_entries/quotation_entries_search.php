@@ -83,6 +83,86 @@
   </div>
 </div>
 
+<!-- Terms & Conditions library picker modal -->
+<div class="modal fade" id="qtTermsPickerModal" tabindex="-1" aria-labelledby="qtTermsPickerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qtTermsPickerLabel">Insert Terms &amp; Conditions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+        <table id="qtTermsPickerTable" class="table table-bordered table-hover align-middle" style="width:100%;cursor:pointer">
+          <thead class="table-light"><tr><th>Ref</th><th>Name</th><th>Description</th></tr></thead>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Terms library picker modal -->
+<div class="modal fade" id="qtPaymentTermsPickerModal" tabindex="-1" aria-labelledby="qtPaymentTermsPickerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qtPaymentTermsPickerLabel">Insert Payment Terms</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+        <table id="qtPaymentTermsPickerTable" class="table table-bordered table-hover align-middle" style="width:100%;cursor:pointer">
+          <thead class="table-light"><tr><th>Ref</th><th>Name</th><th>Description</th></tr></thead>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Delivery Period library picker modal -->
+<div class="modal fade" id="qtDeliveryPeriodPickerModal" tabindex="-1" aria-labelledby="qtDeliveryPeriodPickerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qtDeliveryPeriodPickerLabel">Insert Delivery / Completion Period</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+        <table id="qtDeliveryPeriodPickerTable" class="table table-bordered table-hover align-middle" style="width:100%;cursor:pointer">
+          <thead class="table-light"><tr><th>Ref</th><th>Name</th><th>Description</th></tr></thead>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Notes library picker modal -->
+<div class="modal fade" id="qtNotesPickerModal" tabindex="-1" aria-labelledby="qtNotesPickerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qtNotesPickerLabel">Insert Notes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+        <table id="qtNotesPickerTable" class="table table-bordered table-hover align-middle" style="width:100%;cursor:pointer">
+          <thead class="table-light"><tr><th>Ref</th><th>Name</th><th>Description</th></tr></thead>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="quotationsSearchModal" tabindex="-1" aria-labelledby="quotationsSearchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
     <div class="modal-content">
