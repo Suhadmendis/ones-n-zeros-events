@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GPS Path Console Check</title>
+</head>
+<body>
+  <p>Open DevTools &rarr; Console tab. The full route object is logged below and also available as <code>window.routeData</code>.</p>
+
+  <script>
+    const url = 'route.php?profile=driving&coordinates=79.854201,6.938861;80.635036,7.293121';
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        window.routeData = data;
+        console.log('Full route object (Colombo -> Kandy):', data);
+        console.log('Path coordinates ([lng, lat] pairs):', data.routes?.[0]?.geometry?.coordinates);
+        console.log('Point count:', data.routes?.[0]?.geometry?.coordinates?.length);
+      })
+      .catch((err) => console.error('Fetch failed:', err));
+  </script>
+</body>
+</html>

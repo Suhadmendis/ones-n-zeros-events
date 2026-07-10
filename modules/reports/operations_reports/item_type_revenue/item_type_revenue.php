@@ -1,0 +1,155 @@
+<!-- Report Info Modal -->
+<div class="modal fade" id="reportInfoModal" tabindex="-1" aria-labelledby="reportInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reportInfoModalLabel">
+          <i class="bi bi-info-circle me-2 text-primary"></i>About: Item / Cargo Type Revenue
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <h6 class="fw-bold text-primary mb-2"><i class="bi bi-bullseye me-1"></i>Purpose</h6>
+        <p class="mb-3">
+          The <strong>Item / Cargo Type Revenue</strong> report breaks down trip revenue by the type of cargo or item transported.
+          It answers: <em>"Which cargo types generate the most revenue and how many trips do they account for?"</em> — helping management understand which freight categories are most profitable.
+        </p>
+
+        <hr>
+
+        <h6 class="fw-bold text-primary mb-2"><i class="bi bi-database me-1"></i>Database Structure</h6>
+        <p class="mb-1">This report draws from a single table:</p>
+        <table class="table table-sm table-bordered mb-3">
+          <thead class="table-light">
+            <tr>
+              <th>Table</th>
+              <th>Column</th>
+              <th>Type</th>
+              <th>Role in this report</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>trips</code></td><td><code>item_name</code></td><td>VARCHAR</td><td>Cargo/item type — used as the grouping key</td></tr>
+            <tr><td><code>trips</code></td><td><code>amount</code></td><td>NUMERIC</td><td>Trip revenue — summed and averaged per cargo type</td></tr>
+            <tr><td><code>trips</code></td><td><code>date</code></td><td>DATE</td><td>Used to filter trips within the selected date range</td></tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h6 class="fw-bold text-primary mb-2"><i class="bi bi-gear me-1"></i>How Data Is Gathered</h6>
+        <ol class="mb-3">
+          <li class="mb-1"><strong>Filter by date</strong> — All trips within the selected date range are fetched.</li>
+          <li class="mb-1"><strong>Group by cargo type</strong> — Trips are grouped by <code>item_name</code>. Trips with no item name are grouped as "Unspecified".</li>
+          <li class="mb-1"><strong>Aggregate</strong> — For each cargo type: trips are counted, revenue is summed, average revenue per trip is calculated.</li>
+          <li class="mb-1"><strong>Percentage of total</strong> — Each group's revenue is divided by the grand total to produce a percentage share.</li>
+          <li class="mb-1"><strong>Sort</strong> — Results are sorted by total revenue descending so the highest-value cargo types appear first.</li>
+        </ol>
+
+        <div class="alert alert-info mb-0 py-2">
+          <i class="bi bi-lightbulb me-1"></i>
+          <strong>Tip:</strong> "Unspecified" entries mean the cargo type was not recorded on the trip. Encourage drivers/admins to fill in <code>item_name</code> for more accurate analysis.
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="item-revenue-app" v-cloak>
+  <!-- filters -->
+  <div class="card mb-3">
+    <div class="card-body">
+      <div class="row g-2 align-items-end">
+        <div class="col-auto">
+          <label class="form-label mb-1">Date From</label>
+          <input type="date" class="form-control form-control-sm" v-model="from" />
+        </div>
+        <div class="col-auto">
+          <label class="form-label mb-1">Date To</label>
+          <input type="date" class="form-control form-control-sm" v-model="to" />
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary btn-sm" @click="load" :disabled="loading">
+            <span v-if="loading" class="spinner-border spinner-border-sm me-1"></span>
+            Run Report
+          </button>
+        </div>
+        <div class="col-auto ms-auto">
+          <div class="report-export-btns d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-sm btn-outline-success" onclick="ReportUtils.exportExcel()">
+              <i class="bi bi-file-earmark-excel me-1"></i>Export Excel
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ReportUtils.printReport()">
+              <i class="bi bi-printer me-1"></i>Print / PDF
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#reportInfoModal" title="How this report works">
+              <i class="bi bi-info-circle me-1"></i>How this report works
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row g-1 mt-2">
+        <div class="col-12">
+          <div class="d-flex flex-wrap gap-1 align-items-center">
+            <small class="text-muted me-1">Jump to:</small>
+            <button v-for="mn in months" :key="mn.month" type="button"
+              class="btn btn-sm btn-outline-secondary"
+              @click="selectMonth(mn.year, mn.month)">{{ mn.label }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- results -->
+  <div class="card" v-if="rows.length || ran">
+    <div class="card-header py-2">
+      <strong>Item / Cargo Type Revenue</strong>
+      <span class="text-muted ms-2 small">{{ from }} to {{ to }}</span>
+    </div>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-sm table-bordered table-striped table-hover mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th>Item / Cargo Type</th>
+              <th class="text-center">Trip Count</th>
+              <th class="text-end">Total Revenue (LKR)</th>
+              <th class="text-end">Avg (LKR)</th>
+              <th class="text-end">% of Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="r in rows" :key="r.item_name">
+              <td>{{ r.item_name }}</td>
+              <td class="text-center">{{ r.trip_count }}</td>
+              <td class="text-end fw-semibold">{{ fmt(r.total_revenue) }}</td>
+              <td class="text-end">{{ fmt(r.avg_revenue) }}</td>
+              <td class="text-end">{{ r.pct_of_total }}%</td>
+            </tr>
+            <tr v-if="!rows.length">
+              <td colspan="5" class="text-center text-muted py-3">No data for selected period.</td>
+            </tr>
+          </tbody>
+          <tfoot class="fw-bold table-secondary" v-if="rows.length">
+            <tr>
+              <td>Total</td>
+              <td class="text-center">{{ totalTrips }}</td>
+              <td class="text-end">{{ fmt(grandTotal) }}</td>
+              <td></td>
+              <td class="text-end">100%</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-danger mt-2" v-if="error">{{ error }}</div>
+</div>
+<script src="/modules/reports/operations_reports/item_type_revenue/item_type_revenue.js"></script>

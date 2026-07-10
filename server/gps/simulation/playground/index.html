@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSRM API Playground</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #161922;
+    --border: #262b38;
+    --text: #e6e8ee;
+    --muted: #8b93a7;
+    --accent: #4f8cff;
+    --ok: #3ecf8e;
+    --err: #ff6b6b;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .app {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+  }
+
+  .app-header h1 {
+    margin: 0 0 6px;
+    font-size: 24px;
+  }
+
+  .app-header p {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .app-header code {
+    background: var(--panel);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .tab {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .tab.active {
+    color: var(--text);
+    border-color: var(--accent);
+    background: #1b2436;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+  }
+
+  .service-form h2 {
+    margin: 0 0 4px;
+    font-size: 17px;
+  }
+
+  .service-form h2 span {
+    display: block;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: normal;
+    margin-top: 4px;
+  }
+
+  .desc {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 8px 0 16px;
+  }
+
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+    flex: 1 1 200px;
+  }
+
+  .fields input,
+  .fields select {
+    background: #0f1115;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: "SF Mono", Menlo, monospace;
+  }
+
+  button[type="submit"] {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    filter: brightness(1.08);
+  }
+
+  .log-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .log-header h2 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  #clear-log {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  .log-entry {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+
+  .log-entry.error {
+    border-color: var(--err);
+  }
+
+  .log-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+
+  .log-service {
+    background: #1b2436;
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .log-url {
+    color: var(--muted);
+    font-family: "SF Mono", Menlo, monospace;
+    flex: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .log-status {
+    color: var(--ok);
+    font-weight: 600;
+  }
+
+  .log-entry.error .log-status {
+    color: var(--err);
+  }
+
+  .log-body {
+    margin: 0;
+    padding: 14px;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 12.5px;
+    line-height: 1.5;
+    max-height: 360px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="app-header">
+    <h1>OSRM API Playground</h1>
+    <p>
+      Each tab below hits its own PHP endpoint (<code>route.php</code>, <code>nearest.php</code>,
+      <code>table.php</code>, <code>match.php</code>, <code>trip.php</code>), which forwards the
+      request to <code>router.project-osrm.org</code> and returns the raw JSON. Responses stack up
+      in the log so you can compare services one by one.
+    </p>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-service="route">Route</button>
+    <button class="tab" data-service="nearest">Nearest</button>
+    <button class="tab" data-service="table">Table</button>
+    <button class="tab" data-service="match">Match</button>
+    <button class="tab" data-service="trip">Trip</button>
+    <button class="tab" data-service="geocode">Geocode</button>
+  </nav>
+
+  <div class="panel">
+    <form class="service-form" data-service="route">
+      <h2>Route <span>/route/v1/{profile}/{coordinates}</span></h2>
+      <p class="desc">Fastest path between two or more points, with full geometry, turn-by-turn steps and annotations.</p>
+      <div class="fields">
+        <label>Profile
+          <select name="profile">
+            <option value="driving">driving</option>
+            <option value="walking">walking</option>
+            <option value="cycling">cycling</option>
+          </select>
+        </label>
+        <label>Coordinates (lng,lat;lng,lat)
+          <input type="text" name="coordinates" value="79.8612,6.9271;79.8997,6.9147">
+        </label>
+      </div>
+      <button type="submit">Run Route</button>
+    </form>
+
+    <form class="service-form" data-service="nearest" hidden>
+      <h2>Nearest <span>/nearest/v1/{profile}/{coordinate}</span></h2>
+      <p class="desc">Snaps a single point onto the closest matching road segments.</p>
+      <div class="fields">
+        <label>Profile
+          <select name="profile">
+            <option value="driving">driving</option>
+            <option value="walking">walking</option>
+            <option value="cycling">cycling</option>
+          </select>
+        </label>
+        <label>Coordinate (lng,lat)
+          <input type="text" name="coordinate" value="79.8612,6.9271">
+        </label>
+        <label>Number of matches
+          <input type="number" name="number" value="3" min="1" max="10">
+        </label>
+      </div>
+      <button type="submit">Run Nearest</button>
+    </form>
+
+    <form class="service-form" data-service="table" hidden>
+      <h2>Table <span>/table/v1/{profile}/{coordinates}</span></h2>
+      <p class="desc">Duration/distance matrix between every pair of points — useful for comparing many stops at once.</p>
+      <div class="fields">
+        <label>Profile
+          <select name="profile">
+            <option value="driving">driving</option>
+            <option value="walking">walking</option>
+            <option value="cycling">cycling</option>
+          </select>
+        </label>
+        <label>Coordinates (lng,lat;lng,lat;...)
+          <input type="text" name="coordinates" value="79.8612,6.9271;79.8997,6.9147;79.8750,6.9350">
+        </label>
+      </div>
+      <button type="submit">Run Table</button>
+    </form>
+
+    <form class="service-form" data-service="match" hidden>
+      <h2>Match <span>/match/v1/{profile}/{coordinates}</span></h2>
+      <p class="desc">Snaps a noisy GPS trace (e.g. from a moving vehicle) onto the road network.</p>
+      <div class="fields">
+        <label>Profile
+          <select name="profile">
+            <option value="driving">driving</option>
+            <option value="walking">walking</option>
+            <option value="cycling">cycling</option>
+          </select>
+        </label>
+        <label>Coordinates (trace)
+          <input type="text" name="coordinates" value="79.8612,6.9271;79.8700,6.9250;79.8800,6.9200;79.8997,6.9147">
+        </label>
+      </div>
+      <button type="submit">Run Match</button>
+    </form>
+
+    <form class="service-form" data-service="trip" hidden>
+      <h2>Trip <span>/trip/v1/{profile}/{coordinates}</span></h2>
+      <p class="desc">Solves a travelling-salesman route that visits every given point.</p>
+      <div class="fields">
+        <label>Profile
+          <select name="profile">
+            <option value="driving">driving</option>
+            <option value="walking">walking</option>
+            <option value="cycling">cycling</option>
+          </select>
+        </label>
+        <label>Coordinates
+          <input type="text" name="coordinates" value="79.8612,6.9271;79.8997,6.9147;79.8750,6.9350">
+        </label>
+      </div>
+      <button type="submit">Run Trip</button>
+    </form>
+
+    <form class="service-form" data-service="geocode" hidden>
+      <h2>Geocode <span>nominatim.openstreetmap.org/search?q={query}</span></h2>
+      <p class="desc">Looks up a place name and returns its coordinates (not an OSRM service — used to populate gps_locations).</p>
+      <div class="fields">
+        <label>Place name
+          <input type="text" name="q" value="Colombo, Sri Lanka">
+        </label>
+      </div>
+      <button type="submit">Run Geocode</button>
+    </form>
+  </div>
+
+  <section class="log">
+    <div class="log-header">
+      <h2>Responses</h2>
+      <button id="clear-log" type="button">Clear</button>
+    </div>
+    <div id="log-list"></div>
+  </section>
+</div>
+
+<script>
+  const ENDPOINTS = {
+    route: 'route.php',
+    nearest: 'nearest.php',
+    table: 'table.php',
+    match: 'match.php',
+    trip: 'trip.php',
+    geocode: 'geocode.php',
+  };
+
+  document.querySelectorAll('.tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const service = tab.dataset.service;
+      document.querySelectorAll('.service-form').forEach((form) => {
+        form.hidden = form.dataset.service !== service;
+      });
+    });
+  });
+
+  function createLogEntry(service, url) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'log-entry';
+    wrapper.innerHTML = `
+      <div class="log-meta">
+        <span class="log-service">${service}</span>
+        <span class="log-url">${url}</span>
+        <span class="log-status">…</span>
+      </div>
+      <pre class="log-body">Loading…</pre>
+    `;
+    document.getElementById('log-list').prepend(wrapper);
+    return wrapper;
+  }
+
+  document.querySelectorAll('.service-form').forEach((form) => {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const service = form.dataset.service;
+      const params = new URLSearchParams(new FormData(form));
+      const url = `${ENDPOINTS[service]}?${params.toString()}`;
+      const entry = createLogEntry(service, url);
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        entry.querySelector('.log-body').textContent = JSON.stringify(data, null, 2);
+        entry.querySelector('.log-status').textContent = res.status;
+        if (!res.ok) entry.classList.add('error');
+      } catch (err) {
+        entry.querySelector('.log-body').textContent = String(err);
+        entry.querySelector('.log-status').textContent = 'ERR';
+        entry.classList.add('error');
+      }
+    });
+  });
+
+  document.getElementById('clear-log').addEventListener('click', () => {
+    document.getElementById('log-list').innerHTML = '';
+  });
+</script>
+</body>
+</html>

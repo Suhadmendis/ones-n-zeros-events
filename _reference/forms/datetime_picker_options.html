@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Planned Start — Date/Time Picker Options</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous" />
+
+<!-- Option A: Flatpickr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" crossorigin="anonymous" />
+
+<!-- Option B: Tempus Dominus (Bootstrap 5 native-styled) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.9.9/dist/css/tempus-dominus.min.css" crossorigin="anonymous" />
+
+<style>
+  body { background: #f4f6f9; padding: 32px 16px 64px; }
+  .demo-card { max-width: 1180px; margin: 0 auto; }
+  .option-card { height: 100%; }
+  .option-card .card-header { font-weight: 600; }
+  .verdict { font-size: 0.8rem; }
+  .value-readout { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.8rem; background: #f8f9fa; border: 1px dashed #ccc; padding: 6px 10px; border-radius: 4px; margin-top: 10px; min-height: 34px; }
+  .pill { font-size: .7rem; }
+</style>
+</head>
+<body>
+
+<div class="demo-card">
+  <div class="mb-4">
+    <h4 class="mb-1">Planned Start — Date/Time Picker Options</h4>
+    <p class="text-muted mb-0">Same field, three different widgets. All loaded via CDN &lt;script&gt; tags — no build step, same pattern this app already uses for Bootstrap/DataTables/jQuery.</p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- BASELINE: current native input -->
+    <div class="col-lg-4">
+      <div class="card option-card border-secondary-subtle">
+        <div class="card-header bg-secondary-subtle d-flex justify-content-between align-items-center">
+          Current — Native <code>datetime-local</code>
+          <span class="badge text-bg-secondary pill">baseline</span>
+        </div>
+        <div class="card-body">
+          <label class="form-label">Planned Start</label>
+          <input type="datetime-local" class="form-control" id="native-input" />
+          <div class="value-readout" id="native-readout">—</div>
+          <ul class="small text-muted mt-3 mb-0 ps-3">
+            <li>Zero dependencies, already in place.</li>
+            <li>Rendering is 100% controlled by the OS/browser — Chrome, Safari, Firefox and mobile all look different, and you can't restyle the calendar/clock popup at all.</li>
+            <li>No way to enforce business rules (e.g. block past dates, 30-min steps) without extra JS anyway.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION A: Flatpickr -->
+    <div class="col-lg-4">
+      <div class="card option-card border-primary-subtle">
+        <div class="card-header bg-primary-subtle d-flex justify-content-between align-items-center">
+          Option A — Flatpickr
+          <span class="badge text-bg-primary pill">recommended</span>
+        </div>
+        <div class="card-body">
+          <label class="form-label">Planned Start</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="flatpickr-input" placeholder="Click to pick…" readonly />
+            <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+          </div>
+          <div class="value-readout" id="flatpickr-readout">—</div>
+          <ul class="small text-muted mt-3 mb-0 ps-3">
+            <li>Single calendar + inline time spinner, one consistent look on every browser/OS.</li>
+            <li>~15KB, no other dependency, easy to theme with plain CSS variables to match AdminLTE's palette.</li>
+            <li>Built-in support for min/max dates, disabled dates, 15/30-min step, and a "confirm" button pattern — useful for "Planned Start can't be before Requested Date" type rules later.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION B: Tempus Dominus -->
+    <div class="col-lg-4">
+      <div class="card option-card border-success-subtle">
+        <div class="card-header bg-success-subtle d-flex justify-content-between align-items-center">
+          Option B — Tempus Dominus
+          <span class="badge text-bg-success pill">most "Bootstrap-native"</span>
+        </div>
+        <div class="card-body">
+          <label class="form-label">Planned Start</label>
+          <div class="input-group" id="td-wrapper" data-td-target-input="nearest" data-td-target-toggle="nearest">
+            <input type="text" class="form-control" id="td-input" data-td-target="#td-wrapper" readonly />
+            <span class="input-group-text" data-td-target="#td-wrapper" data-td-toggle="datetimepicker"><i class="bi bi-calendar-event"></i></span>
+          </div>
+          <div class="value-readout" id="td-readout">—</div>
+          <ul class="small text-muted mt-3 mb-0 ps-3">
+            <li>Built specifically for Bootstrap 5 — tabs between calendar/clock views, icons and spacing already match Bootstrap components exactly (it's the spiritual successor to the classic AdminLTE 2/3 datetimepicker).</li>
+            <li>Heavier: needs Popper.js as a second dependency (already implied by Bootstrap's own JS bundle, so effectively free here).</li>
+            <li>More configuration surface (locales, view modes, restrictions) if the form grows more date-heavy later.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="alert alert-light border mt-4 mb-0 small">
+    <strong>My take:</strong> Flatpickr is the easiest win — smallest footprint, easiest to restyle to match the app's colours exactly, and covers everything the work order form needs (min-date validation, step intervals). Tempus Dominus looks slightly more "native Bootstrap" out of the box but drags in Popper and a bigger API surface for functionality we may not need yet. Try both above, then tell me which one to roll out — I'll wire it into every date/datetime field across the vehicle documents, quotations, and work order screens.
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.9.9/dist/js/tempus-dominus.min.js" crossorigin="anonymous"></script>
+
+<script>
+  // Baseline
+  document.getElementById('native-input').addEventListener('input', function () {
+    document.getElementById('native-readout').textContent = this.value || '—';
+  });
+
+  // Flatpickr
+  flatpickr('#flatpickr-input', {
+    enableTime: true,
+    dateFormat: 'Y-m-d H:i',
+    altInput: true,
+    altFormat: 'd M Y, h:i K',
+    minuteIncrement: 15,
+    onChange: function (selectedDates, dateStr) {
+      document.getElementById('flatpickr-readout').textContent = dateStr || '—';
+    },
+  });
+
+  // Tempus Dominus
+  const tdEl = document.getElementById('td-wrapper');
+  const td = new tempusDominus.TempusDominus(tdEl, {
+    display: { icons: { type: 'icons', time: 'bi bi-clock', date: 'bi bi-calendar', up: 'bi bi-chevron-up', down: 'bi bi-chevron-down', previous: 'bi bi-chevron-left', next: 'bi bi-chevron-right', today: 'bi bi-calendar-check', clear: 'bi bi-trash', close: 'bi bi-x' } },
+    localization: { format: 'yyyy-MM-dd HH:mm' },
+  });
+  tdEl.addEventListener('change.td', function (e) {
+    document.getElementById('td-readout').textContent = e.detail?.date ? e.detail.date.toString() : '—';
+  });
+</script>
+
+</body>
+</html>

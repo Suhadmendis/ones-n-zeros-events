@@ -1,0 +1,526 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-width: 210mm;
+  --page-height: 297mm;
+  --page-margin-x: 13mm;
+  --page-margin-top: 10mm;
+  --page-margin-bottom: 12mm;
+  --paper-bg: #d4f3f5;
+  --ink: #2b2b2b;
+  --muted: #4e4e4e;
+  --accent: #14a79f;
+  --grid: #16b2ac;
+  --line-dark: #2c2c2c;
+}
+
+body {
+  background: #e8eef0;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.quotation-document {
+  width: var(--page-width);
+  margin: 0 auto;
+  background: var(--paper-bg);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.14);
+}
+
+.document-hero {
+  height: 38mm;
+  position: relative;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.16), rgba(255, 255, 255, 0.04)),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.08), transparent 56%),
+    linear-gradient(135deg, #605a4d 0%, #42463c 36%, #807866 68%, #51483c 100%);
+}
+
+.document-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 10mm;
+  background: linear-gradient(to bottom, rgba(212, 243, 245, 0), rgba(212, 243, 245, 1));
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 5mm 12mm 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  margin: 0;
+  font-size: 9.5mm;
+  line-height: 0.95;
+  letter-spacing: -0.3mm;
+  font-weight: 700;
+}
+
+.hero-overlay p {
+  margin: 0.8mm 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.9mm;
+  line-height: 1;
+}
+
+.document-shell {
+  padding: 2mm 10mm var(--page-margin-bottom);
+}
+
+.document-meta {
+  margin: 0 0.5mm 4mm;
+}
+
+.meta-group {
+  display: grid;
+  gap: 0.8mm;
+}
+
+.meta-group-secondary {
+  margin-top: 4mm;
+}
+
+.meta-row {
+  display: grid;
+  grid-template-columns: 41mm 1fr;
+  column-gap: 3mm;
+  align-items: start;
+}
+
+.meta-label,
+.meta-value {
+  font-size: 3.1mm;
+  font-weight: 700;
+  color: #424242;
+}
+
+.meta-value {
+  overflow-wrap: anywhere;
+}
+
+.color-palette {
+  margin: 3mm 0.5mm 0;
+  padding-top: 1.6mm;
+  border-top: 0.5mm solid rgba(90, 90, 90, 0.45);
+  font-size: 3.2mm;
+  font-weight: 700;
+  color: #373737;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.color-palette strong {
+  font-weight: 500;
+}
+
+.quotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #fff;
+  border: 0.5mm solid var(--grid);
+}
+
+.quotation-table col.col-arrangement {
+  width: 45.3%;
+}
+
+.quotation-table col.col-qty {
+  width: 6.4%;
+}
+
+.quotation-table col.col-cost {
+  width: 16.4%;
+}
+
+.quotation-table col.col-flora {
+  width: 31.9%;
+}
+
+.quotation-table thead {
+  display: table-header-group;
+}
+
+.quotation-table tfoot {
+  display: table-footer-group;
+}
+
+.quotation-table thead th {
+  background: var(--accent);
+  color: #fff;
+  font-size: 3.9mm;
+  line-height: 1.08;
+  font-weight: 700;
+  text-align: left;
+  padding: 1.8mm 1.6mm 1.7mm;
+  border-right: 0.5mm solid var(--grid);
+  vertical-align: top;
+}
+
+.quotation-table thead th:nth-child(2),
+.quotation-table thead th:nth-child(3),
+.quotation-table thead th:nth-child(4) {
+  text-align: center;
+}
+
+.quotation-table thead th:last-child {
+  border-right: 0;
+}
+
+.quotation-table tbody tr {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.quotation-table td {
+  border-top: 0.5mm solid var(--grid);
+  border-right: 0.5mm solid var(--grid);
+  vertical-align: top;
+  padding: 2.2mm 1.8mm;
+  overflow-wrap: anywhere;
+}
+
+.quotation-table td:last-child {
+  border-right: 0;
+}
+
+.item-block h2 {
+  margin: 0 0 1.2mm;
+  font-size: 4.1mm;
+  line-height: 1.06;
+  font-weight: 700;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.item-block h2 span {
+  font-size: 3.8mm;
+}
+
+.item-subtitle {
+  margin: -0.4mm 0 1.3mm;
+  font-size: 3.8mm;
+  line-height: 1.05;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.item-points {
+  margin: 0 0 1.6mm;
+  padding: 0;
+  list-style: none;
+}
+
+.item-points li {
+  margin: 0 0 0.6mm;
+  font-size: 3mm;
+  line-height: 1.14;
+  font-weight: 600;
+  orphans: 2;
+  widows: 2;
+}
+
+.item-points li::before {
+  content: "- ";
+}
+
+.qty,
+.money,
+.flora {
+  color: #4f4f4f;
+}
+
+.qty {
+  font-size: 4.2mm;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.money {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+  padding-top: 2.4mm;
+  padding-right: 2.8mm;
+}
+
+.money-single {
+  font-size: 4.5mm;
+  display: block;
+}
+
+.money-calc {
+  font-size: 3.7mm;
+  line-height: 1.15;
+  display: block;
+}
+
+.money-total {
+  margin-top: 0.5mm;
+  font-size: 5mm;
+  line-height: 1.05;
+  display: block;
+}
+
+.flora {
+  text-align: right;
+  font-size: 3.2mm;
+  line-height: 1.24;
+  font-weight: 700;
+  padding-right: 2.4mm;
+}
+
+.line-item-sm {
+  min-height: 18mm;
+}
+
+.line-item-md {
+  min-height: 52mm;
+}
+
+.line-item-lg {
+  min-height: 72mm;
+}
+
+.photo,
+.photo-grid,
+.photo-stack {
+  margin-top: 2mm;
+}
+
+.photo-grid,
+.photo-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2mm;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 0.35mm solid rgba(60, 60, 60, 0.08);
+  color: rgba(70, 70, 70, 0.38);
+  font-size: 3.8mm;
+  font-weight: 700;
+  text-align: center;
+}
+
+.photo-large {
+  width: 88%;
+  height: 38mm;
+}
+
+.photo-medium {
+  width: 90%;
+  height: 25mm;
+}
+
+.photo-small {
+  width: 46%;
+  height: 20mm;
+}
+
+.photo-portrait {
+  width: 46%;
+  height: 26mm;
+}
+
+.photo-square {
+  width: 44%;
+  height: 30mm;
+}
+
+.document-summary {
+  margin-top: 8mm;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 0.5mm solid var(--line-dark);
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 3.2mm 3.6mm;
+  font-size: 2.9mm;
+  font-weight: 700;
+  border-top: 0.5mm solid var(--line-dark);
+}
+
+.summary-table tr:first-child th,
+.summary-table tr:first-child td {
+  border-top: 0;
+}
+
+.summary-table th {
+  text-align: left;
+  border-right: 0.5mm solid var(--line-dark);
+  width: 60%;
+}
+
+.summary-table td {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.terms-block {
+  margin-top: 10mm;
+}
+
+.terms-block h3 {
+  margin: 0 0 5mm;
+  text-align: center;
+  font-size: 6.7mm;
+  color: #444;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.terms-block ol {
+  margin: 0;
+  padding-left: 7mm;
+}
+
+.terms-block li {
+  margin: 0 0 2.6mm;
+  padding-left: 2mm;
+  font-size: 4.2mm;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #4a4a4a;
+  orphans: 2;
+  widows: 2;
+}
+
+.closing-block {
+  margin-top: 12mm;
+  text-align: center;
+}
+
+.closing-block p {
+  margin: 0;
+  font-size: 3.6mm;
+  line-height: 1.7;
+  color: #5a5a5a;
+  orphans: 3;
+  widows: 3;
+}
+
+.document-signoff {
+  margin-top: 8mm;
+  text-align: center;
+}
+
+.tagline {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.9mm;
+  font-style: italic;
+  color: #555;
+}
+
+.brand-name {
+  font-size: 3.5mm;
+  font-weight: 700;
+  color: #4c4c4c;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media screen {
+  body {
+    padding: 18px 0;
+  }
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    background: var(--paper-bg);
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .quotation-document {
+    width: 210mm;
+    margin: 0;
+    box-shadow: none;
+    background: transparent;
+    padding: 6mm;
+  }
+
+  .document-hero,
+  .document-shell,
+  .document-meta,
+  .quotation-table,
+  .document-summary,
+  .terms-block,
+  .closing-block,
+  .document-signoff {
+    break-before: auto;
+    break-after: auto;
+    page-break-before: auto;
+    page-break-after: auto;
+  }
+
+  .quotation-table thead {
+    display: table-header-group;
+  }
+
+  .quotation-table tr,
+  .document-signoff {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .summary-table,
+  .summary-table tbody,
+  .summary-table tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .terms-block h3,
+  .terms-block ol,
+  .closing-block p {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+}
