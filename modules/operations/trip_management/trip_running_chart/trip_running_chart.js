@@ -14,6 +14,11 @@ createApp({
       checkGL:  true,
       moduleVisibility: {},
       isExisting: false,
+      // Effective permission matrix for this module, injected by home.php
+      // (server/general/access_engine.php). Falls back to permissive when
+      // absent so this stays non-disruptive ahead of Stage 3's server-side
+      // enforcement — see the access-engine plan.
+      perms: window.__MODULE_PERMS__ || null,
       form: {
         ref:               '',
         vehicle_ref:       '',
@@ -48,6 +53,10 @@ createApp({
   },
 
   computed: {
+    canCreate() { return this.perms ? !!this.perms.effective_can_create : true; },
+    canEdit()   { return this.perms ? !!this.perms.effective_can_edit   : true; },
+    canPrint()  { return this.perms ? !!this.perms.effective_can_print  : true; },
+    canSave()   { return this.isExisting ? this.canEdit : this.canCreate; },
     isDirty() {
       return (
         this.form.vehicle_ref !== '' ||

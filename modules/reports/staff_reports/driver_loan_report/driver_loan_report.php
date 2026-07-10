@@ -91,10 +91,10 @@
         </div>
         <div class="col-auto ms-auto">
           <div class="report-export-btns d-flex align-items-center gap-2">
-            <button type="button" class="btn btn-sm btn-outline-success" onclick="ReportUtils.exportExcel()">
+            <button type="button" class="btn btn-sm btn-outline-success" onclick="ReportUtils.exportExcel()" v-if="canExport">
               <i class="bi bi-file-earmark-excel me-1"></i>Export Excel
             </button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ReportUtils.printReport()">
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ReportUtils.printReport()" v-if="canPrint">
               <i class="bi bi-printer me-1"></i>Print / PDF
             </button>
             <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#reportInfoModal" title="How this report works">

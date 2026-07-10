@@ -27,7 +27,7 @@ createApp({
 
   methods: {
     fetchModules() {
-      axios.get('/server/general/module_system.php')
+      axios.get('/server/general/access_engine.php')
         .then(res => {
           const g = {};
           for (const m of res.data) {

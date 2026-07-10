@@ -2,6 +2,7 @@
 require_once 'server/session.php';
 require_once 'server/config.php';
 require_once 'server/logger.php';
+require_once 'server/general/access_engine.php';
 require_login();
 
 $page  = preg_replace('/[^a-z0-9_]/', '', $_GET['page'] ?? '');
@@ -96,8 +97,13 @@ if ($isReport) {
         'name' => $__u['full_name'] ?? '',
         'role' => implode(', ', $__u['roles'] ?? []),
     ];
+    // Effective can_view/create/edit/delete/... for the module on this page,
+    // so its Vue app can gate New/Edit/Delete/Print buttons — see
+    // server/general/access_engine.php.
+    $__modulePerms = $page ? access_getEffectiveModule($__u['ref'] ?? '', $page) : null;
   ?>
   <script>window.__LOG_USER__ = <?= json_encode($__logUser) ?>;</script>
+  <script>window.__MODULE_PERMS__ = <?= json_encode($__modulePerms) ?>;</script>
   <?php include 'partials/head.php'; ?>
 </head>
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
