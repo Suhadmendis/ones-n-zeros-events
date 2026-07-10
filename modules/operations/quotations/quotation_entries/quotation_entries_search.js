@@ -32,7 +32,7 @@ $(document).ready(function () {
 
   // ── Quotation Status picker ──────────────────────────────────────────────
   const statusPicker = $('#qtStatusPickerTable').DataTable({
-    ajax: { url: '/modules/master_files/references/quotation_statuses/quotation_statuses_data.php?action=list', dataSrc: '' },
+    ajax: { url: '/modules/master_files/quotation/quotation_statuses/quotation_statuses_data.php?action=list', dataSrc: '' },
     columns: [
       { data: 'ref' },
       { data: 'code' },
@@ -108,6 +108,110 @@ $(document).ready(function () {
   $('#qtSalespersonPickerModal').on('shown.bs.modal', function () {
     salespersonPicker.ajax.reload(null, false);
     salespersonPicker.columns.adjust();
+  });
+
+  // ── Terms & Conditions library picker ────────────────────────────────────
+  const termsPicker = $('#qtTermsPickerTable').DataTable({
+    ajax: { url: '/modules/master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions_data.php?action=list', dataSrc: '' },
+    columns: [
+      { data: 'ref' },
+      { data: 'name' },
+      { data: 'description', defaultContent: '' },
+    ],
+    pageLength: 10,
+    searching: true,
+    dom: '<"d-flex justify-content-between align-items-center mb-2"f>rtip',
+    language: { search: 'Filter:', info: 'Showing _START_ to _END_ of _TOTAL_' },
+  });
+
+  $('#qtTermsPickerTable tbody').on('click', 'tr', function () {
+    const data = termsPicker.row(this).data();
+    if (!data) return;
+    bootstrap.Modal.getInstance(document.getElementById('qtTermsPickerModal')).hide();
+    document.dispatchEvent(new CustomEvent('qt-terms-selected', { detail: data }));
+  });
+
+  $('#qtTermsPickerModal').on('shown.bs.modal', function () {
+    termsPicker.ajax.reload(null, false);
+    termsPicker.columns.adjust();
+  });
+
+  // ── Payment Terms library picker ─────────────────────────────────────────
+  const paymentTermsPicker = $('#qtPaymentTermsPickerTable').DataTable({
+    ajax: { url: '/modules/master_files/quotation/quotation_payment_terms/quotation_payment_terms_data.php?action=list', dataSrc: '' },
+    columns: [
+      { data: 'ref' },
+      { data: 'name' },
+      { data: 'description', defaultContent: '' },
+    ],
+    pageLength: 10,
+    searching: true,
+    dom: '<"d-flex justify-content-between align-items-center mb-2"f>rtip',
+    language: { search: 'Filter:', info: 'Showing _START_ to _END_ of _TOTAL_' },
+  });
+
+  $('#qtPaymentTermsPickerTable tbody').on('click', 'tr', function () {
+    const data = paymentTermsPicker.row(this).data();
+    if (!data) return;
+    bootstrap.Modal.getInstance(document.getElementById('qtPaymentTermsPickerModal')).hide();
+    document.dispatchEvent(new CustomEvent('qt-payment-terms-selected', { detail: data }));
+  });
+
+  $('#qtPaymentTermsPickerModal').on('shown.bs.modal', function () {
+    paymentTermsPicker.ajax.reload(null, false);
+    paymentTermsPicker.columns.adjust();
+  });
+
+  // ── Delivery Period library picker ───────────────────────────────────────
+  const deliveryPeriodPicker = $('#qtDeliveryPeriodPickerTable').DataTable({
+    ajax: { url: '/modules/master_files/quotation/quotation_delivery_periods/quotation_delivery_periods_data.php?action=list', dataSrc: '' },
+    columns: [
+      { data: 'ref' },
+      { data: 'name' },
+      { data: 'description', defaultContent: '' },
+    ],
+    pageLength: 10,
+    searching: true,
+    dom: '<"d-flex justify-content-between align-items-center mb-2"f>rtip',
+    language: { search: 'Filter:', info: 'Showing _START_ to _END_ of _TOTAL_' },
+  });
+
+  $('#qtDeliveryPeriodPickerTable tbody').on('click', 'tr', function () {
+    const data = deliveryPeriodPicker.row(this).data();
+    if (!data) return;
+    bootstrap.Modal.getInstance(document.getElementById('qtDeliveryPeriodPickerModal')).hide();
+    document.dispatchEvent(new CustomEvent('qt-delivery-period-selected', { detail: data }));
+  });
+
+  $('#qtDeliveryPeriodPickerModal').on('shown.bs.modal', function () {
+    deliveryPeriodPicker.ajax.reload(null, false);
+    deliveryPeriodPicker.columns.adjust();
+  });
+
+  // ── Notes library picker ─────────────────────────────────────────────────
+  const notesPicker = $('#qtNotesPickerTable').DataTable({
+    ajax: { url: '/modules/master_files/quotation/quotation_notes_templates/quotation_notes_templates_data.php?action=list', dataSrc: '' },
+    columns: [
+      { data: 'ref' },
+      { data: 'name' },
+      { data: 'description', defaultContent: '' },
+    ],
+    pageLength: 10,
+    searching: true,
+    dom: '<"d-flex justify-content-between align-items-center mb-2"f>rtip',
+    language: { search: 'Filter:', info: 'Showing _START_ to _END_ of _TOTAL_' },
+  });
+
+  $('#qtNotesPickerTable tbody').on('click', 'tr', function () {
+    const data = notesPicker.row(this).data();
+    if (!data) return;
+    bootstrap.Modal.getInstance(document.getElementById('qtNotesPickerModal')).hide();
+    document.dispatchEvent(new CustomEvent('qt-notes-selected', { detail: data }));
+  });
+
+  $('#qtNotesPickerModal').on('shown.bs.modal', function () {
+    notesPicker.ajax.reload(null, false);
+    notesPicker.columns.adjust();
   });
 
   const table = $('#quotationsSearchTable').DataTable({

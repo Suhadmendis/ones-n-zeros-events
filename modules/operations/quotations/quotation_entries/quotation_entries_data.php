@@ -32,6 +32,7 @@ function saveQuotationLines(string $quotationRef, array $lines): void {
             'discount' => $line['discount'] ?? 0,
             'tax' => $line['tax'] ?? 0,
             'amount' => $line['amount'] ?? 0,
+            'flora_notes' => !empty($line['flora_notes']) ? $line['flora_notes'] : null,
             'created_by' => current_user()['ref'] ?? null,
             'updated_by' => current_user()['ref'] ?? null,
         ]);
@@ -117,7 +118,7 @@ function updateQuotations(array $data): array {
 const QUOTATION_SELECT = 'id,ref,revision_no,customer_ref,contact_person,subject,customer_reference,'
     . 'quotation_status_ref,quotation_date,valid_until,currency_ref,salesperson_ref,price_list,'
     . 'payment_terms,delivery_period,notes,terms_conditions,internal_notes,subtotal,discount,tax,total_amount,'
-    . 'm_customers(ref,customer_name),m_quotation_statuses(ref,name,display_color),'
+    . 'm_customers(ref,customer_name,phone,mobile),m_quotation_statuses(ref,name,display_color),'
     . 'm_currencies(ref,currency_code,currency_name,symbol),m_employees(ref,full_name)';
 
 function listQuotations(): array {
@@ -129,7 +130,7 @@ function getQuotationWithLines(string $ref): array {
     if (empty($headers)) return [];
     $quotation = $headers[0];
 
-    $quotation['lines'] = supabase_get(SB_API . 't_quotation_lines?select=ref,line_no,item_name,description,image,qty,unit,unit_price,discount,tax,amount&quotation_ref=eq.' . urlencode($ref) . '&order=line_no.asc');
+    $quotation['lines'] = supabase_get(SB_API . 't_quotation_lines?select=ref,line_no,item_name,description,image,qty,unit,unit_price,discount,tax,amount,flora_notes&quotation_ref=eq.' . urlencode($ref) . '&order=line_no.asc');
 
     return $quotation;
 }

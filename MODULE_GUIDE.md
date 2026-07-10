@@ -152,7 +152,7 @@ psql "$DATABASE_URL" -c "SELECT ref, username, full_name FROM sys_users WHERE re
 
 SID=$(php -r '
 session_start();
-$_SESSION["user"] = ["id"=>1,"ref"=>"USR-0000001","username"=>"admin@lankatransport.lk","full_name"=>"Agent","email"=>"admin@lankatransport.lk","roles"=>["Admin"]];
+$_SESSION["user"] = ["id"=>1,"ref"=>"USR-0000001","username"=>"admin@onesnzeros.local","full_name"=>"Agent","email"=>"admin@onesnzeros.local","roles"=>["Admin"]];
 session_write_close();
 echo session_id();
 ')

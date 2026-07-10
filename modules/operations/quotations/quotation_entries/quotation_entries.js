@@ -11,6 +11,7 @@ const emptyLine = () => ({
   unit_price: 0,
   discount: 0,
   tax: 0,
+  flora_notes: '',
 });
 
 const lineHasData = (l) => (
@@ -36,6 +37,8 @@ createApp({
         revision_no: 0,
         customer_ref: '',
         customer_name: '',
+        customer_phone: '',
+        customer_mobile: '',
         contact_person: '',
         subject: '',
         customer_reference: '',
@@ -96,6 +99,8 @@ createApp({
     document.addEventListener('qt-customer-selected', (e) => {
       this.form.customer_ref  = e.detail.ref;
       this.form.customer_name = e.detail.customer_name;
+      this.form.customer_phone = e.detail.phone || '';
+      this.form.customer_mobile = e.detail.mobile || '';
       this.form.contact_person = e.detail.contact_person || '';
     });
     document.addEventListener('qt-status-selected', (e) => {
@@ -109,6 +114,18 @@ createApp({
     document.addEventListener('qt-salesperson-selected', (e) => {
       this.form.salesperson_ref  = e.detail.ref;
       this.form.salesperson_name = e.detail.full_name;
+    });
+    document.addEventListener('qt-terms-selected', (e) => {
+      this.form.terms_conditions = e.detail.description || '';
+    });
+    document.addEventListener('qt-payment-terms-selected', (e) => {
+      this.form.payment_terms = e.detail.description || '';
+    });
+    document.addEventListener('qt-delivery-period-selected', (e) => {
+      this.form.delivery_period = e.detail.description || '';
+    });
+    document.addEventListener('qt-notes-selected', (e) => {
+      this.form.notes = e.detail.description || '';
     });
   },
 
@@ -131,7 +148,7 @@ createApp({
         .finally(() => { this.loading = false; });
     },
 
-    clearCustomer()     { this.form.customer_ref = ''; this.form.customer_name = ''; },
+    clearCustomer()     { this.form.customer_ref = ''; this.form.customer_name = ''; this.form.customer_phone = ''; this.form.customer_mobile = ''; },
     clearStatus()       { this.form.quotation_status_ref = ''; this.form.quotation_status_name = ''; },
     clearCurrency()     { this.form.currency_ref = ''; this.form.currency_name = ''; },
     clearSalesperson()  { this.form.salesperson_ref = ''; this.form.salesperson_name = ''; },
@@ -188,6 +205,21 @@ createApp({
         })
         .catch(err => { this.error = 'Failed to verify record.'; console.error(err); });
     },
+    onWhatsApp() {
+      if (!this.form.customer_ref) { this.error = 'Select a customer first.'; return; }
+      const raw = this.form.customer_mobile || this.form.customer_phone;
+      const digits = String(raw || '').replace(/\D/g, '').replace(/^0/, '94');
+      if (!digits) { this.error = 'This customer has no phone/mobile number on file.'; return; }
+
+      const t = this.totals;
+      const lines = [
+        `Quotation ${this.form.ref || ''}`.trim(),
+        this.form.subject ? `Subject: ${this.form.subject}` : '',
+        `Total: ${t.total_amount.toFixed(2)}`,
+      ].filter(Boolean);
+
+      window.open('https://wa.me/' + digits + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+    },
     onCancel() { this.onReset(); },
     onClose()  { this.onReset(); },
 
@@ -198,6 +230,8 @@ createApp({
       this.form.revision_no = 0;
       this.form.customer_ref = '';
       this.form.customer_name = '';
+      this.form.customer_phone = '';
+      this.form.customer_mobile = '';
       this.form.contact_person = '';
       this.form.subject = '';
       this.form.customer_reference = '';
@@ -265,6 +299,8 @@ createApp({
       this.form.revision_no = data.revision_no ?? 0;
       this.form.customer_ref = data.customer_ref ?? '';
       this.form.customer_name = data.m_customers?.customer_name ?? '';
+      this.form.customer_phone = data.m_customers?.phone ?? '';
+      this.form.customer_mobile = data.m_customers?.mobile ?? '';
       this.form.contact_person = data.contact_person ?? '';
       this.form.subject = data.subject ?? '';
       this.form.customer_reference = data.customer_reference ?? '';
@@ -292,6 +328,7 @@ createApp({
             unit_price: l.unit_price ?? 0,
             discount: l.discount ?? 0,
             tax: l.tax ?? 0,
+            flora_notes: l.flora_notes ?? '',
           }))
         : [emptyLine()];
       this.isExisting = true;

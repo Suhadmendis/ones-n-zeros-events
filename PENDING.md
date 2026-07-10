@@ -18,7 +18,7 @@ The flat single-role permission model (`sys_app_users`/`sys_user_permissions`) w
 ## Test suite
 
 - **Playwright suite is currently broken and running 0 tests** — every file under `tests/modules/**/*.spec.js` imports `'../../../helpers/db.js'` with a wrong relative depth (the real file is `tests/helpers/db.js`). Fix the import path across all spec files. This predates the RBAC work, unrelated.
-- No automated tests exist yet for: Operations → Expenses (fuel_entry, general_expense_entry, vehicle_expense_entry, cash_flow), Operations → Staff & Payroll (driver_advance, deduction, loan, cleaner_salary_settlement, driver_salary_settlement, payment_salary_disburse), Operations → Trip Management (trip_running_chart), Finance → Receivables & Payables (accounts_payable, accounts_receivable, cash_bank), and Settings modules generally.
+- No automated tests exist yet for: Operations → Expenses (fuel_entry, general_expense_entry, vehicle_expense_entry, cash_flow), Operations → Staff & Payroll (employee_advance, deduction, loan, cleaner_salary_settlement, driver_salary_settlement, payment_salary_disburse), Operations → Trip Management (trip_running_chart), Finance → Receivables & Payables (accounts_payable, accounts_receivable, cash_bank), and Settings modules generally.
 - No validation-path tests anywhere (empty-form rejection, server-side required-field checks) — existing specs only cover the happy path.
 - Any future tests for `create_user`/`edit_deactivate_user`/`password_change` need to target the new `sys_users` schema (`full_name` not `first_name`/`last_name`, `record_status` not `status`, `role_refs` array not a single `role` string) — those forms changed as part of the RBAC work above.
 

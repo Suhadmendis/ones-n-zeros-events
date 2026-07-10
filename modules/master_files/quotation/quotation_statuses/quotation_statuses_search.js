@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
   const table = $('#quotationStatusesSearchTable').DataTable({
-    ajax: { url: '/modules/master_files/references/quotation_statuses/quotation_statuses_data.php?action=list', dataSrc: '' },
+    ajax: { url: '/modules/master_files/quotation/quotation_statuses/quotation_statuses_data.php?action=list', dataSrc: '' },
     columns: [
       { data: 'ref' },
       { data: 'code' },

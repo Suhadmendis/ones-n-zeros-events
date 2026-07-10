@@ -65,7 +65,11 @@ function saveUser(array $data): array {
     }
 
     foreach ($roleRefs as $roleRef) {
-        supabase_post(SB_API . 'sys_user_roles', ['user_ref' => $ref, 'role_ref' => $roleRef]);
+        supabase_post(SB_API . 'sys_user_roles', [
+            'ref'      => consumeNextReference('user_roles'),
+            'user_ref' => $ref,
+            'role_ref' => $roleRef,
+        ]);
     }
 
     return $user;
