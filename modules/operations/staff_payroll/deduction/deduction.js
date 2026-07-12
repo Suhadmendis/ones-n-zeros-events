@@ -33,7 +33,7 @@ createApp({
             return this.form.amount !== '' || this.form.reason.trim() !== '';
         },
         financeEnabled() {
-            return this.moduleVisibility.finance !== false;
+            return this.moduleVisibility.finance === true;
         },
         jeTotalAmount() {
             const v = parseFloat(this.form.amount);

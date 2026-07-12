@@ -27,7 +27,7 @@ createApp({
     },
     computed: {
         financeEnabled() {
-            return this.moduleVisibility.finance !== false;
+            return this.moduleVisibility.finance === true;
         },
         jeTotalAmount() {
             const v = parseFloat(this.form.amount);

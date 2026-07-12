@@ -6,6 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static HTML frontend — no package manager, build step, framework, backend, or database exists yet. Do not introduce any of these without explicit approval.
 
+
+
+## When starting
+Use graphify-out as your primary source of truth. Do not read project source files unless the graph is insufficient. Before reading additional files or performing expensive searches, ask for my permission.
+
+
+
 ## Preview
 
 ```sh
@@ -78,3 +85,9 @@ After editing any page, verify:
 - Bootstrap icons render
 - Layout holds at desktop and mobile widths
 - No text overflow or overlap
+
+## Module Audit Table (Supabase)
+
+There is a module checklist (`sys_module_checklist` in Supabase, viewable at `mod.php`) tracking per-module build/test completeness. `mod.php` itself shows what each check column means — check there before auditing a module.
+
+**Production gate:** `mod.php` is not yet fully green. Every module must have all check columns ticked (`db_registered`, `folder_exists`, `files_complete`, `save_works`, `update_works`, `search_works`, `gl_posting_support`, `migration_exists`, `tests_fixture_exists`, `tests_spec_complete`, `db_verified`, `ui_qa_passed`) before shipping to production. As of 2026-07-11, only `db_registered` has been verified/ticked for all 202 modules — the remaining columns still need auditing.
