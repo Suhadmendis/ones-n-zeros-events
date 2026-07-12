@@ -1,0 +1,4082 @@
+{
+  "company_management/administration/activity_log/activity_log.php": {
+    "mtime": 1783707946.0372024,
+    "ast_hash": "3f228e5e10dc7eb0e18f3f725195ff50",
+    "semantic_hash": "3f228e5e10dc7eb0e18f3f725195ff50"
+  },
+  "company_management/administration/activity_log/activity_log_data.php": {
+    "mtime": 1783707946.0374007,
+    "ast_hash": "3caad45ac7af3f90322dfd23db14815b",
+    "semantic_hash": "3caad45ac7af3f90322dfd23db14815b"
+  },
+  "company_management/administration/company_profile/company_profile.js": {
+    "mtime": 1783707946.0377233,
+    "ast_hash": "580292952dcf45ce289d5c01265b80eb",
+    "semantic_hash": "580292952dcf45ce289d5c01265b80eb"
+  },
+  "company_management/administration/company_profile/company_profile.php": {
+    "mtime": 1783707946.03796,
+    "ast_hash": "3fa9d8bc86d071e5d349962d6d8f850c",
+    "semantic_hash": "3fa9d8bc86d071e5d349962d6d8f850c"
+  },
+  "company_management/administration/company_profile/company_profile_data.php": {
+    "mtime": 1783707946.0381713,
+    "ast_hash": "cde75f031609a3eb615946c60882513a",
+    "semantic_hash": "cde75f031609a3eb615946c60882513a"
+  },
+  "company_management/user_management/create_user/create_user.js": {
+    "mtime": 1783707946.0385933,
+    "ast_hash": "eeb7e30c02d1e5a13bbd11576f4fa758",
+    "semantic_hash": "eeb7e30c02d1e5a13bbd11576f4fa758"
+  },
+  "company_management/user_management/create_user/create_user.php": {
+    "mtime": 1783707946.0388386,
+    "ast_hash": "8ca6484eea8fd63047a9a31893bf80b6",
+    "semantic_hash": "8ca6484eea8fd63047a9a31893bf80b6"
+  },
+  "company_management/user_management/create_user/create_user_data.php": {
+    "mtime": 1783707946.0390193,
+    "ast_hash": "4f1df0b0036589b092e3e7e921a92e3e",
+    "semantic_hash": "4f1df0b0036589b092e3e7e921a92e3e"
+  },
+  "company_management/user_management/create_user/create_user_print.php": {
+    "mtime": 1783707946.0392454,
+    "ast_hash": "dd45e47f15e2042a43312b9f54719647",
+    "semantic_hash": "dd45e47f15e2042a43312b9f54719647"
+  },
+  "company_management/user_management/create_user/create_user_search.js": {
+    "mtime": 1783707946.0394576,
+    "ast_hash": "7c79f99ed8406c7146f7a853e97e9ab7",
+    "semantic_hash": "7c79f99ed8406c7146f7a853e97e9ab7"
+  },
+  "company_management/user_management/create_user/create_user_search.php": {
+    "mtime": 1783707946.0396743,
+    "ast_hash": "69299cac01f9adf16ac1ee419d5939fa",
+    "semantic_hash": "69299cac01f9adf16ac1ee419d5939fa"
+  },
+  "company_management/user_management/edit_deactivate_user/edit_deactivate_user.js": {
+    "mtime": 1783707946.039977,
+    "ast_hash": "55c16f88b21eb7141808517446d2948f",
+    "semantic_hash": "55c16f88b21eb7141808517446d2948f"
+  },
+  "company_management/user_management/edit_deactivate_user/edit_deactivate_user.php": {
+    "mtime": 1783707946.0406804,
+    "ast_hash": "d493a84f2e32cf4e671ca0c852f37eae",
+    "semantic_hash": "d493a84f2e32cf4e671ca0c852f37eae"
+  },
+  "company_management/user_management/edit_deactivate_user/edit_deactivate_user_data.php": {
+    "mtime": 1783707946.0409334,
+    "ast_hash": "4e7fcf1b3f4b77abd9292c66882918ac",
+    "semantic_hash": "4e7fcf1b3f4b77abd9292c66882918ac"
+  },
+  "company_management/user_management/edit_deactivate_user/edit_deactivate_user_search.js": {
+    "mtime": 1783707946.0411055,
+    "ast_hash": "3d77a8171bc242e8d7f751de1c1a6174",
+    "semantic_hash": "3d77a8171bc242e8d7f751de1c1a6174"
+  },
+  "company_management/user_management/edit_deactivate_user/edit_deactivate_user_search.php": {
+    "mtime": 1783707946.0412838,
+    "ast_hash": "37657ff7e62cf491100337ec73a9f8e1",
+    "semantic_hash": "37657ff7e62cf491100337ec73a9f8e1"
+  },
+  "company_management/user_management/password_change/password_change.js": {
+    "mtime": 1783707946.041559,
+    "ast_hash": "315d8670d03c032088206f38f2a68f36",
+    "semantic_hash": "315d8670d03c032088206f38f2a68f36"
+  },
+  "company_management/user_management/password_change/password_change.php": {
+    "mtime": 1783707946.0417562,
+    "ast_hash": "3cbb2d14c672bca53115bc66b4adc8ed",
+    "semantic_hash": "3cbb2d14c672bca53115bc66b4adc8ed"
+  },
+  "company_management/user_management/password_change/password_change_data.php": {
+    "mtime": 1783707946.041912,
+    "ast_hash": "9a107497961cec0b7b63c1487bdd2540",
+    "semantic_hash": "9a107497961cec0b7b63c1487bdd2540"
+  },
+  "company_management/user_management/password_change/password_change_search.js": {
+    "mtime": 1783707946.0421596,
+    "ast_hash": "0766e46b5c2031fac0e4a34be03af566",
+    "semantic_hash": "0766e46b5c2031fac0e4a34be03af566"
+  },
+  "company_management/user_management/password_change/password_change_search.php": {
+    "mtime": 1783707946.0423512,
+    "ast_hash": "c73ce688ff911e6a0c7e45ad6e76316c",
+    "semantic_hash": "c73ce688ff911e6a0c7e45ad6e76316c"
+  },
+  "company_management/user_management/role_management/role_management.js": {
+    "mtime": 1783707946.0426726,
+    "ast_hash": "8dea86cbe03e5c2f98b9249247649d32",
+    "semantic_hash": "8dea86cbe03e5c2f98b9249247649d32"
+  },
+  "company_management/user_management/role_management/role_management.php": {
+    "mtime": 1783707946.0428827,
+    "ast_hash": "9d10159ade8424a20ba6e7f6099d3576",
+    "semantic_hash": "9d10159ade8424a20ba6e7f6099d3576"
+  },
+  "company_management/user_management/role_management/role_management_data.php": {
+    "mtime": 1783707946.0430388,
+    "ast_hash": "b99c098d7b10c4a8ae283e4fdcf417d1",
+    "semantic_hash": "b99c098d7b10c4a8ae283e4fdcf417d1"
+  },
+  "company_management/user_management/user_permissions/user_permissions.js": {
+    "mtime": 1783707946.0434692,
+    "ast_hash": "2a2e019d6d6ec6c9ae9a253cba236604",
+    "semantic_hash": "2a2e019d6d6ec6c9ae9a253cba236604"
+  },
+  "company_management/user_management/user_permissions/user_permissions.php": {
+    "mtime": 1783707946.043813,
+    "ast_hash": "6e17e4e9a763190df5ddee4171f45631",
+    "semantic_hash": "6e17e4e9a763190df5ddee4171f45631"
+  },
+  "company_management/user_management/user_permissions/user_permissions_data.php": {
+    "mtime": 1783707946.0440094,
+    "ast_hash": "e4c7179c6b51ea925bbd4b76954a8158",
+    "semantic_hash": "e4c7179c6b51ea925bbd4b76954a8158"
+  },
+  "finance/accounting/chart_of_accounts/chart_of_accounts.js": {
+    "mtime": 1783707946.0446131,
+    "ast_hash": "4065ebe511321098a41c297ad37600ed",
+    "semantic_hash": "4065ebe511321098a41c297ad37600ed"
+  },
+  "finance/accounting/chart_of_accounts/chart_of_accounts.php": {
+    "mtime": 1783707946.0448828,
+    "ast_hash": "a9581aee3c97cedfebffe39d99bd0ffd",
+    "semantic_hash": "a9581aee3c97cedfebffe39d99bd0ffd"
+  },
+  "finance/accounting/chart_of_accounts/chart_of_accounts_data.php": {
+    "mtime": 1783707946.0451138,
+    "ast_hash": "aee39d06e631cc36cd47b53daf09a1eb",
+    "semantic_hash": "aee39d06e631cc36cd47b53daf09a1eb"
+  },
+  "finance/accounting/chart_of_accounts/chart_of_accounts_print.php": {
+    "mtime": 1783707946.045384,
+    "ast_hash": "1389d35a85bfbce2abb27f9d2af1bb48",
+    "semantic_hash": "1389d35a85bfbce2abb27f9d2af1bb48"
+  },
+  "finance/accounting/chart_of_accounts/chart_of_accounts_search.js": {
+    "mtime": 1783707946.0455756,
+    "ast_hash": "59fac7362c36cce906de77ea269621e8",
+    "semantic_hash": "59fac7362c36cce906de77ea269621e8"
+  },
+  "finance/accounting/chart_of_accounts/chart_of_accounts_search.php": {
+    "mtime": 1783707946.045751,
+    "ast_hash": "83119b489ab5574b7f1492cd46210aab",
+    "semantic_hash": "83119b489ab5574b7f1492cd46210aab"
+  },
+  "finance/accounting/general_ledger/general_ledger.js": {
+    "mtime": 1783707946.0460787,
+    "ast_hash": "7943f85ee6a8ea8d813eb252094b245f",
+    "semantic_hash": "7943f85ee6a8ea8d813eb252094b245f"
+  },
+  "finance/accounting/general_ledger/general_ledger.php": {
+    "mtime": 1783707946.0463545,
+    "ast_hash": "a07cf01cb351b2814ce73caa609183b6",
+    "semantic_hash": "a07cf01cb351b2814ce73caa609183b6"
+  },
+  "finance/accounting/general_ledger/general_ledger_data.php": {
+    "mtime": 1783707946.0465245,
+    "ast_hash": "eb4376998c9a308bded02c8aca05957b",
+    "semantic_hash": "eb4376998c9a308bded02c8aca05957b"
+  },
+  "finance/accounting/general_ledger/general_ledger_print.php": {
+    "mtime": 1783707946.0467849,
+    "ast_hash": "c29a0353119f1841321bb7448cf27b21",
+    "semantic_hash": "c29a0353119f1841321bb7448cf27b21"
+  },
+  "finance/accounting/general_ledger/general_ledger_search.js": {
+    "mtime": 1783707946.0469453,
+    "ast_hash": "61ef727067a674bae77469e69576f039",
+    "semantic_hash": "61ef727067a674bae77469e69576f039"
+  },
+  "finance/accounting/general_ledger/general_ledger_search.php": {
+    "mtime": 1783707946.0471127,
+    "ast_hash": "a9a885661a94da01c22ffc32f93160cc",
+    "semantic_hash": "a9a885661a94da01c22ffc32f93160cc"
+  },
+  "finance/accounting/journal_entries/coa_picker.php": {
+    "mtime": 1783707946.0474463,
+    "ast_hash": "11a707445b8297a9ce3a827eab893c0f",
+    "semantic_hash": "11a707445b8297a9ce3a827eab893c0f"
+  },
+  "finance/accounting/journal_entries/journal_entries.js": {
+    "mtime": 1783707946.0476303,
+    "ast_hash": "44498e2e8f2ae47f340d404ba9613a8d",
+    "semantic_hash": "44498e2e8f2ae47f340d404ba9613a8d"
+  },
+  "finance/accounting/journal_entries/journal_entries.php": {
+    "mtime": 1783707946.0478342,
+    "ast_hash": "13aaae54836a15c0c4f3def97a5a8b9d",
+    "semantic_hash": "13aaae54836a15c0c4f3def97a5a8b9d"
+  },
+  "finance/accounting/journal_entries/journal_entries_data.php": {
+    "mtime": 1783707946.0479963,
+    "ast_hash": "1f1579f8171cf181d351d29b71aa3678",
+    "semantic_hash": "1f1579f8171cf181d351d29b71aa3678"
+  },
+  "finance/accounting/journal_entries/journal_entries_print.php": {
+    "mtime": 1783707946.0482764,
+    "ast_hash": "ca6ff28a14fe7d3a6e1f87e514f9d77d",
+    "semantic_hash": "ca6ff28a14fe7d3a6e1f87e514f9d77d"
+  },
+  "finance/accounting/journal_entries/journal_entries_search.js": {
+    "mtime": 1783707946.0485291,
+    "ast_hash": "0b7085291a37996a1c8fd702284b6fbc",
+    "semantic_hash": "0b7085291a37996a1c8fd702284b6fbc"
+  },
+  "finance/accounting/journal_entries/journal_entries_search.php": {
+    "mtime": 1783707946.0487082,
+    "ast_hash": "39ca308341d85548630ee361a9231ae1",
+    "semantic_hash": "39ca308341d85548630ee361a9231ae1"
+  },
+  "finance/accounting/trial_balance/trial_balance.php": {
+    "mtime": 1783707946.0491102,
+    "ast_hash": "93dbbdfc8b09a68b3b77705b4f467e11",
+    "semantic_hash": "93dbbdfc8b09a68b3b77705b4f467e11"
+  },
+  "finance/accounting/trial_balance/trial_balance_report.php": {
+    "mtime": 1783707946.049339,
+    "ast_hash": "9dd30f44db5314fe8b70570558a77382",
+    "semantic_hash": "9dd30f44db5314fe8b70570558a77382"
+  },
+  "finance/assets_budgeting/budgeting/budgeting.js": {
+    "mtime": 1783707946.049793,
+    "ast_hash": "5c8d3b220050d4e83ae6af10faeaf078",
+    "semantic_hash": "5c8d3b220050d4e83ae6af10faeaf078"
+  },
+  "finance/assets_budgeting/budgeting/budgeting.php": {
+    "mtime": 1783707946.0500524,
+    "ast_hash": "238e068294099077dec604b97710884e",
+    "semantic_hash": "238e068294099077dec604b97710884e"
+  },
+  "finance/assets_budgeting/budgeting/budgeting_data.php": {
+    "mtime": 1783707946.0502646,
+    "ast_hash": "26264fe40639c281d80db80e5ff922ae",
+    "semantic_hash": "26264fe40639c281d80db80e5ff922ae"
+  },
+  "finance/assets_budgeting/budgeting/budgeting_print.php": {
+    "mtime": 1783707946.0504787,
+    "ast_hash": "9ce63f8354d75641fbe5a2edf9b9267e",
+    "semantic_hash": "9ce63f8354d75641fbe5a2edf9b9267e"
+  },
+  "finance/assets_budgeting/budgeting/budgeting_search.js": {
+    "mtime": 1783707946.0506582,
+    "ast_hash": "2f69242a7bdf46acc628445ebca8f66b",
+    "semantic_hash": "2f69242a7bdf46acc628445ebca8f66b"
+  },
+  "finance/assets_budgeting/budgeting/budgeting_search.php": {
+    "mtime": 1783707946.050826,
+    "ast_hash": "c0857f42cdde31cec45177ca4d9bb865",
+    "semantic_hash": "c0857f42cdde31cec45177ca4d9bb865"
+  },
+  "finance/assets_budgeting/cost_centers/cost_centers.js": {
+    "mtime": 1783707946.0511515,
+    "ast_hash": "fd14c97017521ce06dee311951825ff5",
+    "semantic_hash": "fd14c97017521ce06dee311951825ff5"
+  },
+  "finance/assets_budgeting/cost_centers/cost_centers.php": {
+    "mtime": 1783707946.0513556,
+    "ast_hash": "8b8666c33f459f305855e333d3ccfe53",
+    "semantic_hash": "8b8666c33f459f305855e333d3ccfe53"
+  },
+  "finance/assets_budgeting/cost_centers/cost_centers_data.php": {
+    "mtime": 1783707946.0515752,
+    "ast_hash": "d8de6546ff1d20aa6b96d394616d639f",
+    "semantic_hash": "d8de6546ff1d20aa6b96d394616d639f"
+  },
+  "finance/assets_budgeting/cost_centers/cost_centers_print.php": {
+    "mtime": 1783707946.051915,
+    "ast_hash": "7dc8266a9e273c2bfac33c5e4885cf91",
+    "semantic_hash": "7dc8266a9e273c2bfac33c5e4885cf91"
+  },
+  "finance/assets_budgeting/cost_centers/cost_centers_search.js": {
+    "mtime": 1783707946.0521247,
+    "ast_hash": "452f1d004536f37386818d7400d611db",
+    "semantic_hash": "452f1d004536f37386818d7400d611db"
+  },
+  "finance/assets_budgeting/cost_centers/cost_centers_search.php": {
+    "mtime": 1783707946.0522885,
+    "ast_hash": "ba3ff309635ccbfcb7eb506ef8d5c39e",
+    "semantic_hash": "ba3ff309635ccbfcb7eb506ef8d5c39e"
+  },
+  "finance/assets_budgeting/fixed_assets/fixed_assets.js": {
+    "mtime": 1783707946.052619,
+    "ast_hash": "12fa2b475b63b1de60a62e05240abc49",
+    "semantic_hash": "12fa2b475b63b1de60a62e05240abc49"
+  },
+  "finance/assets_budgeting/fixed_assets/fixed_assets.php": {
+    "mtime": 1783707946.0528612,
+    "ast_hash": "9ca09c75a67776b63189437308841b7e",
+    "semantic_hash": "9ca09c75a67776b63189437308841b7e"
+  },
+  "finance/assets_budgeting/fixed_assets/fixed_assets_data.php": {
+    "mtime": 1783707946.0530646,
+    "ast_hash": "3315ee6b29e844c3b3ab072812edb71b",
+    "semantic_hash": "3315ee6b29e844c3b3ab072812edb71b"
+  },
+  "finance/assets_budgeting/fixed_assets/fixed_assets_print.php": {
+    "mtime": 1783707946.0532858,
+    "ast_hash": "07dabc383b1eae087a8602fa10a63c31",
+    "semantic_hash": "07dabc383b1eae087a8602fa10a63c31"
+  },
+  "finance/assets_budgeting/fixed_assets/fixed_assets_search.js": {
+    "mtime": 1783707946.0534637,
+    "ast_hash": "f95aecd0dc83d237c12d3c5a9b197c38",
+    "semantic_hash": "f95aecd0dc83d237c12d3c5a9b197c38"
+  },
+  "finance/assets_budgeting/fixed_assets/fixed_assets_search.php": {
+    "mtime": 1783707946.0536585,
+    "ast_hash": "efb2dffbbe1562b6f9422552c515d5ea",
+    "semantic_hash": "efb2dffbbe1562b6f9422552c515d5ea"
+  },
+  "finance/assets_budgeting/multi_currency/multi_currency.js": {
+    "mtime": 1783707946.054033,
+    "ast_hash": "187344b847e69f72cf426ab1c6bdc291",
+    "semantic_hash": "187344b847e69f72cf426ab1c6bdc291"
+  },
+  "finance/assets_budgeting/multi_currency/multi_currency.php": {
+    "mtime": 1783707946.0542724,
+    "ast_hash": "080fc3d047f574400eaa35bb8b378a1a",
+    "semantic_hash": "080fc3d047f574400eaa35bb8b378a1a"
+  },
+  "finance/assets_budgeting/multi_currency/multi_currency_data.php": {
+    "mtime": 1783707946.054621,
+    "ast_hash": "9cbf2001c869c3056e6b2fcd1ebac69b",
+    "semantic_hash": "9cbf2001c869c3056e6b2fcd1ebac69b"
+  },
+  "finance/assets_budgeting/multi_currency/multi_currency_print.php": {
+    "mtime": 1783707946.0549486,
+    "ast_hash": "b2e06faa4fe6b8113c5db93e90db8aa8",
+    "semantic_hash": "b2e06faa4fe6b8113c5db93e90db8aa8"
+  },
+  "finance/assets_budgeting/multi_currency/multi_currency_search.js": {
+    "mtime": 1783707946.0551295,
+    "ast_hash": "d27b8dddcf95956c6cc0003ce89cf0a0",
+    "semantic_hash": "d27b8dddcf95956c6cc0003ce89cf0a0"
+  },
+  "finance/assets_budgeting/multi_currency/multi_currency_search.php": {
+    "mtime": 1783707946.0552864,
+    "ast_hash": "81e54af00844521ffde3599670268b54",
+    "semantic_hash": "81e54af00844521ffde3599670268b54"
+  },
+  "finance/compliance/approval_workflow/approval_workflow.js": {
+    "mtime": 1783707946.0558035,
+    "ast_hash": "f9fd88f7b78d993a06e9446fdab4b9bb",
+    "semantic_hash": "f9fd88f7b78d993a06e9446fdab4b9bb"
+  },
+  "finance/compliance/approval_workflow/approval_workflow.php": {
+    "mtime": 1783707946.0560234,
+    "ast_hash": "0d2b26c66020008f63b5e2ac60a22bac",
+    "semantic_hash": "0d2b26c66020008f63b5e2ac60a22bac"
+  },
+  "finance/compliance/approval_workflow/approval_workflow_data.php": {
+    "mtime": 1783707946.0561996,
+    "ast_hash": "98bb6e987052b6e4d9023dd6d37ba70e",
+    "semantic_hash": "98bb6e987052b6e4d9023dd6d37ba70e"
+  },
+  "finance/compliance/approval_workflow/approval_workflow_print.php": {
+    "mtime": 1783707946.0563986,
+    "ast_hash": "5d35b3598158d4a4f7567661ef5f60fd",
+    "semantic_hash": "5d35b3598158d4a4f7567661ef5f60fd"
+  },
+  "finance/compliance/approval_workflow/approval_workflow_search.js": {
+    "mtime": 1783707946.0565493,
+    "ast_hash": "bbc6e2c02d6f743ab27972d15f3aeac9",
+    "semantic_hash": "bbc6e2c02d6f743ab27972d15f3aeac9"
+  },
+  "finance/compliance/approval_workflow/approval_workflow_search.php": {
+    "mtime": 1783707946.0567312,
+    "ast_hash": "ff489152eb88fd1f0828dc30910b18e0",
+    "semantic_hash": "ff489152eb88fd1f0828dc30910b18e0"
+  },
+  "finance/compliance/audit_trail/audit_trail.php": {
+    "mtime": 1783707946.0571141,
+    "ast_hash": "e901adc53c9c8bd58520cef7ce05eeda",
+    "semantic_hash": "e901adc53c9c8bd58520cef7ce05eeda"
+  },
+  "finance/compliance/audit_trail/audit_trail_data.php": {
+    "mtime": 1783707946.0572696,
+    "ast_hash": "3a2cc22103f1e945c2b929edfd0eeabb",
+    "semantic_hash": "3a2cc22103f1e945c2b929edfd0eeabb"
+  },
+  "finance/compliance/financial_reports/financial_reports.php": {
+    "mtime": 1783707946.0576,
+    "ast_hash": "56dbf7c4024db8c7244cbaa93b0c0d35",
+    "semantic_hash": "56dbf7c4024db8c7244cbaa93b0c0d35"
+  },
+  "finance/compliance/financial_settings/financial_settings.js": {
+    "mtime": 1783707946.057991,
+    "ast_hash": "cb7af5647d8b4819834330e9561c381a",
+    "semantic_hash": "cb7af5647d8b4819834330e9561c381a"
+  },
+  "finance/compliance/financial_settings/financial_settings.php": {
+    "mtime": 1783707946.0581608,
+    "ast_hash": "9ad17a067319dcfafdf39d225fae2277",
+    "semantic_hash": "9ad17a067319dcfafdf39d225fae2277"
+  },
+  "finance/compliance/financial_settings/financial_settings_data.php": {
+    "mtime": 1783707946.0584416,
+    "ast_hash": "35d7703b5ece379910a6959875568463",
+    "semantic_hash": "35d7703b5ece379910a6959875568463"
+  },
+  "finance/compliance/period_closing/period_closing.js": {
+    "mtime": 1783707946.0588183,
+    "ast_hash": "54a6081cd9d33943e845b7f593a1fd9a",
+    "semantic_hash": "54a6081cd9d33943e845b7f593a1fd9a"
+  },
+  "finance/compliance/period_closing/period_closing.php": {
+    "mtime": 1783707946.0591452,
+    "ast_hash": "84a8fe74c123f399f2937ea1c690dca0",
+    "semantic_hash": "84a8fe74c123f399f2937ea1c690dca0"
+  },
+  "finance/compliance/period_closing/period_closing_data.php": {
+    "mtime": 1783707946.0593314,
+    "ast_hash": "adb943be84fd9aa7d1e294ec0be695d5",
+    "semantic_hash": "adb943be84fd9aa7d1e294ec0be695d5"
+  },
+  "finance/compliance/period_closing/period_closing_print.php": {
+    "mtime": 1783707946.0595734,
+    "ast_hash": "60a345a6c8447627d2d75726a6b64efa",
+    "semantic_hash": "60a345a6c8447627d2d75726a6b64efa"
+  },
+  "finance/compliance/period_closing/period_closing_search.js": {
+    "mtime": 1783707946.0597289,
+    "ast_hash": "0296743a3d64ca1ec66c6291bdd08f22",
+    "semantic_hash": "0296743a3d64ca1ec66c6291bdd08f22"
+  },
+  "finance/compliance/period_closing/period_closing_search.php": {
+    "mtime": 1783707946.059887,
+    "ast_hash": "5e6611e94202fcb394f03b7a11ce20c5",
+    "semantic_hash": "5e6611e94202fcb394f03b7a11ce20c5"
+  },
+  "finance/compliance/tax_management/tax_management.js": {
+    "mtime": 1783707946.0602295,
+    "ast_hash": "ad862dc64df4ffd82e6f7a9f6fde7d14",
+    "semantic_hash": "ad862dc64df4ffd82e6f7a9f6fde7d14"
+  },
+  "finance/compliance/tax_management/tax_management.php": {
+    "mtime": 1783707946.060452,
+    "ast_hash": "e65dcd69b1aec9545f984df759527c41",
+    "semantic_hash": "e65dcd69b1aec9545f984df759527c41"
+  },
+  "finance/compliance/tax_management/tax_management_data.php": {
+    "mtime": 1783707946.0607867,
+    "ast_hash": "b0b0b878993c9d13f74cbbad61ad48c7",
+    "semantic_hash": "b0b0b878993c9d13f74cbbad61ad48c7"
+  },
+  "finance/compliance/tax_management/tax_management_print.php": {
+    "mtime": 1783707946.0610452,
+    "ast_hash": "58aa64b39cf3ecf1fc4e40e03bf553ab",
+    "semantic_hash": "58aa64b39cf3ecf1fc4e40e03bf553ab"
+  },
+  "finance/compliance/tax_management/tax_management_search.js": {
+    "mtime": 1783707946.061212,
+    "ast_hash": "f482dea212ff26a2e3e054abaf601741",
+    "semantic_hash": "f482dea212ff26a2e3e054abaf601741"
+  },
+  "finance/compliance/tax_management/tax_management_search.php": {
+    "mtime": 1783707946.0613794,
+    "ast_hash": "c87b0aad30cf4b6e21b255ffafeecd6f",
+    "semantic_hash": "c87b0aad30cf4b6e21b255ffafeecd6f"
+  },
+  "finance/receivables_payables/accounts_payable/accounts_payable.js": {
+    "mtime": 1783707946.0618877,
+    "ast_hash": "249272c96aeff44cfaabd1a28d3f189e",
+    "semantic_hash": "249272c96aeff44cfaabd1a28d3f189e"
+  },
+  "finance/receivables_payables/accounts_payable/accounts_payable.php": {
+    "mtime": 1783707946.0620613,
+    "ast_hash": "8bd8f090edbf2fecd650bc2deae7989d",
+    "semantic_hash": "8bd8f090edbf2fecd650bc2deae7989d"
+  },
+  "finance/receivables_payables/accounts_payable/accounts_payable_data.php": {
+    "mtime": 1783707946.0622745,
+    "ast_hash": "0270e357be6370be61df21d6b3c9cc9f",
+    "semantic_hash": "0270e357be6370be61df21d6b3c9cc9f"
+  },
+  "finance/receivables_payables/accounts_payable/accounts_payable_print.php": {
+    "mtime": 1783707946.062503,
+    "ast_hash": "3a7aee75154cad978d59560a56218a76",
+    "semantic_hash": "3a7aee75154cad978d59560a56218a76"
+  },
+  "finance/receivables_payables/accounts_payable/accounts_payable_search.js": {
+    "mtime": 1783707946.0627277,
+    "ast_hash": "ec081861cfdaf020009cdfa2428673d2",
+    "semantic_hash": "ec081861cfdaf020009cdfa2428673d2"
+  },
+  "finance/receivables_payables/accounts_payable/accounts_payable_search.php": {
+    "mtime": 1783707946.0629392,
+    "ast_hash": "0702c257a9d5e8a03093ea0d0b710be1",
+    "semantic_hash": "0702c257a9d5e8a03093ea0d0b710be1"
+  },
+  "finance/receivables_payables/accounts_receivable/accounts_receivable.js": {
+    "mtime": 1783707946.0634449,
+    "ast_hash": "426d12bfaba2f352c22d0e9ba3296f4e",
+    "semantic_hash": "426d12bfaba2f352c22d0e9ba3296f4e"
+  },
+  "finance/receivables_payables/accounts_receivable/accounts_receivable.php": {
+    "mtime": 1783707946.0636296,
+    "ast_hash": "862274ba41b499a2769c56f23acc1ac8",
+    "semantic_hash": "862274ba41b499a2769c56f23acc1ac8"
+  },
+  "finance/receivables_payables/accounts_receivable/accounts_receivable_data.php": {
+    "mtime": 1783707946.063848,
+    "ast_hash": "a0886b230cfe5c33e955f3dc548d0fe4",
+    "semantic_hash": "a0886b230cfe5c33e955f3dc548d0fe4"
+  },
+  "finance/receivables_payables/accounts_receivable/accounts_receivable_print.php": {
+    "mtime": 1783707946.064093,
+    "ast_hash": "ecea43fa223d0fb8e6fd3d8f37ffbdbd",
+    "semantic_hash": "ecea43fa223d0fb8e6fd3d8f37ffbdbd"
+  },
+  "finance/receivables_payables/accounts_receivable/accounts_receivable_search.js": {
+    "mtime": 1783707946.0642838,
+    "ast_hash": "d6bf2a8038b208cd77e6996f06b38f0b",
+    "semantic_hash": "d6bf2a8038b208cd77e6996f06b38f0b"
+  },
+  "finance/receivables_payables/accounts_receivable/accounts_receivable_search.php": {
+    "mtime": 1783707946.0644674,
+    "ast_hash": "27dd5e9d4cd762dbe28eb72178471c7c",
+    "semantic_hash": "27dd5e9d4cd762dbe28eb72178471c7c"
+  },
+  "finance/receivables_payables/bank_reconciliation/bank_reconciliation.js": {
+    "mtime": 1783707946.064938,
+    "ast_hash": "a41bdd607103eeec14ce05e3a05c05b4",
+    "semantic_hash": "a41bdd607103eeec14ce05e3a05c05b4"
+  },
+  "finance/receivables_payables/bank_reconciliation/bank_reconciliation.php": {
+    "mtime": 1783707946.0651655,
+    "ast_hash": "d5c379fbce4222a23f18a0e72ea843c5",
+    "semantic_hash": "d5c379fbce4222a23f18a0e72ea843c5"
+  },
+  "finance/receivables_payables/bank_reconciliation/bank_reconciliation_data.php": {
+    "mtime": 1783707946.0653315,
+    "ast_hash": "7a039d9dd0a7090eff46cd1b524cdd00",
+    "semantic_hash": "7a039d9dd0a7090eff46cd1b524cdd00"
+  },
+  "finance/receivables_payables/bank_reconciliation/bank_reconciliation_print.php": {
+    "mtime": 1783707946.0655057,
+    "ast_hash": "e3284a6bd3879364b6cf15e9479466d4",
+    "semantic_hash": "e3284a6bd3879364b6cf15e9479466d4"
+  },
+  "finance/receivables_payables/bank_reconciliation/bank_reconciliation_search.js": {
+    "mtime": 1783707946.0656662,
+    "ast_hash": "c4b9a7af0d21fb384bec3eff6d9976db",
+    "semantic_hash": "c4b9a7af0d21fb384bec3eff6d9976db"
+  },
+  "finance/receivables_payables/bank_reconciliation/bank_reconciliation_search.php": {
+    "mtime": 1783707946.0658357,
+    "ast_hash": "912fae40eea9aff405302acdc55134df",
+    "semantic_hash": "912fae40eea9aff405302acdc55134df"
+  },
+  "finance/receivables_payables/cash_bank/cash_bank.js": {
+    "mtime": 1783707946.0662885,
+    "ast_hash": "dc8a87e909cd818ef8bd82a623860331",
+    "semantic_hash": "dc8a87e909cd818ef8bd82a623860331"
+  },
+  "finance/receivables_payables/cash_bank/cash_bank.php": {
+    "mtime": 1783707946.066483,
+    "ast_hash": "34e36c66ace850f1a1526a261b79e848",
+    "semantic_hash": "34e36c66ace850f1a1526a261b79e848"
+  },
+  "finance/receivables_payables/cash_bank/cash_bank_data.php": {
+    "mtime": 1783707946.0666559,
+    "ast_hash": "0f38cf16ce5c1d73f8a6433637de4262",
+    "semantic_hash": "0f38cf16ce5c1d73f8a6433637de4262"
+  },
+  "finance/receivables_payables/cash_bank/cash_bank_print.php": {
+    "mtime": 1783707946.0668302,
+    "ast_hash": "dea49d042c0dfda6aca971b475fe68df",
+    "semantic_hash": "dea49d042c0dfda6aca971b475fe68df"
+  },
+  "finance/receivables_payables/cash_bank/cash_bank_search.js": {
+    "mtime": 1783707946.067015,
+    "ast_hash": "1c26b54eb047823e38d167e44156628c",
+    "semantic_hash": "1c26b54eb047823e38d167e44156628c"
+  },
+  "finance/receivables_payables/cash_bank/cash_bank_search.php": {
+    "mtime": 1783707946.067233,
+    "ast_hash": "2c83cedbd149df7408e86ebb1ae1d97b",
+    "semantic_hash": "2c83cedbd149df7408e86ebb1ae1d97b"
+  },
+  "human_resources_payroll/customer_specific_reports/cs_payroll_summary/cs_payroll_summary.js": {
+    "mtime": 1783707946.0678055,
+    "ast_hash": "20f43b0ff8c8a0b55ffa1549db73670f",
+    "semantic_hash": "20f43b0ff8c8a0b55ffa1549db73670f"
+  },
+  "human_resources_payroll/customer_specific_reports/cs_payroll_summary/cs_payroll_summary.php": {
+    "mtime": 1783707946.0680375,
+    "ast_hash": "59eb31d2e56e86143008341cb78aed6e",
+    "semantic_hash": "59eb31d2e56e86143008341cb78aed6e"
+  },
+  "human_resources_payroll/customer_specific_reports/cs_payroll_summary/cs_payroll_summary_data.php": {
+    "mtime": 1783707946.0682325,
+    "ast_hash": "0913630fa76c243e7796c197da0b072f",
+    "semantic_hash": "0913630fa76c243e7796c197da0b072f"
+  },
+  "human_resources_payroll/hr_operations/attendance/attendance.js": {
+    "mtime": 1783718105.215755,
+    "ast_hash": "da2dd5cccc7bacf3c9d277165e7f9d8c",
+    "semantic_hash": "da2dd5cccc7bacf3c9d277165e7f9d8c"
+  },
+  "human_resources_payroll/hr_operations/attendance/attendance.php": {
+    "mtime": 1783718051.2571216,
+    "ast_hash": "02741666ed0ec4fc9483aa3f3d617cfa",
+    "semantic_hash": "02741666ed0ec4fc9483aa3f3d617cfa"
+  },
+  "human_resources_payroll/hr_operations/attendance/attendance_data.php": {
+    "mtime": 1783718061.3069115,
+    "ast_hash": "2f304c3aab5d4e02125f819ba5f3e994",
+    "semantic_hash": "2f304c3aab5d4e02125f819ba5f3e994"
+  },
+  "human_resources_payroll/hr_operations/attendance/attendance_print.php": {
+    "mtime": 1783718126.845829,
+    "ast_hash": "e7f1f3ea4d369a497bc58e4f348290d5",
+    "semantic_hash": "e7f1f3ea4d369a497bc58e4f348290d5"
+  },
+  "human_resources_payroll/hr_operations/attendance/attendance_search.js": {
+    "mtime": 1783718122.3294773,
+    "ast_hash": "559bd59cbdb42af2464373b05aa6f2d5",
+    "semantic_hash": "559bd59cbdb42af2464373b05aa6f2d5"
+  },
+  "human_resources_payroll/hr_operations/attendance/attendance_search.php": {
+    "mtime": 1783718113.5798843,
+    "ast_hash": "b4ce8c11274bf2fb3cbb91e07bc778e6",
+    "semantic_hash": "b4ce8c11274bf2fb3cbb91e07bc778e6"
+  },
+  "human_resources_payroll/hr_operations/freelance_crew_payment/freelance_crew_payment.js": {
+    "mtime": 1783718252.2946494,
+    "ast_hash": "b93e687e92a7e7efb119bf606fd8083d",
+    "semantic_hash": "b93e687e92a7e7efb119bf606fd8083d"
+  },
+  "human_resources_payroll/hr_operations/freelance_crew_payment/freelance_crew_payment.php": {
+    "mtime": 1783718206.7629344,
+    "ast_hash": "117ab9107ab67f5083d5889820e46493",
+    "semantic_hash": "117ab9107ab67f5083d5889820e46493"
+  },
+  "human_resources_payroll/hr_operations/freelance_crew_payment/freelance_crew_payment_data.php": {
+    "mtime": 1783718227.3668463,
+    "ast_hash": "ca1f50fb833b4e0b53856bd6b37e42d2",
+    "semantic_hash": "ca1f50fb833b4e0b53856bd6b37e42d2"
+  },
+  "human_resources_payroll/hr_operations/freelance_crew_payment/freelance_crew_payment_print.php": {
+    "mtime": 1783718279.2027934,
+    "ast_hash": "ccae24a2ac9a41320a198bf4f635c04a",
+    "semantic_hash": "ccae24a2ac9a41320a198bf4f635c04a"
+  },
+  "human_resources_payroll/hr_operations/freelance_crew_payment/freelance_crew_payment_search.js": {
+    "mtime": 1783718274.4526458,
+    "ast_hash": "1dc88c1526557c7171b18befd600f5b3",
+    "semantic_hash": "1dc88c1526557c7171b18befd600f5b3"
+  },
+  "human_resources_payroll/hr_operations/freelance_crew_payment/freelance_crew_payment_search.php": {
+    "mtime": 1783718263.8404584,
+    "ast_hash": "8d2716a34d62c069e3034dd97428c19c",
+    "semantic_hash": "8d2716a34d62c069e3034dd97428c19c"
+  },
+  "human_resources_payroll/hr_operations/leave_management/leave_management.js": {
+    "mtime": 1783718169.4883163,
+    "ast_hash": "c90f08c0dd5b9289addff71eefa77496",
+    "semantic_hash": "c90f08c0dd5b9289addff71eefa77496"
+  },
+  "human_resources_payroll/hr_operations/leave_management/leave_management.php": {
+    "mtime": 1783718141.104532,
+    "ast_hash": "c91248158e7a41e9f0707fd1e66bb291",
+    "semantic_hash": "c91248158e7a41e9f0707fd1e66bb291"
+  },
+  "human_resources_payroll/hr_operations/leave_management/leave_management_data.php": {
+    "mtime": 1783718149.914538,
+    "ast_hash": "c3e135dc039152db8f3ad90c7c8b30ca",
+    "semantic_hash": "c3e135dc039152db8f3ad90c7c8b30ca"
+  },
+  "human_resources_payroll/hr_operations/leave_management/leave_management_print.php": {
+    "mtime": 1783718190.068571,
+    "ast_hash": "49a552738d8da7a48055dc7f98ccbb6d",
+    "semantic_hash": "49a552738d8da7a48055dc7f98ccbb6d"
+  },
+  "human_resources_payroll/hr_operations/leave_management/leave_management_search.js": {
+    "mtime": 1783718185.4947817,
+    "ast_hash": "eb935de6b1c52e2682052d8c9e4160f3",
+    "semantic_hash": "eb935de6b1c52e2682052d8c9e4160f3"
+  },
+  "human_resources_payroll/hr_operations/leave_management/leave_management_search.php": {
+    "mtime": 1783718177.580155,
+    "ast_hash": "8e5269e810a9a0e34daf0b1a21d642e0",
+    "semantic_hash": "8e5269e810a9a0e34daf0b1a21d642e0"
+  },
+  "human_resources_payroll/payroll_inquiry/employee_payslips/employee_payslips.js": {
+    "mtime": 1783707946.068649,
+    "ast_hash": "6d095c065960b642ecb54fd4f4069899",
+    "semantic_hash": "6d095c065960b642ecb54fd4f4069899"
+  },
+  "human_resources_payroll/payroll_inquiry/employee_payslips/employee_payslips.php": {
+    "mtime": 1783707946.0688665,
+    "ast_hash": "f527a064b4274356aa013781d245c96d",
+    "semantic_hash": "f527a064b4274356aa013781d245c96d"
+  },
+  "human_resources_payroll/payroll_inquiry/employee_payslips/employee_payslips_data.php": {
+    "mtime": 1783707946.0690622,
+    "ast_hash": "7941aebba1af961e0f91ee168b2df1b6",
+    "semantic_hash": "7941aebba1af961e0f91ee168b2df1b6"
+  },
+  "human_resources_payroll/payroll_inquiry/payroll_summary/payroll_summary.js": {
+    "mtime": 1783707946.0693789,
+    "ast_hash": "b852488b4af7edb57ddb2821241c4939",
+    "semantic_hash": "b852488b4af7edb57ddb2821241c4939"
+  },
+  "human_resources_payroll/payroll_inquiry/payroll_summary/payroll_summary.php": {
+    "mtime": 1783707946.0695906,
+    "ast_hash": "91703c2dbcf605ac9c4ff9d286cf0ef4",
+    "semantic_hash": "91703c2dbcf605ac9c4ff9d286cf0ef4"
+  },
+  "human_resources_payroll/payroll_inquiry/payroll_summary/payroll_summary_data.php": {
+    "mtime": 1783707946.0697534,
+    "ast_hash": "bc6052d79b56904f0d2312811534fc02",
+    "semantic_hash": "bc6052d79b56904f0d2312811534fc02"
+  },
+  "human_resources_payroll/payroll_processing/payroll_inputs/payroll_inputs.js": {
+    "mtime": 1783707946.0701616,
+    "ast_hash": "2d7ad7314502250575b25489780a7957",
+    "semantic_hash": "2d7ad7314502250575b25489780a7957"
+  },
+  "human_resources_payroll/payroll_processing/payroll_inputs/payroll_inputs.php": {
+    "mtime": 1783707946.07043,
+    "ast_hash": "299db965def277070ca9095c3ed087bd",
+    "semantic_hash": "299db965def277070ca9095c3ed087bd"
+  },
+  "human_resources_payroll/payroll_processing/payroll_inputs/payroll_inputs_data.php": {
+    "mtime": 1783707946.0706182,
+    "ast_hash": "cc39222a68a56a72997398276911d5e0",
+    "semantic_hash": "cc39222a68a56a72997398276911d5e0"
+  },
+  "human_resources_payroll/payroll_processing/payroll_inputs/payroll_inputs_print.php": {
+    "mtime": 1783707946.0708253,
+    "ast_hash": "4153c85e4c26b13d50c58f313c780503",
+    "semantic_hash": "4153c85e4c26b13d50c58f313c780503"
+  },
+  "human_resources_payroll/payroll_processing/payroll_inputs/payroll_inputs_search.js": {
+    "mtime": 1783707946.0710707,
+    "ast_hash": "3d226c24fe0cb68a0de478bcc244d6cf",
+    "semantic_hash": "3d226c24fe0cb68a0de478bcc244d6cf"
+  },
+  "human_resources_payroll/payroll_processing/payroll_inputs/payroll_inputs_search.php": {
+    "mtime": 1783707946.071291,
+    "ast_hash": "c44f52fd5d08aac2d10118a331f918f2",
+    "semantic_hash": "c44f52fd5d08aac2d10118a331f918f2"
+  },
+  "human_resources_payroll/payroll_processing/payroll_periods/payroll_periods.js": {
+    "mtime": 1783707946.0716043,
+    "ast_hash": "d102ddc6a7bbffc35fe5e262f901b3cc",
+    "semantic_hash": "d102ddc6a7bbffc35fe5e262f901b3cc"
+  },
+  "human_resources_payroll/payroll_processing/payroll_periods/payroll_periods.php": {
+    "mtime": 1783707946.0718575,
+    "ast_hash": "6e6bc13f76e697312566e3731921149a",
+    "semantic_hash": "6e6bc13f76e697312566e3731921149a"
+  },
+  "human_resources_payroll/payroll_processing/payroll_periods/payroll_periods_data.php": {
+    "mtime": 1783707946.0720365,
+    "ast_hash": "7f865650dbfc44995ba47235516a77d4",
+    "semantic_hash": "7f865650dbfc44995ba47235516a77d4"
+  },
+  "human_resources_payroll/payroll_processing/payroll_periods/payroll_periods_print.php": {
+    "mtime": 1783707946.0723877,
+    "ast_hash": "3b71cf1f79925909fe4a89badc3d334d",
+    "semantic_hash": "3b71cf1f79925909fe4a89badc3d334d"
+  },
+  "human_resources_payroll/payroll_processing/payroll_periods/payroll_periods_search.js": {
+    "mtime": 1783707946.0725615,
+    "ast_hash": "15a0e659d0cf97a82136784e0e67adff",
+    "semantic_hash": "15a0e659d0cf97a82136784e0e67adff"
+  },
+  "human_resources_payroll/payroll_processing/payroll_periods/payroll_periods_search.php": {
+    "mtime": 1783707946.0727248,
+    "ast_hash": "59b50227a9228b8ac7e3a5a6f4ce06a0",
+    "semantic_hash": "59b50227a9228b8ac7e3a5a6f4ce06a0"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs.js": {
+    "mtime": 1783707946.0730803,
+    "ast_hash": "63c507668528182f9cb2ef100e076624",
+    "semantic_hash": "63c507668528182f9cb2ef100e076624"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs.php": {
+    "mtime": 1783707946.0733006,
+    "ast_hash": "7a659b7865defc753f6cc00a3f2cf25f",
+    "semantic_hash": "7a659b7865defc753f6cc00a3f2cf25f"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs_data.php": {
+    "mtime": 1783707946.0735214,
+    "ast_hash": "ef2264917f6a68fbc6d6c479055cc134",
+    "semantic_hash": "ef2264917f6a68fbc6d6c479055cc134"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs_line_pickers.php": {
+    "mtime": 1783707946.0737116,
+    "ast_hash": "2ae7692e7ed9baf12147adea6a97810e",
+    "semantic_hash": "2ae7692e7ed9baf12147adea6a97810e"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs_print.php": {
+    "mtime": 1783707946.0740519,
+    "ast_hash": "6ea48028a9869591d50f1bc9f841a932",
+    "semantic_hash": "6ea48028a9869591d50f1bc9f841a932"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs_search.js": {
+    "mtime": 1783707946.0742264,
+    "ast_hash": "93fb680e4f45089596d1b6ad22eefe78",
+    "semantic_hash": "93fb680e4f45089596d1b6ad22eefe78"
+  },
+  "human_resources_payroll/payroll_processing/payroll_runs/payroll_runs_search.php": {
+    "mtime": 1783707946.074377,
+    "ast_hash": "ad9f6f1af0ac697407218e376af68f3b",
+    "semantic_hash": "ad9f6f1af0ac697407218e376af68f3b"
+  },
+  "human_resources_payroll/salary_setup/employee_salary_structure/employee_salary_structure.js": {
+    "mtime": 1783707946.074771,
+    "ast_hash": "92dd0c89cb769c9ccfb3464e2acc74b4",
+    "semantic_hash": "92dd0c89cb769c9ccfb3464e2acc74b4"
+  },
+  "human_resources_payroll/salary_setup/employee_salary_structure/employee_salary_structure.php": {
+    "mtime": 1783707946.075128,
+    "ast_hash": "a65bc2f1c786826bcfc9d63da4d9e5bc",
+    "semantic_hash": "a65bc2f1c786826bcfc9d63da4d9e5bc"
+  },
+  "human_resources_payroll/salary_setup/employee_salary_structure/employee_salary_structure_data.php": {
+    "mtime": 1783707946.0753186,
+    "ast_hash": "f497f3246da6fa196c46438568e425cd",
+    "semantic_hash": "f497f3246da6fa196c46438568e425cd"
+  },
+  "human_resources_payroll/salary_setup/employee_salary_structure/employee_salary_structure_print.php": {
+    "mtime": 1783707946.0755026,
+    "ast_hash": "3126e697f3a2a6ffd289df29579bd02c",
+    "semantic_hash": "3126e697f3a2a6ffd289df29579bd02c"
+  },
+  "human_resources_payroll/salary_setup/employee_salary_structure/employee_salary_structure_search.js": {
+    "mtime": 1783707946.0758395,
+    "ast_hash": "261357f04cd3e23c6e91c76c3d578d66",
+    "semantic_hash": "261357f04cd3e23c6e91c76c3d578d66"
+  },
+  "human_resources_payroll/salary_setup/employee_salary_structure/employee_salary_structure_search.php": {
+    "mtime": 1783707946.076131,
+    "ast_hash": "ab4f1df7038aaec1b5a37334c029a3c3",
+    "semantic_hash": "ab4f1df7038aaec1b5a37334c029a3c3"
+  },
+  "human_resources_payroll/salary_setup/payroll_profiles/payroll_profiles.js": {
+    "mtime": 1783707946.07645,
+    "ast_hash": "5eaf0cffe7cc34e6589655f262307acf",
+    "semantic_hash": "5eaf0cffe7cc34e6589655f262307acf"
+  },
+  "human_resources_payroll/salary_setup/payroll_profiles/payroll_profiles.php": {
+    "mtime": 1783707946.0766985,
+    "ast_hash": "a6ae7a199d071447e9ecc2d5c4a9188c",
+    "semantic_hash": "a6ae7a199d071447e9ecc2d5c4a9188c"
+  },
+  "human_resources_payroll/salary_setup/payroll_profiles/payroll_profiles_data.php": {
+    "mtime": 1783707946.0768623,
+    "ast_hash": "365760baf6d70bc2b21690f73f25d613",
+    "semantic_hash": "365760baf6d70bc2b21690f73f25d613"
+  },
+  "human_resources_payroll/salary_setup/payroll_profiles/payroll_profiles_print.php": {
+    "mtime": 1783707946.077197,
+    "ast_hash": "e42e2f8b4a7e0c47f360952dd4c5e388",
+    "semantic_hash": "e42e2f8b4a7e0c47f360952dd4c5e388"
+  },
+  "human_resources_payroll/salary_setup/payroll_profiles/payroll_profiles_search.js": {
+    "mtime": 1783707946.0773656,
+    "ast_hash": "24ea5f77337cbd37f0f01e391153cc9c",
+    "semantic_hash": "24ea5f77337cbd37f0f01e391153cc9c"
+  },
+  "human_resources_payroll/salary_setup/payroll_profiles/payroll_profiles_search.php": {
+    "mtime": 1783707946.077566,
+    "ast_hash": "621b27284fb755a3d8ceef357727ce49",
+    "semantic_hash": "621b27284fb755a3d8ceef357727ce49"
+  },
+  "human_resources_payroll/salary_setup/salary_assignments/salary_assignments.js": {
+    "mtime": 1783707946.077904,
+    "ast_hash": "83c1414b1563a89bb7aa1360a74cd3e8",
+    "semantic_hash": "83c1414b1563a89bb7aa1360a74cd3e8"
+  },
+  "human_resources_payroll/salary_setup/salary_assignments/salary_assignments.php": {
+    "mtime": 1783707946.0783727,
+    "ast_hash": "441e8a233e99627acc3ba6185c9faada",
+    "semantic_hash": "441e8a233e99627acc3ba6185c9faada"
+  },
+  "human_resources_payroll/salary_setup/salary_assignments/salary_assignments_data.php": {
+    "mtime": 1783707946.0788288,
+    "ast_hash": "a24465fe4d19b9ae7ce2d3b6f7f08f35",
+    "semantic_hash": "a24465fe4d19b9ae7ce2d3b6f7f08f35"
+  },
+  "human_resources_payroll/salary_setup/salary_assignments/salary_assignments_print.php": {
+    "mtime": 1783707946.0790176,
+    "ast_hash": "7817534b9365094590d34e4a39d57af7",
+    "semantic_hash": "7817534b9365094590d34e4a39d57af7"
+  },
+  "human_resources_payroll/salary_setup/salary_assignments/salary_assignments_search.js": {
+    "mtime": 1783707946.0791872,
+    "ast_hash": "cb3b54257cb2aaaa642e9b9114e673ce",
+    "semantic_hash": "cb3b54257cb2aaaa642e9b9114e673ce"
+  },
+  "human_resources_payroll/salary_setup/salary_assignments/salary_assignments_search.php": {
+    "mtime": 1783707946.079384,
+    "ast_hash": "b92903e2f12599f3224a8f8cea237fbb",
+    "semantic_hash": "b92903e2f12599f3224a8f8cea237fbb"
+  },
+  "human_resources_payroll/salary_setup/salary_components/salary_components.js": {
+    "mtime": 1783707946.079689,
+    "ast_hash": "b984435a4404dfe8f248dc5ee9c18df5",
+    "semantic_hash": "b984435a4404dfe8f248dc5ee9c18df5"
+  },
+  "human_resources_payroll/salary_setup/salary_components/salary_components.php": {
+    "mtime": 1783707946.079872,
+    "ast_hash": "83118c3978353d412f262fae5fbeebd4",
+    "semantic_hash": "83118c3978353d412f262fae5fbeebd4"
+  },
+  "human_resources_payroll/salary_setup/salary_components/salary_components_data.php": {
+    "mtime": 1783707946.0801,
+    "ast_hash": "b3ff1c42b51e47e50274699823d03a26",
+    "semantic_hash": "b3ff1c42b51e47e50274699823d03a26"
+  },
+  "human_resources_payroll/salary_setup/salary_components/salary_components_print.php": {
+    "mtime": 1783707946.0802908,
+    "ast_hash": "37d02789781afd800c7130a6f8bc6827",
+    "semantic_hash": "37d02789781afd800c7130a6f8bc6827"
+  },
+  "human_resources_payroll/salary_setup/salary_components/salary_components_search.js": {
+    "mtime": 1783707946.0805082,
+    "ast_hash": "12ae22df420c16084a6c36ec9c0b68eb",
+    "semantic_hash": "12ae22df420c16084a6c36ec9c0b68eb"
+  },
+  "human_resources_payroll/salary_setup/salary_components/salary_components_search.php": {
+    "mtime": 1783707946.0807078,
+    "ast_hash": "a931a83e99da98ce8f7bfe2a2ca320ca",
+    "semantic_hash": "a931a83e99da98ce8f7bfe2a2ca320ca"
+  },
+  "master_files/organisation/department/department.js": {
+    "mtime": 1783707946.0812516,
+    "ast_hash": "10421550e92937d34ce912fe7343acca",
+    "semantic_hash": "10421550e92937d34ce912fe7343acca"
+  },
+  "master_files/organisation/department/department.php": {
+    "mtime": 1783707946.081467,
+    "ast_hash": "48e789178ead5de268bed652cfb26f70",
+    "semantic_hash": "48e789178ead5de268bed652cfb26f70"
+  },
+  "master_files/organisation/department/department_data.php": {
+    "mtime": 1783707946.0816767,
+    "ast_hash": "e2ad90c557819dfd328c95e2e048c517",
+    "semantic_hash": "e2ad90c557819dfd328c95e2e048c517"
+  },
+  "master_files/organisation/department/department_print.php": {
+    "mtime": 1783707946.0819361,
+    "ast_hash": "9f2df6524d6c0c2c7c4dd584984ecdef",
+    "semantic_hash": "9f2df6524d6c0c2c7c4dd584984ecdef"
+  },
+  "master_files/organisation/department/department_search.js": {
+    "mtime": 1783707946.0821512,
+    "ast_hash": "13083e1353d72077d443a0f62f7dcc16",
+    "semantic_hash": "13083e1353d72077d443a0f62f7dcc16"
+  },
+  "master_files/organisation/department/department_search.php": {
+    "mtime": 1783707946.0823133,
+    "ast_hash": "afa6cce2ed7f4047faf1e54701e8bd2d",
+    "semantic_hash": "afa6cce2ed7f4047faf1e54701e8bd2d"
+  },
+  "master_files/organisation/designations/designations.js": {
+    "mtime": 1783707946.0825973,
+    "ast_hash": "a5ecba957a9f490dfdf64b767ee4ae0e",
+    "semantic_hash": "a5ecba957a9f490dfdf64b767ee4ae0e"
+  },
+  "master_files/organisation/designations/designations.php": {
+    "mtime": 1783707946.082786,
+    "ast_hash": "c5a61f5877a7ab25e534ee20e1438529",
+    "semantic_hash": "c5a61f5877a7ab25e534ee20e1438529"
+  },
+  "master_files/organisation/designations/designations_data.php": {
+    "mtime": 1783707946.0829496,
+    "ast_hash": "4b25d0cc0bab263a13c193c9bf93e060",
+    "semantic_hash": "4b25d0cc0bab263a13c193c9bf93e060"
+  },
+  "master_files/organisation/designations/designations_print.php": {
+    "mtime": 1783707946.0831113,
+    "ast_hash": "7e3a19765a370e09ef44a3c349b286c9",
+    "semantic_hash": "7e3a19765a370e09ef44a3c349b286c9"
+  },
+  "master_files/organisation/designations/designations_search.js": {
+    "mtime": 1783707946.08327,
+    "ast_hash": "873aadea751836b50e71abf0777b2fba",
+    "semantic_hash": "873aadea751836b50e71abf0777b2fba"
+  },
+  "master_files/organisation/designations/designations_search.php": {
+    "mtime": 1783707946.0834656,
+    "ast_hash": "3a9ba358557d936d08dbd20b9fc4ab05",
+    "semantic_hash": "3a9ba358557d936d08dbd20b9fc4ab05"
+  },
+  "master_files/organisation/employment_types/employment_types.js": {
+    "mtime": 1783707946.0837846,
+    "ast_hash": "3c81b6aac5cb98f02d97667d105ea2a6",
+    "semantic_hash": "3c81b6aac5cb98f02d97667d105ea2a6"
+  },
+  "master_files/organisation/employment_types/employment_types.php": {
+    "mtime": 1783707946.083962,
+    "ast_hash": "a710f0b85e73ee8f497a0cac0958197c",
+    "semantic_hash": "a710f0b85e73ee8f497a0cac0958197c"
+  },
+  "master_files/organisation/employment_types/employment_types_data.php": {
+    "mtime": 1783707946.0841742,
+    "ast_hash": "936390180344c5ee76f1e7f571453003",
+    "semantic_hash": "936390180344c5ee76f1e7f571453003"
+  },
+  "master_files/organisation/employment_types/employment_types_print.php": {
+    "mtime": 1783707946.08435,
+    "ast_hash": "fb268e72fa2f077a105ab2df0eef12d6",
+    "semantic_hash": "fb268e72fa2f077a105ab2df0eef12d6"
+  },
+  "master_files/organisation/employment_types/employment_types_search.js": {
+    "mtime": 1783707946.084522,
+    "ast_hash": "b98f44657ee9c099e6238e526c8eb186",
+    "semantic_hash": "b98f44657ee9c099e6238e526c8eb186"
+  },
+  "master_files/organisation/employment_types/employment_types_search.php": {
+    "mtime": 1783707946.0846934,
+    "ast_hash": "cd850198ddb9096143a80c37a22f3f50",
+    "semantic_hash": "cd850198ddb9096143a80c37a22f3f50"
+  },
+  "master_files/people/employee_assignment/employee_assignment.js": {
+    "mtime": 1783707946.0851803,
+    "ast_hash": "2751c4039d21897054973f568973a408",
+    "semantic_hash": "2751c4039d21897054973f568973a408"
+  },
+  "master_files/people/employee_assignment/employee_assignment.php": {
+    "mtime": 1783707946.085363,
+    "ast_hash": "d349c5e530b1c2ca4d4d8a0fd6c65ed2",
+    "semantic_hash": "d349c5e530b1c2ca4d4d8a0fd6c65ed2"
+  },
+  "master_files/people/employee_assignment/employee_assignment_data.php": {
+    "mtime": 1783707946.0855358,
+    "ast_hash": "0c75900050b0a14d24f0a0193dc29859",
+    "semantic_hash": "0c75900050b0a14d24f0a0193dc29859"
+  },
+  "master_files/people/employee_assignment/employee_assignment_print.php": {
+    "mtime": 1783707946.0857067,
+    "ast_hash": "9e13cce09c213988f774986d74cde3eb",
+    "semantic_hash": "9e13cce09c213988f774986d74cde3eb"
+  },
+  "master_files/people/employee_assignment/employee_assignment_search.js": {
+    "mtime": 1783707946.0858922,
+    "ast_hash": "6d8f0d630094815755562f9896279a08",
+    "semantic_hash": "6d8f0d630094815755562f9896279a08"
+  },
+  "master_files/people/employee_assignment/employee_assignment_search.php": {
+    "mtime": 1783707946.0860622,
+    "ast_hash": "51b83a335dac995b7d064d3285128361",
+    "semantic_hash": "51b83a335dac995b7d064d3285128361"
+  },
+  "master_files/people/employee_master/employee_master.js": {
+    "mtime": 1783707946.086617,
+    "ast_hash": "279add56c9deb01bfaf224017a04f789",
+    "semantic_hash": "279add56c9deb01bfaf224017a04f789"
+  },
+  "master_files/people/employee_master/employee_master.php": {
+    "mtime": 1783707946.0868068,
+    "ast_hash": "75e6858eef92145a39d7b1853499c7a9",
+    "semantic_hash": "75e6858eef92145a39d7b1853499c7a9"
+  },
+  "master_files/people/employee_master/employee_master_data.php": {
+    "mtime": 1783707946.0870287,
+    "ast_hash": "75c5c81f06b550f58f50b559ed812fad",
+    "semantic_hash": "75c5c81f06b550f58f50b559ed812fad"
+  },
+  "master_files/people/employee_master/employee_master_print.php": {
+    "mtime": 1783707946.0872087,
+    "ast_hash": "2b1ad6d31a5b862a6de533f4e8dc24c1",
+    "semantic_hash": "2b1ad6d31a5b862a6de533f4e8dc24c1"
+  },
+  "master_files/people/employee_master/employee_master_search.js": {
+    "mtime": 1783707946.0873754,
+    "ast_hash": "5abbe1bbf2739f33d2cf6f09b4500a70",
+    "semantic_hash": "5abbe1bbf2739f33d2cf6f09b4500a70"
+  },
+  "master_files/people/employee_master/employee_master_search.php": {
+    "mtime": 1783707946.0875494,
+    "ast_hash": "7e6a5a7798b01b9c155c1012ab090280",
+    "semantic_hash": "7e6a5a7798b01b9c155c1012ab090280"
+  },
+  "master_files/people/employment_record/employment_record.js": {
+    "mtime": 1783707946.0878785,
+    "ast_hash": "b28fde84b0de85e230f4011aef4e8866",
+    "semantic_hash": "b28fde84b0de85e230f4011aef4e8866"
+  },
+  "master_files/people/employment_record/employment_record.php": {
+    "mtime": 1783707946.0881047,
+    "ast_hash": "aa819732491d7aef130213b46099a4e0",
+    "semantic_hash": "aa819732491d7aef130213b46099a4e0"
+  },
+  "master_files/people/employment_record/employment_record_data.php": {
+    "mtime": 1783707946.0883095,
+    "ast_hash": "0f8b6a4e1461505da91a2f6630bca59c",
+    "semantic_hash": "0f8b6a4e1461505da91a2f6630bca59c"
+  },
+  "master_files/people/employment_record/employment_record_print.php": {
+    "mtime": 1783707946.088487,
+    "ast_hash": "964977127263666e575616a4dae9f345",
+    "semantic_hash": "964977127263666e575616a4dae9f345"
+  },
+  "master_files/people/employment_record/employment_record_search.js": {
+    "mtime": 1783707946.0886538,
+    "ast_hash": "aad8388e5e1674ae45bf5c46d220daba",
+    "semantic_hash": "aad8388e5e1674ae45bf5c46d220daba"
+  },
+  "master_files/people/employment_record/employment_record_search.php": {
+    "mtime": 1783707946.088818,
+    "ast_hash": "5624b3c81b4e916f81742b8e4c443db5",
+    "semantic_hash": "5624b3c81b4e916f81742b8e4c443db5"
+  },
+  "master_files/quotation/quotation_delivery_periods/quotation_delivery_periods.js": {
+    "mtime": 1783707946.0892856,
+    "ast_hash": "8444007041e9dacd76738e4b1703a452",
+    "semantic_hash": "8444007041e9dacd76738e4b1703a452"
+  },
+  "master_files/quotation/quotation_delivery_periods/quotation_delivery_periods.php": {
+    "mtime": 1783707946.089495,
+    "ast_hash": "b144c60c522d309bc05ea21397bd8860",
+    "semantic_hash": "b144c60c522d309bc05ea21397bd8860"
+  },
+  "master_files/quotation/quotation_delivery_periods/quotation_delivery_periods_data.php": {
+    "mtime": 1783707946.0896976,
+    "ast_hash": "3973f2a68af8058dd8bde469e337497e",
+    "semantic_hash": "3973f2a68af8058dd8bde469e337497e"
+  },
+  "master_files/quotation/quotation_delivery_periods/quotation_delivery_periods_print.php": {
+    "mtime": 1783707946.0898771,
+    "ast_hash": "5c817f6425acd03b26b76a15352ce4ab",
+    "semantic_hash": "5c817f6425acd03b26b76a15352ce4ab"
+  },
+  "master_files/quotation/quotation_delivery_periods/quotation_delivery_periods_search.js": {
+    "mtime": 1783707946.0900426,
+    "ast_hash": "b1973f054a0f3f31edb387d8a0a4c1c1",
+    "semantic_hash": "b1973f054a0f3f31edb387d8a0a4c1c1"
+  },
+  "master_files/quotation/quotation_delivery_periods/quotation_delivery_periods_search.php": {
+    "mtime": 1783707946.0902376,
+    "ast_hash": "27e2504e97d596d7f7aa4cec66368270",
+    "semantic_hash": "27e2504e97d596d7f7aa4cec66368270"
+  },
+  "master_files/quotation/quotation_notes_templates/quotation_notes_templates.js": {
+    "mtime": 1783707946.0905852,
+    "ast_hash": "3128daebb93d37c7f33d93fd367220d0",
+    "semantic_hash": "3128daebb93d37c7f33d93fd367220d0"
+  },
+  "master_files/quotation/quotation_notes_templates/quotation_notes_templates.php": {
+    "mtime": 1783707946.0907893,
+    "ast_hash": "8c9eea713067fc60a5a7085e72e50560",
+    "semantic_hash": "8c9eea713067fc60a5a7085e72e50560"
+  },
+  "master_files/quotation/quotation_notes_templates/quotation_notes_templates_data.php": {
+    "mtime": 1783707946.0909855,
+    "ast_hash": "d11e2267354919f6f1d076d2180c6b2b",
+    "semantic_hash": "d11e2267354919f6f1d076d2180c6b2b"
+  },
+  "master_files/quotation/quotation_notes_templates/quotation_notes_templates_print.php": {
+    "mtime": 1783707946.091173,
+    "ast_hash": "ece7ca110a51c36cb382a69d069d250a",
+    "semantic_hash": "ece7ca110a51c36cb382a69d069d250a"
+  },
+  "master_files/quotation/quotation_notes_templates/quotation_notes_templates_search.js": {
+    "mtime": 1783707946.0913484,
+    "ast_hash": "f2b29e4e3dee6e46aca560e790bd17eb",
+    "semantic_hash": "f2b29e4e3dee6e46aca560e790bd17eb"
+  },
+  "master_files/quotation/quotation_notes_templates/quotation_notes_templates_search.php": {
+    "mtime": 1783707946.0915244,
+    "ast_hash": "15b10799e0ce85ca02e79bb8a68d99d9",
+    "semantic_hash": "15b10799e0ce85ca02e79bb8a68d99d9"
+  },
+  "master_files/quotation/quotation_payment_terms/quotation_payment_terms.js": {
+    "mtime": 1783707946.091832,
+    "ast_hash": "57ed255a77cacb58695eabc2950590d4",
+    "semantic_hash": "57ed255a77cacb58695eabc2950590d4"
+  },
+  "master_files/quotation/quotation_payment_terms/quotation_payment_terms.php": {
+    "mtime": 1783707946.0919976,
+    "ast_hash": "121850505166e0b5238c7ea5695a5682",
+    "semantic_hash": "121850505166e0b5238c7ea5695a5682"
+  },
+  "master_files/quotation/quotation_payment_terms/quotation_payment_terms_data.php": {
+    "mtime": 1783707946.092216,
+    "ast_hash": "e85b45af518040889acadec4f2f14c8a",
+    "semantic_hash": "e85b45af518040889acadec4f2f14c8a"
+  },
+  "master_files/quotation/quotation_payment_terms/quotation_payment_terms_print.php": {
+    "mtime": 1783707946.092381,
+    "ast_hash": "d92f26e6455af206ad01f57d5bfb62f2",
+    "semantic_hash": "d92f26e6455af206ad01f57d5bfb62f2"
+  },
+  "master_files/quotation/quotation_payment_terms/quotation_payment_terms_search.js": {
+    "mtime": 1783707946.0925362,
+    "ast_hash": "7a0300be2d92014c8193ef84c9bf58ee",
+    "semantic_hash": "7a0300be2d92014c8193ef84c9bf58ee"
+  },
+  "master_files/quotation/quotation_payment_terms/quotation_payment_terms_search.php": {
+    "mtime": 1783707946.092711,
+    "ast_hash": "08169c71b12be62dacd8e7642a44072a",
+    "semantic_hash": "08169c71b12be62dacd8e7642a44072a"
+  },
+  "master_files/quotation/quotation_statuses/quotation_statuses.js": {
+    "mtime": 1783707946.093014,
+    "ast_hash": "e5855ed3445b8cbed4983f31d4b1d2e0",
+    "semantic_hash": "e5855ed3445b8cbed4983f31d4b1d2e0"
+  },
+  "master_files/quotation/quotation_statuses/quotation_statuses.php": {
+    "mtime": 1783707946.0931904,
+    "ast_hash": "bd95d1b778b3609c5eb07098a69e28e6",
+    "semantic_hash": "bd95d1b778b3609c5eb07098a69e28e6"
+  },
+  "master_files/quotation/quotation_statuses/quotation_statuses_data.php": {
+    "mtime": 1783707946.0933454,
+    "ast_hash": "4fb2b468fbb3469238af864e1e4dd0e3",
+    "semantic_hash": "4fb2b468fbb3469238af864e1e4dd0e3"
+  },
+  "master_files/quotation/quotation_statuses/quotation_statuses_print.php": {
+    "mtime": 1783707946.0935497,
+    "ast_hash": "695d3e318c7d0446ff2a3429f7fc28d3",
+    "semantic_hash": "695d3e318c7d0446ff2a3429f7fc28d3"
+  },
+  "master_files/quotation/quotation_statuses/quotation_statuses_search.js": {
+    "mtime": 1783707946.0937464,
+    "ast_hash": "acc7a5b4e115f24f84c82efb3f75f081",
+    "semantic_hash": "acc7a5b4e115f24f84c82efb3f75f081"
+  },
+  "master_files/quotation/quotation_statuses/quotation_statuses_search.php": {
+    "mtime": 1783707946.0939107,
+    "ast_hash": "c81013ee92d4fd5d06a80dfd05fa3475",
+    "semantic_hash": "c81013ee92d4fd5d06a80dfd05fa3475"
+  },
+  "master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions.js": {
+    "mtime": 1783707946.0942776,
+    "ast_hash": "94925fce277998efab0c98e803207f9b",
+    "semantic_hash": "94925fce277998efab0c98e803207f9b"
+  },
+  "master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions.php": {
+    "mtime": 1783707946.094515,
+    "ast_hash": "cecb1c98929611b8d1f4a5a9d9c2735b",
+    "semantic_hash": "cecb1c98929611b8d1f4a5a9d9c2735b"
+  },
+  "master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions_data.php": {
+    "mtime": 1783707946.0946748,
+    "ast_hash": "254d04e479b04b369fe0ad571b94b525",
+    "semantic_hash": "254d04e479b04b369fe0ad571b94b525"
+  },
+  "master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions_print.php": {
+    "mtime": 1783707946.094846,
+    "ast_hash": "ea88bcab3cbb6d426507f311fde7f8ae",
+    "semantic_hash": "ea88bcab3cbb6d426507f311fde7f8ae"
+  },
+  "master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions_search.js": {
+    "mtime": 1783707946.0950153,
+    "ast_hash": "49434f888e8b4e555155902d192ea016",
+    "semantic_hash": "49434f888e8b4e555155902d192ea016"
+  },
+  "master_files/quotation/quotation_terms_and_conditions/quotation_terms_and_conditions_search.php": {
+    "mtime": 1783707946.095176,
+    "ast_hash": "e4db30ca720b022c0730bacbbfb61c68",
+    "semantic_hash": "e4db30ca720b022c0730bacbbfb61c68"
+  },
+  "master_files/references/ceremony_type/ceremony_type.js": {
+    "mtime": 1783712154.2138221,
+    "ast_hash": "214088d6073350e9500b73834f4261bc",
+    "semantic_hash": "214088d6073350e9500b73834f4261bc"
+  },
+  "master_files/references/ceremony_type/ceremony_type.php": {
+    "mtime": 1783712154.2131886,
+    "ast_hash": "29b7f0b7cd0b798b591f23e29bdbc465",
+    "semantic_hash": "29b7f0b7cd0b798b591f23e29bdbc465"
+  },
+  "master_files/references/ceremony_type/ceremony_type_data.php": {
+    "mtime": 1783712154.2146811,
+    "ast_hash": "d7abd5fd1473f27cb16124f559096a91",
+    "semantic_hash": "d7abd5fd1473f27cb16124f559096a91"
+  },
+  "master_files/references/ceremony_type/ceremony_type_print.php": {
+    "mtime": 1783712154.217141,
+    "ast_hash": "aa101348e0145ad969426d58ba54efdf",
+    "semantic_hash": "aa101348e0145ad969426d58ba54efdf"
+  },
+  "master_files/references/ceremony_type/ceremony_type_search.js": {
+    "mtime": 1783712154.2161448,
+    "ast_hash": "b9d336a4c62254ac528d838281adb023",
+    "semantic_hash": "b9d336a4c62254ac528d838281adb023"
+  },
+  "master_files/references/ceremony_type/ceremony_type_search.php": {
+    "mtime": 1783712154.215464,
+    "ast_hash": "ba241cb8d807a34adbefe437bf8ac32b",
+    "semantic_hash": "ba241cb8d807a34adbefe437bf8ac32b"
+  },
+  "master_files/references/customer_advance/customer_advance.js": {
+    "mtime": 1783712492.667092,
+    "ast_hash": "d1b8be152dff9e087b1d8d3e55379592",
+    "semantic_hash": "d1b8be152dff9e087b1d8d3e55379592"
+  },
+  "master_files/references/customer_advance/customer_advance.php": {
+    "mtime": 1783712471.0847635,
+    "ast_hash": "b978db825687d248e319c08d37c242bb",
+    "semantic_hash": "b978db825687d248e319c08d37c242bb"
+  },
+  "master_files/references/customer_advance/customer_advance_data.php": {
+    "mtime": 1783716821.243919,
+    "ast_hash": "1601c21eec865c2c96dd160e6f94dc05",
+    "semantic_hash": "1601c21eec865c2c96dd160e6f94dc05"
+  },
+  "master_files/references/customer_advance/customer_advance_print.php": {
+    "mtime": 1783712177.2791,
+    "ast_hash": "ef5aff83bc93b80a93f6ca5cb9da9fac",
+    "semantic_hash": "ef5aff83bc93b80a93f6ca5cb9da9fac"
+  },
+  "master_files/references/customer_advance/customer_advance_search.js": {
+    "mtime": 1783712510.0524395,
+    "ast_hash": "94216621c7c8c1c4fbbe383b0cd6c356",
+    "semantic_hash": "94216621c7c8c1c4fbbe383b0cd6c356"
+  },
+  "master_files/references/customer_advance/customer_advance_search.php": {
+    "mtime": 1783712502.6450255,
+    "ast_hash": "9a453a40bb839908ce2ce45c657af051",
+    "semantic_hash": "9a453a40bb839908ce2ce45c657af051"
+  },
+  "master_files/references/customer_master_file/customer_master_file.js": {
+    "mtime": 1783707946.0957742,
+    "ast_hash": "9b5ef671df179e49eadf2e4f947c78dc",
+    "semantic_hash": "9b5ef671df179e49eadf2e4f947c78dc"
+  },
+  "master_files/references/customer_master_file/customer_master_file.php": {
+    "mtime": 1783707946.0960112,
+    "ast_hash": "3d9fb31973f150d2c9732b4f23fa10ba",
+    "semantic_hash": "3d9fb31973f150d2c9732b4f23fa10ba"
+  },
+  "master_files/references/customer_master_file/customer_master_file_data.php": {
+    "mtime": 1783707946.0962317,
+    "ast_hash": "aacdff65f736e3f7a9dcb2f236375553",
+    "semantic_hash": "aacdff65f736e3f7a9dcb2f236375553"
+  },
+  "master_files/references/customer_master_file/customer_master_file_print.php": {
+    "mtime": 1783707946.0964022,
+    "ast_hash": "16fa057e5abbe020e2bb2ad726ce28ac",
+    "semantic_hash": "16fa057e5abbe020e2bb2ad726ce28ac"
+  },
+  "master_files/references/customer_master_file/customer_master_file_search.js": {
+    "mtime": 1783707946.0966697,
+    "ast_hash": "5e6e32c6cd333636d6f1bc0ecd64c50d",
+    "semantic_hash": "5e6e32c6cd333636d6f1bc0ecd64c50d"
+  },
+  "master_files/references/customer_master_file/customer_master_file_search.php": {
+    "mtime": 1783707946.0968487,
+    "ast_hash": "e8f5c326813b6b2e9ce923f6872efbd1",
+    "semantic_hash": "e8f5c326813b6b2e9ce923f6872efbd1"
+  },
+  "master_files/references/customer_types/customer_types.js": {
+    "mtime": 1783707946.097176,
+    "ast_hash": "2387dceecfd081b8f2f2eb29c286b603",
+    "semantic_hash": "2387dceecfd081b8f2f2eb29c286b603"
+  },
+  "master_files/references/customer_types/customer_types.php": {
+    "mtime": 1783707946.0973363,
+    "ast_hash": "89003a8788328a4fc88278ac7c038ed1",
+    "semantic_hash": "89003a8788328a4fc88278ac7c038ed1"
+  },
+  "master_files/references/customer_types/customer_types_data.php": {
+    "mtime": 1783707946.097491,
+    "ast_hash": "a9c2d1b6f388f2f749b621e142927e5b",
+    "semantic_hash": "a9c2d1b6f388f2f749b621e142927e5b"
+  },
+  "master_files/references/customer_types/customer_types_print.php": {
+    "mtime": 1783707946.0976653,
+    "ast_hash": "f11110d28ea7ff28efb7804de59162a0",
+    "semantic_hash": "f11110d28ea7ff28efb7804de59162a0"
+  },
+  "master_files/references/customer_types/customer_types_search.js": {
+    "mtime": 1783707946.0978224,
+    "ast_hash": "5719f962807d4f01d16ada10c4b5f73e",
+    "semantic_hash": "5719f962807d4f01d16ada10c4b5f73e"
+  },
+  "master_files/references/customer_types/customer_types_search.php": {
+    "mtime": 1783707946.097986,
+    "ast_hash": "75a0e3aeaeb06bf10551a4332efa3c29",
+    "semantic_hash": "75a0e3aeaeb06bf10551a4332efa3c29"
+  },
+  "master_files/references/event_type_master/event_type_master.js": {
+    "mtime": 1783712144.80551,
+    "ast_hash": "5048189295ccbdf1d4030a1ae34db05f",
+    "semantic_hash": "5048189295ccbdf1d4030a1ae34db05f"
+  },
+  "master_files/references/event_type_master/event_type_master.php": {
+    "mtime": 1783712144.8049731,
+    "ast_hash": "38c344c8dbabcd1999e0ffce2a7ad839",
+    "semantic_hash": "38c344c8dbabcd1999e0ffce2a7ad839"
+  },
+  "master_files/references/event_type_master/event_type_master_data.php": {
+    "mtime": 1783712144.8062017,
+    "ast_hash": "930c69ed231d20e014ab12ea6d81d769",
+    "semantic_hash": "930c69ed231d20e014ab12ea6d81d769"
+  },
+  "master_files/references/event_type_master/event_type_master_print.php": {
+    "mtime": 1783712144.808436,
+    "ast_hash": "36f5599377cd97d27aa536126bb1a101",
+    "semantic_hash": "36f5599377cd97d27aa536126bb1a101"
+  },
+  "master_files/references/event_type_master/event_type_master_search.js": {
+    "mtime": 1783712144.807567,
+    "ast_hash": "896d7e986ac6659806b53201a6cb3188",
+    "semantic_hash": "896d7e986ac6659806b53201a6cb3188"
+  },
+  "master_files/references/event_type_master/event_type_master_search.php": {
+    "mtime": 1783712144.8069184,
+    "ast_hash": "31a024d9a240ad5e4b2a58d956a60b48",
+    "semantic_hash": "31a024d9a240ad5e4b2a58d956a60b48"
+  },
+  "master_files/references/general_expense_type/general_expense_type.js": {
+    "mtime": 1783707946.0982804,
+    "ast_hash": "5f44bd4823d0c166f0b48eb26231f4d3",
+    "semantic_hash": "5f44bd4823d0c166f0b48eb26231f4d3"
+  },
+  "master_files/references/general_expense_type/general_expense_type.php": {
+    "mtime": 1783707946.0984437,
+    "ast_hash": "cc99cfea143ae1ee32044bddcf2d62c3",
+    "semantic_hash": "cc99cfea143ae1ee32044bddcf2d62c3"
+  },
+  "master_files/references/general_expense_type/general_expense_type_data.php": {
+    "mtime": 1783707946.0986109,
+    "ast_hash": "f417ec71a4598f16f5a33ae7f70d0647",
+    "semantic_hash": "f417ec71a4598f16f5a33ae7f70d0647"
+  },
+  "master_files/references/general_expense_type/general_expense_type_print.php": {
+    "mtime": 1783707946.0987942,
+    "ast_hash": "9f167a5dfb61364cdbc0799c101685ff",
+    "semantic_hash": "9f167a5dfb61364cdbc0799c101685ff"
+  },
+  "master_files/references/general_expense_type/general_expense_type_search.js": {
+    "mtime": 1783707946.0989962,
+    "ast_hash": "0586aa0e73a740ed06b80c1f35d33d1a",
+    "semantic_hash": "0586aa0e73a740ed06b80c1f35d33d1a"
+  },
+  "master_files/references/general_expense_type/general_expense_type_search.php": {
+    "mtime": 1783707946.0991774,
+    "ast_hash": "ba7e0dfd6d889ddca1baa6e0ebd055c7",
+    "semantic_hash": "ba7e0dfd6d889ddca1baa6e0ebd055c7"
+  },
+  "master_files/references/item_master_file/item_master_file.js": {
+    "mtime": 1783707946.0996685,
+    "ast_hash": "d2e3bea2758bdd8076837b7793480930",
+    "semantic_hash": "d2e3bea2758bdd8076837b7793480930"
+  },
+  "master_files/references/item_master_file/item_master_file.php": {
+    "mtime": 1783707946.0998638,
+    "ast_hash": "c7e25e860e932e43c8759d7c70e3df8a",
+    "semantic_hash": "c7e25e860e932e43c8759d7c70e3df8a"
+  },
+  "master_files/references/item_master_file/item_master_file_data.php": {
+    "mtime": 1783707946.100035,
+    "ast_hash": "b1fe2e0414c1d4ed94533cdc692c1f0b",
+    "semantic_hash": "b1fe2e0414c1d4ed94533cdc692c1f0b"
+  },
+  "master_files/references/item_master_file/item_master_file_print.php": {
+    "mtime": 1783707946.1002686,
+    "ast_hash": "3d241235a1b5130adc4cb8ef16c3fecc",
+    "semantic_hash": "3d241235a1b5130adc4cb8ef16c3fecc"
+  },
+  "master_files/references/item_master_file/item_master_file_search.js": {
+    "mtime": 1783707946.1004312,
+    "ast_hash": "900a1a19826ad3356ab2919ae2a812b3",
+    "semantic_hash": "900a1a19826ad3356ab2919ae2a812b3"
+  },
+  "master_files/references/item_master_file/item_master_file_search.php": {
+    "mtime": 1783707946.1005783,
+    "ast_hash": "88bf649f85a9c4ac8abb3596fd1701a6",
+    "semantic_hash": "88bf649f85a9c4ac8abb3596fd1701a6"
+  },
+  "master_files/references/location_master_file/location_master_file.js": {
+    "mtime": 1783707946.1008477,
+    "ast_hash": "8d1c3627600dd714d49d249681da364d",
+    "semantic_hash": "8d1c3627600dd714d49d249681da364d"
+  },
+  "master_files/references/location_master_file/location_master_file.php": {
+    "mtime": 1783707946.1010208,
+    "ast_hash": "5f2d37fd3aa635109f463adf2f3dc592",
+    "semantic_hash": "5f2d37fd3aa635109f463adf2f3dc592"
+  },
+  "master_files/references/location_master_file/location_master_file_data.php": {
+    "mtime": 1783707946.1011872,
+    "ast_hash": "d3f5a5d2022b9e6adb688dfc9a8657f9",
+    "semantic_hash": "d3f5a5d2022b9e6adb688dfc9a8657f9"
+  },
+  "master_files/references/location_master_file/location_master_file_print.php": {
+    "mtime": 1783707946.1014378,
+    "ast_hash": "406103aabd0ea234cddceaa40520828d",
+    "semantic_hash": "406103aabd0ea234cddceaa40520828d"
+  },
+  "master_files/references/location_master_file/location_master_file_search.js": {
+    "mtime": 1783707946.1016011,
+    "ast_hash": "9e143d79492f9851b15177f3a4a08dce",
+    "semantic_hash": "9e143d79492f9851b15177f3a4a08dce"
+  },
+  "master_files/references/location_master_file/location_master_file_search.php": {
+    "mtime": 1783707946.1017604,
+    "ast_hash": "a00fdfd05d1699b46a4a6f18cf534a04",
+    "semantic_hash": "a00fdfd05d1699b46a4a6f18cf534a04"
+  },
+  "master_files/references/supplier_category/supplier_category.js": {
+    "mtime": 1783712152.2787318,
+    "ast_hash": "cbaa9f5cf2e52f3ed014e228b46c555a",
+    "semantic_hash": "cbaa9f5cf2e52f3ed014e228b46c555a"
+  },
+  "master_files/references/supplier_category/supplier_category.php": {
+    "mtime": 1783712152.2778513,
+    "ast_hash": "c6dc55a8bf222d2c087d7a2df2358362",
+    "semantic_hash": "c6dc55a8bf222d2c087d7a2df2358362"
+  },
+  "master_files/references/supplier_category/supplier_category_data.php": {
+    "mtime": 1783712152.2792475,
+    "ast_hash": "fc7418b1c29f010381b80560501fb61e",
+    "semantic_hash": "fc7418b1c29f010381b80560501fb61e"
+  },
+  "master_files/references/supplier_category/supplier_category_print.php": {
+    "mtime": 1783712152.2813315,
+    "ast_hash": "b5afbd3ad21ffe018cfeebe123009c5c",
+    "semantic_hash": "b5afbd3ad21ffe018cfeebe123009c5c"
+  },
+  "master_files/references/supplier_category/supplier_category_search.js": {
+    "mtime": 1783712152.2806025,
+    "ast_hash": "097ac8459c6449935c0c1841f93f5fa7",
+    "semantic_hash": "097ac8459c6449935c0c1841f93f5fa7"
+  },
+  "master_files/references/supplier_category/supplier_category_search.php": {
+    "mtime": 1783712152.279975,
+    "ast_hash": "b73d6f0d5d9f0b102ce939b18704055d",
+    "semantic_hash": "b73d6f0d5d9f0b102ce939b18704055d"
+  },
+  "master_files/references/supplier_master/supplier_master.js": {
+    "mtime": 1783712322.310784,
+    "ast_hash": "6df6ea15f3b19b1d3f0caf10491a06d8",
+    "semantic_hash": "6df6ea15f3b19b1d3f0caf10491a06d8"
+  },
+  "master_files/references/supplier_master/supplier_master.php": {
+    "mtime": 1783712296.2509432,
+    "ast_hash": "46fd4a4f37ccabfd5b9f7544e3f20295",
+    "semantic_hash": "46fd4a4f37ccabfd5b9f7544e3f20295"
+  },
+  "master_files/references/supplier_master/supplier_master_data.php": {
+    "mtime": 1783716810.7631774,
+    "ast_hash": "69f04a76cd707e9a271c0e8d18f7ad2b",
+    "semantic_hash": "69f04a76cd707e9a271c0e8d18f7ad2b"
+  },
+  "master_files/references/supplier_master/supplier_master_print.php": {
+    "mtime": 1783712165.0496485,
+    "ast_hash": "aea7834434bd7ea6e4f9d8bb1d7b2484",
+    "semantic_hash": "aea7834434bd7ea6e4f9d8bb1d7b2484"
+  },
+  "master_files/references/supplier_master/supplier_master_search.js": {
+    "mtime": 1783712339.5256932,
+    "ast_hash": "f539a8f11c73a9a9f9319d9bfa9daa1a",
+    "semantic_hash": "f539a8f11c73a9a9f9319d9bfa9daa1a"
+  },
+  "master_files/references/supplier_master/supplier_master_search.php": {
+    "mtime": 1783712329.881035,
+    "ast_hash": "eff8e926726343e04672f271edab9b14",
+    "semantic_hash": "eff8e926726343e04672f271edab9b14"
+  },
+  "master_files/references/venue_category/venue_category.js": {
+    "mtime": 1783712162.8218734,
+    "ast_hash": "3d1d629eb3dcf3eec31e425da0f33812",
+    "semantic_hash": "3d1d629eb3dcf3eec31e425da0f33812"
+  },
+  "master_files/references/venue_category/venue_category.php": {
+    "mtime": 1783712162.8208663,
+    "ast_hash": "82eb2d9d70e9594d16d306da1713d0a3",
+    "semantic_hash": "82eb2d9d70e9594d16d306da1713d0a3"
+  },
+  "master_files/references/venue_category/venue_category_data.php": {
+    "mtime": 1783712162.8228722,
+    "ast_hash": "614af02ff6ecc798593dab97180d786b",
+    "semantic_hash": "614af02ff6ecc798593dab97180d786b"
+  },
+  "master_files/references/venue_category/venue_category_print.php": {
+    "mtime": 1783712162.825225,
+    "ast_hash": "0cc4debe5d988a7b54b5456d6cd57f1c",
+    "semantic_hash": "0cc4debe5d988a7b54b5456d6cd57f1c"
+  },
+  "master_files/references/venue_category/venue_category_search.js": {
+    "mtime": 1783712162.8243787,
+    "ast_hash": "1ad7fca952a9d6eb4c943c65aff3e0b7",
+    "semantic_hash": "1ad7fca952a9d6eb4c943c65aff3e0b7"
+  },
+  "master_files/references/venue_category/venue_category_search.php": {
+    "mtime": 1783712162.823634,
+    "ast_hash": "5f4c9585740197bf347b4d218dced25e",
+    "semantic_hash": "5f4c9585740197bf347b4d218dced25e"
+  },
+  "master_files/references/venue_master/venue_master.js": {
+    "mtime": 1783712389.3491666,
+    "ast_hash": "db1ee4de64791c6de2cd206242660ba7",
+    "semantic_hash": "db1ee4de64791c6de2cd206242660ba7"
+  },
+  "master_files/references/venue_master/venue_master.php": {
+    "mtime": 1783712366.632187,
+    "ast_hash": "a1b9dfcb27139faaec226b7501750b49",
+    "semantic_hash": "a1b9dfcb27139faaec226b7501750b49"
+  },
+  "master_files/references/venue_master/venue_master_data.php": {
+    "mtime": 1783712423.0528154,
+    "ast_hash": "39f5b4106e29f5e9662c3de514b8aac3",
+    "semantic_hash": "39f5b4106e29f5e9662c3de514b8aac3"
+  },
+  "master_files/references/venue_master/venue_master_print.php": {
+    "mtime": 1783712170.8042166,
+    "ast_hash": "c85e8421177de82045e8562d8b8f98cd",
+    "semantic_hash": "c85e8421177de82045e8562d8b8f98cd"
+  },
+  "master_files/references/venue_master/venue_master_search.js": {
+    "mtime": 1783712407.3067353,
+    "ast_hash": "961d20eeccb56d27702e8ccadb296fca",
+    "semantic_hash": "961d20eeccb56d27702e8ccadb296fca"
+  },
+  "master_files/references/venue_master/venue_master_search.php": {
+    "mtime": 1783712395.8547723,
+    "ast_hash": "067aad13e634c50b246e05178afba39b",
+    "semantic_hash": "067aad13e634c50b246e05178afba39b"
+  },
+  "master_files/references/work_order_statuses/work_order_statuses.js": {
+    "mtime": 1783707946.1020334,
+    "ast_hash": "d69dd90d81a27d34853f5c3205dfabff",
+    "semantic_hash": "d69dd90d81a27d34853f5c3205dfabff"
+  },
+  "master_files/references/work_order_statuses/work_order_statuses.php": {
+    "mtime": 1783707946.1021976,
+    "ast_hash": "4b8e5d1ac1b40168b50c724f41ac4ecb",
+    "semantic_hash": "4b8e5d1ac1b40168b50c724f41ac4ecb"
+  },
+  "master_files/references/work_order_statuses/work_order_statuses_data.php": {
+    "mtime": 1783707946.1023552,
+    "ast_hash": "e177dd007826ab2911fdad301f1412c5",
+    "semantic_hash": "e177dd007826ab2911fdad301f1412c5"
+  },
+  "master_files/references/work_order_statuses/work_order_statuses_print.php": {
+    "mtime": 1783707946.1025188,
+    "ast_hash": "89381d6fbbc683dea9e478681dc3be90",
+    "semantic_hash": "89381d6fbbc683dea9e478681dc3be90"
+  },
+  "master_files/references/work_order_statuses/work_order_statuses_search.js": {
+    "mtime": 1783707946.102669,
+    "ast_hash": "245615ecb1372ca2a9caf6b9ac6d562e",
+    "semantic_hash": "245615ecb1372ca2a9caf6b9ac6d562e"
+  },
+  "master_files/references/work_order_statuses/work_order_statuses_search.php": {
+    "mtime": 1783707946.1028323,
+    "ast_hash": "ceac7711ddd7d56d9108ecbba417fa7d",
+    "semantic_hash": "ceac7711ddd7d56d9108ecbba417fa7d"
+  },
+  "master_files/references/work_order_types/work_order_types.js": {
+    "mtime": 1783707946.1031146,
+    "ast_hash": "04a8ceb122de69dfa2e58d4e88254aaf",
+    "semantic_hash": "04a8ceb122de69dfa2e58d4e88254aaf"
+  },
+  "master_files/references/work_order_types/work_order_types.php": {
+    "mtime": 1783707946.1033218,
+    "ast_hash": "0f0b1a27e97fc22de293e1f0d8619666",
+    "semantic_hash": "0f0b1a27e97fc22de293e1f0d8619666"
+  },
+  "master_files/references/work_order_types/work_order_types_data.php": {
+    "mtime": 1783707946.1034763,
+    "ast_hash": "afafcec7d82b6ee39485aea3ad69ef9c",
+    "semantic_hash": "afafcec7d82b6ee39485aea3ad69ef9c"
+  },
+  "master_files/references/work_order_types/work_order_types_print.php": {
+    "mtime": 1783707946.1036859,
+    "ast_hash": "9d95c03f8f2459c8fc4f25074aa4bee1",
+    "semantic_hash": "9d95c03f8f2459c8fc4f25074aa4bee1"
+  },
+  "master_files/references/work_order_types/work_order_types_search.js": {
+    "mtime": 1783707946.1038465,
+    "ast_hash": "0a6b5eadce115a9b4e9a67b7a6333dcb",
+    "semantic_hash": "0a6b5eadce115a9b4e9a67b7a6333dcb"
+  },
+  "master_files/references/work_order_types/work_order_types_search.php": {
+    "mtime": 1783707946.104031,
+    "ast_hash": "6482dd320d7b820075c6ff8f14bc4e01",
+    "semantic_hash": "6482dd320d7b820075c6ff8f14bc4e01"
+  },
+  "master_files/staff_fleet/cleaner_master_file/cleaner_master_file.js": {
+    "mtime": 1783707946.104599,
+    "ast_hash": "1045c8224a3ab1de57c92f778a3e799b",
+    "semantic_hash": "1045c8224a3ab1de57c92f778a3e799b"
+  },
+  "master_files/staff_fleet/cleaner_master_file/cleaner_master_file.php": {
+    "mtime": 1783707946.1048014,
+    "ast_hash": "0703f33cefac0612fdfe1f298389c2c6",
+    "semantic_hash": "0703f33cefac0612fdfe1f298389c2c6"
+  },
+  "master_files/staff_fleet/cleaner_master_file/cleaner_master_file_data.php": {
+    "mtime": 1783707946.1050003,
+    "ast_hash": "6d3d14459101d3c1359d472fd4c42488",
+    "semantic_hash": "6d3d14459101d3c1359d472fd4c42488"
+  },
+  "master_files/staff_fleet/cleaner_master_file/cleaner_master_file_print.php": {
+    "mtime": 1783707946.1051626,
+    "ast_hash": "e4053bde78d62d9f67029dbe8cc94add",
+    "semantic_hash": "e4053bde78d62d9f67029dbe8cc94add"
+  },
+  "master_files/staff_fleet/cleaner_master_file/cleaner_master_file_search.js": {
+    "mtime": 1783707946.1054113,
+    "ast_hash": "9f6a3ec0aa9b26f3f2257d6bcd53b67f",
+    "semantic_hash": "9f6a3ec0aa9b26f3f2257d6bcd53b67f"
+  },
+  "master_files/staff_fleet/cleaner_master_file/cleaner_master_file_search.php": {
+    "mtime": 1783707946.1055868,
+    "ast_hash": "cc5f75259a2b0e8a2b4b67834671456c",
+    "semantic_hash": "cc5f75259a2b0e8a2b4b67834671456c"
+  },
+  "master_files/staff_fleet/driver_master_file/driver_master_file.js": {
+    "mtime": 1783711161.218471,
+    "ast_hash": "6546e1a86e6699f4ca4925b509a927ff",
+    "semantic_hash": "6546e1a86e6699f4ca4925b509a927ff"
+  },
+  "master_files/staff_fleet/driver_master_file/driver_master_file.php": {
+    "mtime": 1783711174.16839,
+    "ast_hash": "b6919cf3adabe3d65ce16e6d82ba9b84",
+    "semantic_hash": "b6919cf3adabe3d65ce16e6d82ba9b84"
+  },
+  "master_files/staff_fleet/driver_master_file/driver_master_file_data.php": {
+    "mtime": 1783707946.106356,
+    "ast_hash": "fd45c3fc1ca5a051ad1d4e24c2da47e3",
+    "semantic_hash": "fd45c3fc1ca5a051ad1d4e24c2da47e3"
+  },
+  "master_files/staff_fleet/driver_master_file/driver_master_file_print.php": {
+    "mtime": 1783707946.1065469,
+    "ast_hash": "3d84610fc8e32a94727de9546090ab3e",
+    "semantic_hash": "3d84610fc8e32a94727de9546090ab3e"
+  },
+  "master_files/staff_fleet/driver_master_file/driver_master_file_search.js": {
+    "mtime": 1783707946.1067169,
+    "ast_hash": "63252d71ab4401cc5ffa502b0f35a361",
+    "semantic_hash": "63252d71ab4401cc5ffa502b0f35a361"
+  },
+  "master_files/staff_fleet/driver_master_file/driver_master_file_search.php": {
+    "mtime": 1783707946.106897,
+    "ast_hash": "edc9827ace989da5a799d29d66b6b429",
+    "semantic_hash": "edc9827ace989da5a799d29d66b6b429"
+  },
+  "master_files/staff_fleet/freelance_crew_master/freelance_crew_master.js": {
+    "mtime": 1783717943.2767355,
+    "ast_hash": "eab58f62ed6bc61a3c510528f3779cec",
+    "semantic_hash": "eab58f62ed6bc61a3c510528f3779cec"
+  },
+  "master_files/staff_fleet/freelance_crew_master/freelance_crew_master.php": {
+    "mtime": 1783717943.2759457,
+    "ast_hash": "a719b0782716e75517311e78b9bdd928",
+    "semantic_hash": "a719b0782716e75517311e78b9bdd928"
+  },
+  "master_files/staff_fleet/freelance_crew_master/freelance_crew_master_data.php": {
+    "mtime": 1783717943.2775261,
+    "ast_hash": "b50fc3a75a663bb9c4532ccec234ac5a",
+    "semantic_hash": "b50fc3a75a663bb9c4532ccec234ac5a"
+  },
+  "master_files/staff_fleet/freelance_crew_master/freelance_crew_master_print.php": {
+    "mtime": 1783717943.2797139,
+    "ast_hash": "3572c82810943845a4cdaa36f91993c0",
+    "semantic_hash": "3572c82810943845a4cdaa36f91993c0"
+  },
+  "master_files/staff_fleet/freelance_crew_master/freelance_crew_master_search.js": {
+    "mtime": 1783717943.2789037,
+    "ast_hash": "4b4805e50f211638a3132a4c0b8322d0",
+    "semantic_hash": "4b4805e50f211638a3132a4c0b8322d0"
+  },
+  "master_files/staff_fleet/freelance_crew_master/freelance_crew_master_search.php": {
+    "mtime": 1783717943.2782464,
+    "ast_hash": "30e75ac7a5ab751ce557709ade96b496",
+    "semantic_hash": "30e75ac7a5ab751ce557709ade96b496"
+  },
+  "master_files/staff_fleet/vehicle_master_file/vehicle_master_file.js": {
+    "mtime": 1783707946.1072407,
+    "ast_hash": "d42c5a0d04e7fc343c4dd809f225598d",
+    "semantic_hash": "d42c5a0d04e7fc343c4dd809f225598d"
+  },
+  "master_files/staff_fleet/vehicle_master_file/vehicle_master_file.php": {
+    "mtime": 1783707946.1074226,
+    "ast_hash": "9bb13bfddf47252260dbd6a75d0d3d4d",
+    "semantic_hash": "9bb13bfddf47252260dbd6a75d0d3d4d"
+  },
+  "master_files/staff_fleet/vehicle_master_file/vehicle_master_file_data.php": {
+    "mtime": 1783707946.1075969,
+    "ast_hash": "253eb49342542eb649f0fc87d48af93a",
+    "semantic_hash": "253eb49342542eb649f0fc87d48af93a"
+  },
+  "master_files/staff_fleet/vehicle_master_file/vehicle_master_file_print.php": {
+    "mtime": 1783707946.1078026,
+    "ast_hash": "d27e49e51606fd883d1ea799f3fbd94b",
+    "semantic_hash": "d27e49e51606fd883d1ea799f3fbd94b"
+  },
+  "master_files/staff_fleet/vehicle_master_file/vehicle_master_file_search.js": {
+    "mtime": 1783707946.1079714,
+    "ast_hash": "5e75cd4ddd3b0c6b9667229a870696b9",
+    "semantic_hash": "5e75cd4ddd3b0c6b9667229a870696b9"
+  },
+  "master_files/staff_fleet/vehicle_master_file/vehicle_master_file_search.php": {
+    "mtime": 1783707946.1081326,
+    "ast_hash": "60457d3d4421a82cf75618a62b3d99fd",
+    "semantic_hash": "60457d3d4421a82cf75618a62b3d99fd"
+  },
+  "master_files/vehicle/fleet_statuses/fleet_statuses.js": {
+    "mtime": 1783707946.108526,
+    "ast_hash": "45948e9fd8f14778d4919adac67ae856",
+    "semantic_hash": "45948e9fd8f14778d4919adac67ae856"
+  },
+  "master_files/vehicle/fleet_statuses/fleet_statuses.php": {
+    "mtime": 1783707946.1086974,
+    "ast_hash": "0a4be5e80adf936c92cd1cc6e49c40f5",
+    "semantic_hash": "0a4be5e80adf936c92cd1cc6e49c40f5"
+  },
+  "master_files/vehicle/fleet_statuses/fleet_statuses_data.php": {
+    "mtime": 1783707946.1088536,
+    "ast_hash": "322eee44016dc4c5832d5f7874f5642f",
+    "semantic_hash": "322eee44016dc4c5832d5f7874f5642f"
+  },
+  "master_files/vehicle/fleet_statuses/fleet_statuses_print.php": {
+    "mtime": 1783707946.1090074,
+    "ast_hash": "cdbc8886d72545c962b22fee82444605",
+    "semantic_hash": "cdbc8886d72545c962b22fee82444605"
+  },
+  "master_files/vehicle/fleet_statuses/fleet_statuses_search.js": {
+    "mtime": 1783707946.10917,
+    "ast_hash": "1d27582c939ee50d1a3400758b265659",
+    "semantic_hash": "1d27582c939ee50d1a3400758b265659"
+  },
+  "master_files/vehicle/fleet_statuses/fleet_statuses_search.php": {
+    "mtime": 1783707946.1093302,
+    "ast_hash": "2de375500784805c29b90f9e07b97f3a",
+    "semantic_hash": "2de375500784805c29b90f9e07b97f3a"
+  },
+  "master_files/vehicle/fuel_type/fuel_type.js": {
+    "mtime": 1783707946.1096528,
+    "ast_hash": "a1ec13665b9ed33c9b02ca2ee3fa47d3",
+    "semantic_hash": "a1ec13665b9ed33c9b02ca2ee3fa47d3"
+  },
+  "master_files/vehicle/fuel_type/fuel_type.php": {
+    "mtime": 1783707946.1098166,
+    "ast_hash": "38298bb8255c0d190669b561ea0098de",
+    "semantic_hash": "38298bb8255c0d190669b561ea0098de"
+  },
+  "master_files/vehicle/fuel_type/fuel_type_data.php": {
+    "mtime": 1783707946.1100435,
+    "ast_hash": "a38aba10f1a287d85419e00a413c989c",
+    "semantic_hash": "a38aba10f1a287d85419e00a413c989c"
+  },
+  "master_files/vehicle/fuel_type/fuel_type_print.php": {
+    "mtime": 1783707946.1102223,
+    "ast_hash": "88f0d5f1b85c6b4947b9320b5d57fade",
+    "semantic_hash": "88f0d5f1b85c6b4947b9320b5d57fade"
+  },
+  "master_files/vehicle/fuel_type/fuel_type_search.js": {
+    "mtime": 1783707946.1104217,
+    "ast_hash": "8078d9c895d8eac45fbfc0d5912851b8",
+    "semantic_hash": "8078d9c895d8eac45fbfc0d5912851b8"
+  },
+  "master_files/vehicle/fuel_type/fuel_type_search.php": {
+    "mtime": 1783707946.110586,
+    "ast_hash": "5af41bfd9b5bacd87750ce2bb2f37a03",
+    "semantic_hash": "5af41bfd9b5bacd87750ce2bb2f37a03"
+  },
+  "master_files/vehicle/gps_device/gps_device.js": {
+    "mtime": 1783707946.1108928,
+    "ast_hash": "ab485a0626921466a9752e7ae2e76c34",
+    "semantic_hash": "ab485a0626921466a9752e7ae2e76c34"
+  },
+  "master_files/vehicle/gps_device/gps_device.php": {
+    "mtime": 1783707946.1110725,
+    "ast_hash": "878f52a9321b4f70cf7d284e1a0249ab",
+    "semantic_hash": "878f52a9321b4f70cf7d284e1a0249ab"
+  },
+  "master_files/vehicle/gps_device/gps_device_data.php": {
+    "mtime": 1783707946.1112273,
+    "ast_hash": "72df40a201c94f50411c223da427ff5b",
+    "semantic_hash": "72df40a201c94f50411c223da427ff5b"
+  },
+  "master_files/vehicle/gps_device/gps_device_print.php": {
+    "mtime": 1783707946.1114118,
+    "ast_hash": "cd4908bd0e42e62c28fd0d3004735212",
+    "semantic_hash": "cd4908bd0e42e62c28fd0d3004735212"
+  },
+  "master_files/vehicle/gps_device/gps_device_search.js": {
+    "mtime": 1783707946.1115637,
+    "ast_hash": "5ee8117f7ebd8784247903b950042ad6",
+    "semantic_hash": "5ee8117f7ebd8784247903b950042ad6"
+  },
+  "master_files/vehicle/gps_device/gps_device_search.php": {
+    "mtime": 1783707946.111728,
+    "ast_hash": "6689180d19b3ee145dbcd0c6dc6895ee",
+    "semantic_hash": "6689180d19b3ee145dbcd0c6dc6895ee"
+  },
+  "master_files/vehicle/maintenance_type/maintenance_type.js": {
+    "mtime": 1783707946.1120222,
+    "ast_hash": "2351ca208bc824e4c7ec143c5c407de2",
+    "semantic_hash": "2351ca208bc824e4c7ec143c5c407de2"
+  },
+  "master_files/vehicle/maintenance_type/maintenance_type.php": {
+    "mtime": 1783707946.1122043,
+    "ast_hash": "62cc9dd4ad1275deafeb91cb774f2a39",
+    "semantic_hash": "62cc9dd4ad1275deafeb91cb774f2a39"
+  },
+  "master_files/vehicle/maintenance_type/maintenance_type_data.php": {
+    "mtime": 1783707946.1123567,
+    "ast_hash": "8382c4ef54719fa14b5b6adb3c82fb28",
+    "semantic_hash": "8382c4ef54719fa14b5b6adb3c82fb28"
+  },
+  "master_files/vehicle/maintenance_type/maintenance_type_print.php": {
+    "mtime": 1783707946.1125257,
+    "ast_hash": "86abf42194267c2ff52bb64fa176b97c",
+    "semantic_hash": "86abf42194267c2ff52bb64fa176b97c"
+  },
+  "master_files/vehicle/maintenance_type/maintenance_type_search.js": {
+    "mtime": 1783707946.1127067,
+    "ast_hash": "081f874b0e8e96165cdec75a012fe2ac",
+    "semantic_hash": "081f874b0e8e96165cdec75a012fe2ac"
+  },
+  "master_files/vehicle/maintenance_type/maintenance_type_search.php": {
+    "mtime": 1783707946.112865,
+    "ast_hash": "69562b9c8e0a564c7f3fff76a8dbaf64",
+    "semantic_hash": "69562b9c8e0a564c7f3fff76a8dbaf64"
+  },
+  "master_files/vehicle/vehicle_brand/vehicle_brand.js": {
+    "mtime": 1783707946.1131294,
+    "ast_hash": "4413ef52e467f0580449d0915d22b8eb",
+    "semantic_hash": "4413ef52e467f0580449d0915d22b8eb"
+  },
+  "master_files/vehicle/vehicle_brand/vehicle_brand.php": {
+    "mtime": 1783707946.1132896,
+    "ast_hash": "948372b284cf793ab8220a9f73b1ba8f",
+    "semantic_hash": "948372b284cf793ab8220a9f73b1ba8f"
+  },
+  "master_files/vehicle/vehicle_brand/vehicle_brand_data.php": {
+    "mtime": 1783707946.1134362,
+    "ast_hash": "292d366a27101161d28eaef554b72ffa",
+    "semantic_hash": "292d366a27101161d28eaef554b72ffa"
+  },
+  "master_files/vehicle/vehicle_brand/vehicle_brand_print.php": {
+    "mtime": 1783707946.1136093,
+    "ast_hash": "5a1611665b1cfdc5356b4eccf31f8e3c",
+    "semantic_hash": "5a1611665b1cfdc5356b4eccf31f8e3c"
+  },
+  "master_files/vehicle/vehicle_brand/vehicle_brand_search.js": {
+    "mtime": 1783707946.1137931,
+    "ast_hash": "578da502446baea7b99691441bcb83dd",
+    "semantic_hash": "578da502446baea7b99691441bcb83dd"
+  },
+  "master_files/vehicle/vehicle_brand/vehicle_brand_search.php": {
+    "mtime": 1783707946.1139438,
+    "ast_hash": "590dfe40c310c1068003fc322948d926",
+    "semantic_hash": "590dfe40c310c1068003fc322948d926"
+  },
+  "master_files/vehicle/vehicle_document_types/vehicle_document_types.js": {
+    "mtime": 1783707946.1142085,
+    "ast_hash": "1baddbca541b3e1027bb60c7117ec16b",
+    "semantic_hash": "1baddbca541b3e1027bb60c7117ec16b"
+  },
+  "master_files/vehicle/vehicle_document_types/vehicle_document_types.php": {
+    "mtime": 1783707946.114397,
+    "ast_hash": "f1abd730c5cf6313be03244c52160466",
+    "semantic_hash": "f1abd730c5cf6313be03244c52160466"
+  },
+  "master_files/vehicle/vehicle_document_types/vehicle_document_types_data.php": {
+    "mtime": 1783707946.1145573,
+    "ast_hash": "cc9b76eae8b7b45ebc51e782351998ef",
+    "semantic_hash": "cc9b76eae8b7b45ebc51e782351998ef"
+  },
+  "master_files/vehicle/vehicle_document_types/vehicle_document_types_print.php": {
+    "mtime": 1783707946.114803,
+    "ast_hash": "b15c02c40f51dde3e508002e2e40c08c",
+    "semantic_hash": "b15c02c40f51dde3e508002e2e40c08c"
+  },
+  "master_files/vehicle/vehicle_document_types/vehicle_document_types_search.js": {
+    "mtime": 1783707946.1150308,
+    "ast_hash": "ae0c792a71450063ba03af660559b7d5",
+    "semantic_hash": "ae0c792a71450063ba03af660559b7d5"
+  },
+  "master_files/vehicle/vehicle_document_types/vehicle_document_types_search.php": {
+    "mtime": 1783707946.1152174,
+    "ast_hash": "0ec6d345f22e157a043935d0b3a7c2a2",
+    "semantic_hash": "0ec6d345f22e157a043935d0b3a7c2a2"
+  },
+  "master_files/vehicle/vehicle_model/vehicle_model.js": {
+    "mtime": 1783707946.1155412,
+    "ast_hash": "cb75548b5202bdfec8a1c5976cfa3b15",
+    "semantic_hash": "cb75548b5202bdfec8a1c5976cfa3b15"
+  },
+  "master_files/vehicle/vehicle_model/vehicle_model.php": {
+    "mtime": 1783707946.115775,
+    "ast_hash": "384946a4dbb7d8d97c2e8ec2792308ad",
+    "semantic_hash": "384946a4dbb7d8d97c2e8ec2792308ad"
+  },
+  "master_files/vehicle/vehicle_model/vehicle_model_data.php": {
+    "mtime": 1783707946.115967,
+    "ast_hash": "2f7999db4dcaff31b7fe0352ec9f2152",
+    "semantic_hash": "2f7999db4dcaff31b7fe0352ec9f2152"
+  },
+  "master_files/vehicle/vehicle_model/vehicle_model_print.php": {
+    "mtime": 1783707946.1161392,
+    "ast_hash": "052548aa45612e9d7a5b4293475679f3",
+    "semantic_hash": "052548aa45612e9d7a5b4293475679f3"
+  },
+  "master_files/vehicle/vehicle_model/vehicle_model_search.js": {
+    "mtime": 1783707946.1162925,
+    "ast_hash": "969d286467ecada892c990026ff304ac",
+    "semantic_hash": "969d286467ecada892c990026ff304ac"
+  },
+  "master_files/vehicle/vehicle_model/vehicle_model_search.php": {
+    "mtime": 1783707946.1164947,
+    "ast_hash": "c0f34db9580464856a66a4cfbcf1352f",
+    "semantic_hash": "c0f34db9580464856a66a4cfbcf1352f"
+  },
+  "master_files/vehicle/vehicle_type/vehicle_type.js": {
+    "mtime": 1783707946.116799,
+    "ast_hash": "79b47fa2a9b3c7fe556ef1d4bc363d7f",
+    "semantic_hash": "79b47fa2a9b3c7fe556ef1d4bc363d7f"
+  },
+  "master_files/vehicle/vehicle_type/vehicle_type.php": {
+    "mtime": 1783707946.1169941,
+    "ast_hash": "07f630a7c7ed1583a5aef08c513cc90d",
+    "semantic_hash": "07f630a7c7ed1583a5aef08c513cc90d"
+  },
+  "master_files/vehicle/vehicle_type/vehicle_type_data.php": {
+    "mtime": 1783707946.1171753,
+    "ast_hash": "3ab10e153c29e4490d7cde3194f3e708",
+    "semantic_hash": "3ab10e153c29e4490d7cde3194f3e708"
+  },
+  "master_files/vehicle/vehicle_type/vehicle_type_print.php": {
+    "mtime": 1783707946.1173823,
+    "ast_hash": "dca1d30a550f1e1d24ac3673fe38b4a6",
+    "semantic_hash": "dca1d30a550f1e1d24ac3673fe38b4a6"
+  },
+  "master_files/vehicle/vehicle_type/vehicle_type_search.js": {
+    "mtime": 1783707946.1175473,
+    "ast_hash": "c1c6a191a84613b56852c47886b8168a",
+    "semantic_hash": "c1c6a191a84613b56852c47886b8168a"
+  },
+  "master_files/vehicle/vehicle_type/vehicle_type_search.php": {
+    "mtime": 1783707946.117707,
+    "ast_hash": "bf565c5d2c00d39976a29875cebeb6f9",
+    "semantic_hash": "bf565c5d2c00d39976a29875cebeb6f9"
+  },
+  "operations/event_planning/event_calendar/event_calendar.js": {
+    "mtime": 1783718522.1338935,
+    "ast_hash": "399b0fa431afe388c40c06b14db6a5d2",
+    "semantic_hash": "399b0fa431afe388c40c06b14db6a5d2"
+  },
+  "operations/event_planning/event_calendar/event_calendar.php": {
+    "mtime": 1783718500.974397,
+    "ast_hash": "86d3c177e59e086ce79db53c4c185b7e",
+    "semantic_hash": "86d3c177e59e086ce79db53c4c185b7e"
+  },
+  "operations/event_planning/event_calendar/event_calendar_data.php": {
+    "mtime": 1783718479.5694551,
+    "ast_hash": "d53b9bb1eb9ab350dcb2fbff28ae046f",
+    "semantic_hash": "d53b9bb1eb9ab350dcb2fbff28ae046f"
+  },
+  "operations/event_planning/site_visit/site_visit.js": {
+    "mtime": 1783718326.3316221,
+    "ast_hash": "0e99d5ba002d33aef519f99ce338d68a",
+    "semantic_hash": "0e99d5ba002d33aef519f99ce338d68a"
+  },
+  "operations/event_planning/site_visit/site_visit.php": {
+    "mtime": 1783718295.6443746,
+    "ast_hash": "8c08eb611dcddd20514a8fd74c8a554c",
+    "semantic_hash": "8c08eb611dcddd20514a8fd74c8a554c"
+  },
+  "operations/event_planning/site_visit/site_visit_data.php": {
+    "mtime": 1783718304.4078352,
+    "ast_hash": "1aa087e19986f8f928c79dd0d1c02d46",
+    "semantic_hash": "1aa087e19986f8f928c79dd0d1c02d46"
+  },
+  "operations/event_planning/site_visit/site_visit_print.php": {
+    "mtime": 1783718346.2689972,
+    "ast_hash": "1a4ffe4b1ed7ead066499a648981f7b4",
+    "semantic_hash": "1a4ffe4b1ed7ead066499a648981f7b4"
+  },
+  "operations/event_planning/site_visit/site_visit_search.js": {
+    "mtime": 1783718342.2014022,
+    "ast_hash": "eb9db491d82144fb3a119a996bb652d8",
+    "semantic_hash": "eb9db491d82144fb3a119a996bb652d8"
+  },
+  "operations/event_planning/site_visit/site_visit_search.php": {
+    "mtime": 1783718335.0536964,
+    "ast_hash": "afcbbb7a4f0b7e04721d7c4f842a2764",
+    "semantic_hash": "afcbbb7a4f0b7e04721d7c4f842a2764"
+  },
+  "operations/expenses/cash_flow/cash_flow.js": {
+    "mtime": 1783707946.1182535,
+    "ast_hash": "a043567e114e11f18038e0f92fd9e8c4",
+    "semantic_hash": "a043567e114e11f18038e0f92fd9e8c4"
+  },
+  "operations/expenses/cash_flow/cash_flow.php": {
+    "mtime": 1783707946.118427,
+    "ast_hash": "040c1bd5272d8f1ad1dbde9ae9955de2",
+    "semantic_hash": "040c1bd5272d8f1ad1dbde9ae9955de2"
+  },
+  "operations/expenses/cash_flow/cash_flow_data.php": {
+    "mtime": 1783707946.118599,
+    "ast_hash": "ad459b1c3e94d61951b95ca7d47b970f",
+    "semantic_hash": "ad459b1c3e94d61951b95ca7d47b970f"
+  },
+  "operations/expenses/cash_flow/cash_flow_print.php": {
+    "mtime": 1783707946.1187668,
+    "ast_hash": "406f1ee0f15182fdfb6d64f27586bb27",
+    "semantic_hash": "406f1ee0f15182fdfb6d64f27586bb27"
+  },
+  "operations/expenses/cash_flow/cash_flow_search.js": {
+    "mtime": 1783707946.1189613,
+    "ast_hash": "aeeb814e325a1c66d336c73754f9c697",
+    "semantic_hash": "aeeb814e325a1c66d336c73754f9c697"
+  },
+  "operations/expenses/cash_flow/cash_flow_search.php": {
+    "mtime": 1783707946.119163,
+    "ast_hash": "f790a6194477655d95c3e80476044ec1",
+    "semantic_hash": "f790a6194477655d95c3e80476044ec1"
+  },
+  "operations/expenses/fuel_entry/fuel_entry.js": {
+    "mtime": 1783707946.1194606,
+    "ast_hash": "3a62b4b7446398cdbebb9d8d7839db06",
+    "semantic_hash": "3a62b4b7446398cdbebb9d8d7839db06"
+  },
+  "operations/expenses/fuel_entry/fuel_entry.php": {
+    "mtime": 1783707946.119675,
+    "ast_hash": "ff97d6878c81a21bfb9c517994101d04",
+    "semantic_hash": "ff97d6878c81a21bfb9c517994101d04"
+  },
+  "operations/expenses/fuel_entry/fuel_entry_data.php": {
+    "mtime": 1783707946.1198711,
+    "ast_hash": "94218da8de56044e7a3b1ec746ac7fab",
+    "semantic_hash": "94218da8de56044e7a3b1ec746ac7fab"
+  },
+  "operations/expenses/fuel_entry/fuel_entry_print.php": {
+    "mtime": 1783707946.1200821,
+    "ast_hash": "ae97e058ef03e0a83bc1d260daf176d8",
+    "semantic_hash": "ae97e058ef03e0a83bc1d260daf176d8"
+  },
+  "operations/expenses/fuel_entry/fuel_entry_search.js": {
+    "mtime": 1783707946.1202466,
+    "ast_hash": "7a13fd5520a519023b6c4a7e18bbb480",
+    "semantic_hash": "7a13fd5520a519023b6c4a7e18bbb480"
+  },
+  "operations/expenses/fuel_entry/fuel_entry_search.php": {
+    "mtime": 1783707946.1205168,
+    "ast_hash": "79e9fe15e30a41b09df6c5300380d522",
+    "semantic_hash": "79e9fe15e30a41b09df6c5300380d522"
+  },
+  "operations/expenses/general_expense_entry/general_expense_entry.js": {
+    "mtime": 1783707946.12091,
+    "ast_hash": "e55884635619488b1f2bbd2f568366b1",
+    "semantic_hash": "e55884635619488b1f2bbd2f568366b1"
+  },
+  "operations/expenses/general_expense_entry/general_expense_entry.php": {
+    "mtime": 1783707946.1210897,
+    "ast_hash": "19093f77fa3994312b2ea0983b5793f2",
+    "semantic_hash": "19093f77fa3994312b2ea0983b5793f2"
+  },
+  "operations/expenses/general_expense_entry/general_expense_entry_data.php": {
+    "mtime": 1783707946.1213832,
+    "ast_hash": "ccb55a692382031b52734d913ab803d9",
+    "semantic_hash": "ccb55a692382031b52734d913ab803d9"
+  },
+  "operations/expenses/general_expense_entry/general_expense_entry_print.php": {
+    "mtime": 1783707946.121569,
+    "ast_hash": "8cd68925cd2d1579105047227f8c4e9b",
+    "semantic_hash": "8cd68925cd2d1579105047227f8c4e9b"
+  },
+  "operations/expenses/general_expense_entry/general_expense_entry_search.js": {
+    "mtime": 1783707946.121729,
+    "ast_hash": "09cda0ece22d95db39448cf482bf59a3",
+    "semantic_hash": "09cda0ece22d95db39448cf482bf59a3"
+  },
+  "operations/expenses/general_expense_entry/general_expense_entry_search.php": {
+    "mtime": 1783707946.1219108,
+    "ast_hash": "b9ace54d2978c5e4db4efeb27fa2e44a",
+    "semantic_hash": "b9ace54d2978c5e4db4efeb27fa2e44a"
+  },
+  "operations/expenses/vehicle_expense_entry/vehicle_expense_entry.js": {
+    "mtime": 1783707946.1222534,
+    "ast_hash": "4bc0d4d2ccfb034b59f4a960b7a7abea",
+    "semantic_hash": "4bc0d4d2ccfb034b59f4a960b7a7abea"
+  },
+  "operations/expenses/vehicle_expense_entry/vehicle_expense_entry.php": {
+    "mtime": 1783707946.1224303,
+    "ast_hash": "daf5162029a769fc3a9466dfe3dcb1cf",
+    "semantic_hash": "daf5162029a769fc3a9466dfe3dcb1cf"
+  },
+  "operations/expenses/vehicle_expense_entry/vehicle_expense_entry_data.php": {
+    "mtime": 1783707946.1225939,
+    "ast_hash": "5cfc3b7d28bcb2a3b77791367df79848",
+    "semantic_hash": "5cfc3b7d28bcb2a3b77791367df79848"
+  },
+  "operations/expenses/vehicle_expense_entry/vehicle_expense_entry_print.php": {
+    "mtime": 1783707946.1227984,
+    "ast_hash": "e3c41a71ef5f6488f94df2c718e9717e",
+    "semantic_hash": "e3c41a71ef5f6488f94df2c718e9717e"
+  },
+  "operations/expenses/vehicle_expense_entry/vehicle_expense_entry_search.js": {
+    "mtime": 1783707946.122986,
+    "ast_hash": "95eaba0fddae899fb96e288346131eaf",
+    "semantic_hash": "95eaba0fddae899fb96e288346131eaf"
+  },
+  "operations/expenses/vehicle_expense_entry/vehicle_expense_entry_search.php": {
+    "mtime": 1783707946.1231833,
+    "ast_hash": "7d75cd0ceb10b51403ae0ec65c03a2ab",
+    "semantic_hash": "7d75cd0ceb10b51403ae0ec65c03a2ab"
+  },
+  "operations/fleet_maintenance/vehicle_documents/vehicle_documents.js": {
+    "mtime": 1783707946.123586,
+    "ast_hash": "dbe12e8e6632a06fcae7655f1bc2ec7b",
+    "semantic_hash": "dbe12e8e6632a06fcae7655f1bc2ec7b"
+  },
+  "operations/fleet_maintenance/vehicle_documents/vehicle_documents.php": {
+    "mtime": 1783707946.1237566,
+    "ast_hash": "bb296411cb6d7c6d3fbed82a367ea072",
+    "semantic_hash": "bb296411cb6d7c6d3fbed82a367ea072"
+  },
+  "operations/fleet_maintenance/vehicle_documents/vehicle_documents_data.php": {
+    "mtime": 1783707946.1239247,
+    "ast_hash": "c8fc0cd3bffe55e6a2545c1384a893f5",
+    "semantic_hash": "c8fc0cd3bffe55e6a2545c1384a893f5"
+  },
+  "operations/fleet_maintenance/vehicle_documents/vehicle_documents_print.php": {
+    "mtime": 1783707946.1240842,
+    "ast_hash": "67e19594b82546ea92460d31f0b16514",
+    "semantic_hash": "67e19594b82546ea92460d31f0b16514"
+  },
+  "operations/fleet_maintenance/vehicle_documents/vehicle_documents_search.js": {
+    "mtime": 1783707946.124255,
+    "ast_hash": "390b32bfc79d85dc381729a87ab051f9",
+    "semantic_hash": "390b32bfc79d85dc381729a87ab051f9"
+  },
+  "operations/fleet_maintenance/vehicle_documents/vehicle_documents_search.php": {
+    "mtime": 1783707946.1245573,
+    "ast_hash": "3b0ef82852bfe5be36df847a4be8f267",
+    "semantic_hash": "3b0ef82852bfe5be36df847a4be8f267"
+  },
+  "operations/fleet_maintenance/vehicle_gps/vehicle_gps.js": {
+    "mtime": 1783707946.124848,
+    "ast_hash": "eacd83687cedd269899e1d24e5dce9c7",
+    "semantic_hash": "eacd83687cedd269899e1d24e5dce9c7"
+  },
+  "operations/fleet_maintenance/vehicle_gps/vehicle_gps.php": {
+    "mtime": 1783707946.1250553,
+    "ast_hash": "e844b2382644014622835f928b3cd634",
+    "semantic_hash": "e844b2382644014622835f928b3cd634"
+  },
+  "operations/fleet_maintenance/vehicle_gps/vehicle_gps_data.php": {
+    "mtime": 1783707946.125195,
+    "ast_hash": "dfa57fa7bb2ba7202b005818f31de985",
+    "semantic_hash": "dfa57fa7bb2ba7202b005818f31de985"
+  },
+  "operations/fleet_maintenance/vehicle_gps/vehicle_gps_print.php": {
+    "mtime": 1783707946.1253629,
+    "ast_hash": "d7847131fca9c45b0ec0e133897401cf",
+    "semantic_hash": "d7847131fca9c45b0ec0e133897401cf"
+  },
+  "operations/fleet_maintenance/vehicle_gps/vehicle_gps_search.js": {
+    "mtime": 1783707946.125578,
+    "ast_hash": "16233841e85872a60ec759f93d70bcd6",
+    "semantic_hash": "16233841e85872a60ec759f93d70bcd6"
+  },
+  "operations/fleet_maintenance/vehicle_gps/vehicle_gps_search.php": {
+    "mtime": 1783707946.1258197,
+    "ast_hash": "80fb5d79e52cf7558e21d487a3671c0e",
+    "semantic_hash": "80fb5d79e52cf7558e21d487a3671c0e"
+  },
+  "operations/fleet_maintenance/vehicle_maintenance/vehicle_maintenance.js": {
+    "mtime": 1783707946.1261635,
+    "ast_hash": "3eb97e412a228a14c68d3c33aeccc595",
+    "semantic_hash": "3eb97e412a228a14c68d3c33aeccc595"
+  },
+  "operations/fleet_maintenance/vehicle_maintenance/vehicle_maintenance.php": {
+    "mtime": 1783707946.1263793,
+    "ast_hash": "b19daa80088d8291909e09834d2ecce5",
+    "semantic_hash": "b19daa80088d8291909e09834d2ecce5"
+  },
+  "operations/fleet_maintenance/vehicle_maintenance/vehicle_maintenance_data.php": {
+    "mtime": 1783707946.1265523,
+    "ast_hash": "180c4051ed9807a3004a7cd26c6a6fd5",
+    "semantic_hash": "180c4051ed9807a3004a7cd26c6a6fd5"
+  },
+  "operations/fleet_maintenance/vehicle_maintenance/vehicle_maintenance_print.php": {
+    "mtime": 1783707946.1267085,
+    "ast_hash": "ac475001bb7e587683023cc916996ff6",
+    "semantic_hash": "ac475001bb7e587683023cc916996ff6"
+  },
+  "operations/fleet_maintenance/vehicle_maintenance/vehicle_maintenance_search.js": {
+    "mtime": 1783707946.1269,
+    "ast_hash": "0db0641fe5fe495ef6c9b9729f177aef",
+    "semantic_hash": "0db0641fe5fe495ef6c9b9729f177aef"
+  },
+  "operations/fleet_maintenance/vehicle_maintenance/vehicle_maintenance_search.php": {
+    "mtime": 1783707946.12708,
+    "ast_hash": "e0d3ec8e95e801bacc5b5739fe9f8bbc",
+    "semantic_hash": "e0d3ec8e95e801bacc5b5739fe9f8bbc"
+  },
+  "operations/fleet_maintenance/vehicle_odometer_readings/vehicle_odometer_readings.js": {
+    "mtime": 1783707946.1273727,
+    "ast_hash": "8fa0b2a19215e6edc42a5810ec2ffd48",
+    "semantic_hash": "8fa0b2a19215e6edc42a5810ec2ffd48"
+  },
+  "operations/fleet_maintenance/vehicle_odometer_readings/vehicle_odometer_readings.php": {
+    "mtime": 1783707946.127629,
+    "ast_hash": "56f84e82bf2926d4ba22f05c48fadc10",
+    "semantic_hash": "56f84e82bf2926d4ba22f05c48fadc10"
+  },
+  "operations/fleet_maintenance/vehicle_odometer_readings/vehicle_odometer_readings_data.php": {
+    "mtime": 1783707946.1278474,
+    "ast_hash": "3ff6028a90af88c2b6558613bd1b9de2",
+    "semantic_hash": "3ff6028a90af88c2b6558613bd1b9de2"
+  },
+  "operations/fleet_maintenance/vehicle_odometer_readings/vehicle_odometer_readings_print.php": {
+    "mtime": 1783707946.128006,
+    "ast_hash": "738b7d6799d93769f48527a18552f483",
+    "semantic_hash": "738b7d6799d93769f48527a18552f483"
+  },
+  "operations/fleet_maintenance/vehicle_odometer_readings/vehicle_odometer_readings_search.js": {
+    "mtime": 1783707946.1281962,
+    "ast_hash": "3b962ab590fb6f8ef9cf555fde699f53",
+    "semantic_hash": "3b962ab590fb6f8ef9cf555fde699f53"
+  },
+  "operations/fleet_maintenance/vehicle_odometer_readings/vehicle_odometer_readings_search.php": {
+    "mtime": 1783707946.1283808,
+    "ast_hash": "805d66286ec741164f45c1f4f2d87282",
+    "semantic_hash": "805d66286ec741164f45c1f4f2d87282"
+  },
+  "operations/quotations/quotation_entries/quotation_entries.js": {
+    "mtime": 1783707946.1288202,
+    "ast_hash": "20da5ba97707e60eb7061ced12da43ae",
+    "semantic_hash": "20da5ba97707e60eb7061ced12da43ae"
+  },
+  "operations/quotations/quotation_entries/quotation_entries.php": {
+    "mtime": 1783707946.1290133,
+    "ast_hash": "4cb02accc9117f672c04621c65ec9b69",
+    "semantic_hash": "4cb02accc9117f672c04621c65ec9b69"
+  },
+  "operations/quotations/quotation_entries/quotation_entries_data.php": {
+    "mtime": 1783707946.1291823,
+    "ast_hash": "90324ceb88478d501941070be229bf03",
+    "semantic_hash": "90324ceb88478d501941070be229bf03"
+  },
+  "operations/quotations/quotation_entries/quotation_entries_print.php": {
+    "mtime": 1783707946.1293862,
+    "ast_hash": "f7a64c2c24262ce9a0df8ab18a100b64",
+    "semantic_hash": "f7a64c2c24262ce9a0df8ab18a100b64"
+  },
+  "operations/quotations/quotation_entries/quotation_entries_search.js": {
+    "mtime": 1783707946.1295862,
+    "ast_hash": "408d7e850f30fb4e44ca5a0f78afc643",
+    "semantic_hash": "408d7e850f30fb4e44ca5a0f78afc643"
+  },
+  "operations/quotations/quotation_entries/quotation_entries_search.php": {
+    "mtime": 1783707946.1298063,
+    "ast_hash": "31dc88ea21128b61994ae4d362fd2a07",
+    "semantic_hash": "31dc88ea21128b61994ae4d362fd2a07"
+  },
+  "operations/quotations/quotation_resources/quotation_resources.js": {
+    "mtime": 1783707946.1301007,
+    "ast_hash": "db5a19806244a55e021137f75b7a4f2e",
+    "semantic_hash": "db5a19806244a55e021137f75b7a4f2e"
+  },
+  "operations/quotations/quotation_resources/quotation_resources.php": {
+    "mtime": 1783707946.1302848,
+    "ast_hash": "cb40eb0b86da38835834440e681ee048",
+    "semantic_hash": "cb40eb0b86da38835834440e681ee048"
+  },
+  "operations/quotations/quotation_resources/quotation_resources_data.php": {
+    "mtime": 1783707946.1304748,
+    "ast_hash": "c617bbcd9203b973647f9094e90464eb",
+    "semantic_hash": "c617bbcd9203b973647f9094e90464eb"
+  },
+  "operations/quotations/quotation_resources/quotation_resources_print.php": {
+    "mtime": 1783707946.1306465,
+    "ast_hash": "91c1109cf645cc2120fb69134d88858b",
+    "semantic_hash": "91c1109cf645cc2120fb69134d88858b"
+  },
+  "operations/quotations/quotation_resources/quotation_resources_search.js": {
+    "mtime": 1783707946.1308222,
+    "ast_hash": "0adaccd774379346d51ba1b2a08503c8",
+    "semantic_hash": "0adaccd774379346d51ba1b2a08503c8"
+  },
+  "operations/quotations/quotation_resources/quotation_resources_search.php": {
+    "mtime": 1783707946.1310036,
+    "ast_hash": "5d6dabf8db647e8e1b57e44d4cc1a32d",
+    "semantic_hash": "5d6dabf8db647e8e1b57e44d4cc1a32d"
+  },
+  "operations/staff_payroll/cleaner_salary_settlement/cleaner_salary_settlement.js": {
+    "mtime": 1783707946.1314447,
+    "ast_hash": "7365722c312d7a199b09cf8387061db6",
+    "semantic_hash": "7365722c312d7a199b09cf8387061db6"
+  },
+  "operations/staff_payroll/cleaner_salary_settlement/cleaner_salary_settlement.php": {
+    "mtime": 1783707946.131647,
+    "ast_hash": "9f467718305b8c35f1cd7e8cf32088dd",
+    "semantic_hash": "9f467718305b8c35f1cd7e8cf32088dd"
+  },
+  "operations/staff_payroll/cleaner_salary_settlement/cleaner_salary_settlement_data.php": {
+    "mtime": 1783707946.1318572,
+    "ast_hash": "a48794f3271a7a7e9bef2f96798eb9cc",
+    "semantic_hash": "a48794f3271a7a7e9bef2f96798eb9cc"
+  },
+  "operations/staff_payroll/cleaner_salary_settlement/cleaner_salary_settlement_print.php": {
+    "mtime": 1783707946.132093,
+    "ast_hash": "e66f9246e5f4a4b6d02c7f6072420cd1",
+    "semantic_hash": "e66f9246e5f4a4b6d02c7f6072420cd1"
+  },
+  "operations/staff_payroll/cleaner_salary_settlement/cleaner_salary_settlement_search.js": {
+    "mtime": 1783707946.1322584,
+    "ast_hash": "b517557ade0c3e49858bfefb5beea04c",
+    "semantic_hash": "b517557ade0c3e49858bfefb5beea04c"
+  },
+  "operations/staff_payroll/cleaner_salary_settlement/cleaner_salary_settlement_search.php": {
+    "mtime": 1783707946.1324074,
+    "ast_hash": "d986f48602ce65215a50a264eda5b225",
+    "semantic_hash": "d986f48602ce65215a50a264eda5b225"
+  },
+  "operations/staff_payroll/deduction/deduction.js": {
+    "mtime": 1783707946.1327364,
+    "ast_hash": "11462dd6ad00041adb8d68efafd851de",
+    "semantic_hash": "11462dd6ad00041adb8d68efafd851de"
+  },
+  "operations/staff_payroll/deduction/deduction.php": {
+    "mtime": 1783707946.1329618,
+    "ast_hash": "27399156d90f85e8a2d9e423d1ab02c4",
+    "semantic_hash": "27399156d90f85e8a2d9e423d1ab02c4"
+  },
+  "operations/staff_payroll/deduction/deduction_data.php": {
+    "mtime": 1783707946.1331625,
+    "ast_hash": "036c8beb4a548a31242f5815b014b6c4",
+    "semantic_hash": "036c8beb4a548a31242f5815b014b6c4"
+  },
+  "operations/staff_payroll/deduction/deduction_print.php": {
+    "mtime": 1783707946.133345,
+    "ast_hash": "35706060f12283930e71db7a0ffabf7b",
+    "semantic_hash": "35706060f12283930e71db7a0ffabf7b"
+  },
+  "operations/staff_payroll/deduction/deduction_search.js": {
+    "mtime": 1783707946.1335325,
+    "ast_hash": "687f324ec36397816b946a84648e7dbf",
+    "semantic_hash": "687f324ec36397816b946a84648e7dbf"
+  },
+  "operations/staff_payroll/deduction/deduction_search.php": {
+    "mtime": 1783707946.1337552,
+    "ast_hash": "b7d98067a7c035b61261aeec2485a1d8",
+    "semantic_hash": "b7d98067a7c035b61261aeec2485a1d8"
+  },
+  "operations/staff_payroll/driver_salary_settlement/driver_salary_settlement.js": {
+    "mtime": 1783707946.1340811,
+    "ast_hash": "fd4f55e39801e62b9014c90c97143c84",
+    "semantic_hash": "fd4f55e39801e62b9014c90c97143c84"
+  },
+  "operations/staff_payroll/driver_salary_settlement/driver_salary_settlement.php": {
+    "mtime": 1783707946.1342406,
+    "ast_hash": "1dd4bcc6890cdbbcbea689a7e82528f2",
+    "semantic_hash": "1dd4bcc6890cdbbcbea689a7e82528f2"
+  },
+  "operations/staff_payroll/driver_salary_settlement/driver_salary_settlement_data.php": {
+    "mtime": 1783707946.134427,
+    "ast_hash": "ffb6b26feb444c4d1ea45e194fe8b942",
+    "semantic_hash": "ffb6b26feb444c4d1ea45e194fe8b942"
+  },
+  "operations/staff_payroll/driver_salary_settlement/driver_salary_settlement_print.php": {
+    "mtime": 1783707946.1346002,
+    "ast_hash": "90260f96a74dc65194ba255a8baa16ab",
+    "semantic_hash": "90260f96a74dc65194ba255a8baa16ab"
+  },
+  "operations/staff_payroll/driver_salary_settlement/driver_salary_settlement_search.js": {
+    "mtime": 1783707946.134759,
+    "ast_hash": "37838e1042e05d442eb51c4c3158b37a",
+    "semantic_hash": "37838e1042e05d442eb51c4c3158b37a"
+  },
+  "operations/staff_payroll/driver_salary_settlement/driver_salary_settlement_search.php": {
+    "mtime": 1783707946.1349454,
+    "ast_hash": "48d3acc3f49297f69216211606594255",
+    "semantic_hash": "48d3acc3f49297f69216211606594255"
+  },
+  "operations/staff_payroll/employee_advance/employee_advance.js": {
+    "mtime": 1783707946.1352336,
+    "ast_hash": "f3b657006b853bd21a9d41f3973d9d13",
+    "semantic_hash": "f3b657006b853bd21a9d41f3973d9d13"
+  },
+  "operations/staff_payroll/employee_advance/employee_advance.php": {
+    "mtime": 1783707946.1354718,
+    "ast_hash": "5613b0d073519258485c99d526d8d52f",
+    "semantic_hash": "5613b0d073519258485c99d526d8d52f"
+  },
+  "operations/staff_payroll/employee_advance/employee_advance_data.php": {
+    "mtime": 1783707946.1357048,
+    "ast_hash": "03e7babeff31e1ddbb28074eb39c031f",
+    "semantic_hash": "03e7babeff31e1ddbb28074eb39c031f"
+  },
+  "operations/staff_payroll/employee_advance/employee_advance_print.php": {
+    "mtime": 1783707946.1358864,
+    "ast_hash": "8f170f7f194eb9b53bc56016e6d71cab",
+    "semantic_hash": "8f170f7f194eb9b53bc56016e6d71cab"
+  },
+  "operations/staff_payroll/employee_advance/employee_advance_search.js": {
+    "mtime": 1783707946.1360903,
+    "ast_hash": "5a38908f2a1aca18010e54c72e2ee6eb",
+    "semantic_hash": "5a38908f2a1aca18010e54c72e2ee6eb"
+  },
+  "operations/staff_payroll/employee_advance/employee_advance_search.php": {
+    "mtime": 1783707946.1362736,
+    "ast_hash": "25d404e52f45baa8cd2ffc1676fb8aaa",
+    "semantic_hash": "25d404e52f45baa8cd2ffc1676fb8aaa"
+  },
+  "operations/staff_payroll/loan/loan.js": {
+    "mtime": 1783707946.1366286,
+    "ast_hash": "97077a72bc6a72448234309bd0399078",
+    "semantic_hash": "97077a72bc6a72448234309bd0399078"
+  },
+  "operations/staff_payroll/loan/loan.php": {
+    "mtime": 1783707946.1368403,
+    "ast_hash": "cde7c0d59f2a8b60599dbb7019676190",
+    "semantic_hash": "cde7c0d59f2a8b60599dbb7019676190"
+  },
+  "operations/staff_payroll/loan/loan_data.php": {
+    "mtime": 1783707946.1370575,
+    "ast_hash": "0c57a7ba60b4739b6506b1f3767bfee5",
+    "semantic_hash": "0c57a7ba60b4739b6506b1f3767bfee5"
+  },
+  "operations/staff_payroll/loan/loan_print.php": {
+    "mtime": 1783707946.1373055,
+    "ast_hash": "9c73174e85cdbb3d872ef20c481ae800",
+    "semantic_hash": "9c73174e85cdbb3d872ef20c481ae800"
+  },
+  "operations/staff_payroll/loan/loan_search.js": {
+    "mtime": 1783707946.1374583,
+    "ast_hash": "658b57dd051301ea9ab813fb9248886c",
+    "semantic_hash": "658b57dd051301ea9ab813fb9248886c"
+  },
+  "operations/staff_payroll/loan/loan_search.php": {
+    "mtime": 1783707946.1376696,
+    "ast_hash": "3008db3de687d692c0931561e6570a49",
+    "semantic_hash": "3008db3de687d692c0931561e6570a49"
+  },
+  "operations/staff_payroll/payment_salary_disburse/payment_salary_disburse.js": {
+    "mtime": 1783707946.1379597,
+    "ast_hash": "dfbae4d81330dc03a007376f95092c0e",
+    "semantic_hash": "dfbae4d81330dc03a007376f95092c0e"
+  },
+  "operations/staff_payroll/payment_salary_disburse/payment_salary_disburse.php": {
+    "mtime": 1783707946.1381931,
+    "ast_hash": "88171249d4b7ea51b0b686ce0686351e",
+    "semantic_hash": "88171249d4b7ea51b0b686ce0686351e"
+  },
+  "operations/staff_payroll/payment_salary_disburse/payment_salary_disburse_data.php": {
+    "mtime": 1783707946.1384351,
+    "ast_hash": "68ca0c4069b4708e998c9462b4c6d2a9",
+    "semantic_hash": "68ca0c4069b4708e998c9462b4c6d2a9"
+  },
+  "operations/staff_payroll/payment_salary_disburse/payment_salary_disburse_print.php": {
+    "mtime": 1783707946.1386173,
+    "ast_hash": "120c1a8712cddbecead6bac674e61ad7",
+    "semantic_hash": "120c1a8712cddbecead6bac674e61ad7"
+  },
+  "operations/staff_payroll/payment_salary_disburse/payment_salary_disburse_search.js": {
+    "mtime": 1783707946.1387846,
+    "ast_hash": "78c82bb814a88be4216b604387e62381",
+    "semantic_hash": "78c82bb814a88be4216b604387e62381"
+  },
+  "operations/staff_payroll/payment_salary_disburse/payment_salary_disburse_search.php": {
+    "mtime": 1783707946.1389647,
+    "ast_hash": "fd36cc53a204175dd6d01ff52f6c0c7b",
+    "semantic_hash": "fd36cc53a204175dd6d01ff52f6c0c7b"
+  },
+  "operations/trip_management/trip_running_chart/trip_running_chart.js": {
+    "mtime": 1783711199.6051314,
+    "ast_hash": "c3e46bd660e57411ba15818724274288",
+    "semantic_hash": "c3e46bd660e57411ba15818724274288"
+  },
+  "operations/trip_management/trip_running_chart/trip_running_chart.php": {
+    "mtime": 1783711211.7419705,
+    "ast_hash": "5b9fea816f91adc4874e183e3e9ee429",
+    "semantic_hash": "5b9fea816f91adc4874e183e3e9ee429"
+  },
+  "operations/trip_management/trip_running_chart/trip_running_chart_data.php": {
+    "mtime": 1783707946.1397836,
+    "ast_hash": "42aee8f109f85fbe8e77860ae00175ad",
+    "semantic_hash": "42aee8f109f85fbe8e77860ae00175ad"
+  },
+  "operations/trip_management/trip_running_chart/trip_running_chart_print.php": {
+    "mtime": 1783707946.1399815,
+    "ast_hash": "699b911c80837bf732e7b068f7071e41",
+    "semantic_hash": "699b911c80837bf732e7b068f7071e41"
+  },
+  "operations/trip_management/trip_running_chart/trip_running_chart_search.js": {
+    "mtime": 1783707946.1401498,
+    "ast_hash": "27d29eb18bbebe121a1cb0ec2cf7dd2d",
+    "semantic_hash": "27d29eb18bbebe121a1cb0ec2cf7dd2d"
+  },
+  "operations/trip_management/trip_running_chart/trip_running_chart_search.php": {
+    "mtime": 1783707946.140498,
+    "ast_hash": "5e0d853003147f9660432e72a68c2e58",
+    "semantic_hash": "5e0d853003147f9660432e72a68c2e58"
+  },
+  "operations/work_orders/fleet_tracker/fleet_tracker.js": {
+    "mtime": 1783707946.1408877,
+    "ast_hash": "5065add18f314d30a925bcc8884586c6",
+    "semantic_hash": "5065add18f314d30a925bcc8884586c6"
+  },
+  "operations/work_orders/fleet_tracker/fleet_tracker.php": {
+    "mtime": 1783707946.1411624,
+    "ast_hash": "af8e231c168ebd57505e08df2196abb8",
+    "semantic_hash": "af8e231c168ebd57505e08df2196abb8"
+  },
+  "operations/work_orders/fleet_tracker/fleet_tracker_data.php": {
+    "mtime": 1783707946.141336,
+    "ast_hash": "9cb62308ec4a8dfbbb275803f5c01d87",
+    "semantic_hash": "9cb62308ec4a8dfbbb275803f5c01d87"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries.js": {
+    "mtime": 1783707946.1416125,
+    "ast_hash": "30d1d14562d46a31d539ec7810968e2d",
+    "semantic_hash": "30d1d14562d46a31d539ec7810968e2d"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries.php": {
+    "mtime": 1783707946.141825,
+    "ast_hash": "151aefc8a819190c5486b5d5526708b3",
+    "semantic_hash": "151aefc8a819190c5486b5d5526708b3"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries_data.php": {
+    "mtime": 1783707946.1419926,
+    "ast_hash": "eecc9354822c8e990ca3410397211a9d",
+    "semantic_hash": "eecc9354822c8e990ca3410397211a9d"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries_line_pickers.php": {
+    "mtime": 1783707946.1421459,
+    "ast_hash": "1fdfdbf13afacdc8b7e0f4c9706cd2de",
+    "semantic_hash": "1fdfdbf13afacdc8b7e0f4c9706cd2de"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries_print.php": {
+    "mtime": 1783707946.1423144,
+    "ast_hash": "833a1ba9d27e276a25883bb7b7aa9136",
+    "semantic_hash": "833a1ba9d27e276a25883bb7b7aa9136"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries_search.js": {
+    "mtime": 1783707946.1424847,
+    "ast_hash": "c60bd83fc7b69a5e0ec27870e8de6cdc",
+    "semantic_hash": "c60bd83fc7b69a5e0ec27870e8de6cdc"
+  },
+  "operations/work_orders/work_order_entries/work_order_entries_search.php": {
+    "mtime": 1783707946.142695,
+    "ast_hash": "75047b492f0a09bdcfea95ba2302d82b",
+    "semantic_hash": "75047b492f0a09bdcfea95ba2302d82b"
+  },
+  "reports/analytics_reports/highest_expense_vehicle/highest_expense_vehicle.js": {
+    "mtime": 1783707946.1432767,
+    "ast_hash": "f37877d79310305cc24e487912be321e",
+    "semantic_hash": "f37877d79310305cc24e487912be321e"
+  },
+  "reports/analytics_reports/highest_expense_vehicle/highest_expense_vehicle.php": {
+    "mtime": 1783707946.143515,
+    "ast_hash": "23ecd165eff099b0fe2ec9a4ba8eab0b",
+    "semantic_hash": "23ecd165eff099b0fe2ec9a4ba8eab0b"
+  },
+  "reports/analytics_reports/highest_expense_vehicle/highest_expense_vehicle_data.php": {
+    "mtime": 1783707946.1437204,
+    "ast_hash": "48845365f60ec4535f44ab03884142ff",
+    "semantic_hash": "48845365f60ec4535f44ab03884142ff"
+  },
+  "reports/analytics_reports/lowest_fuel_efficiency/lowest_fuel_efficiency.js": {
+    "mtime": 1783707946.1440165,
+    "ast_hash": "d633062d27ac59e40c1602e5e4442fa7",
+    "semantic_hash": "d633062d27ac59e40c1602e5e4442fa7"
+  },
+  "reports/analytics_reports/lowest_fuel_efficiency/lowest_fuel_efficiency.php": {
+    "mtime": 1783707946.1442041,
+    "ast_hash": "76ad13b77d8c2fff4f424c22d618af43",
+    "semantic_hash": "76ad13b77d8c2fff4f424c22d618af43"
+  },
+  "reports/analytics_reports/lowest_fuel_efficiency/lowest_fuel_efficiency_data.php": {
+    "mtime": 1783707946.144338,
+    "ast_hash": "c8f48b47cf58a8f00b66a8e800729b54",
+    "semantic_hash": "c8f48b47cf58a8f00b66a8e800729b54"
+  },
+  "reports/analytics_reports/profit_per_km/profit_per_km.js": {
+    "mtime": 1783707946.1446133,
+    "ast_hash": "cba39ff1bfea22fe8dbdeebfcd5ed6e3",
+    "semantic_hash": "cba39ff1bfea22fe8dbdeebfcd5ed6e3"
+  },
+  "reports/analytics_reports/profit_per_km/profit_per_km.php": {
+    "mtime": 1783707946.144817,
+    "ast_hash": "0d78b609f1b038cd576b420541a15290",
+    "semantic_hash": "0d78b609f1b038cd576b420541a15290"
+  },
+  "reports/analytics_reports/profit_per_km/profit_per_km_data.php": {
+    "mtime": 1783707946.1449916,
+    "ast_hash": "4b174330e8e5c92dfc7ae7209cd74425",
+    "semantic_hash": "4b174330e8e5c92dfc7ae7209cd74425"
+  },
+  "reports/analytics_reports/top_performing_driver/top_performing_driver.js": {
+    "mtime": 1783707946.1452773,
+    "ast_hash": "6ccdd57aeef39333ef4fcad51fda104b",
+    "semantic_hash": "6ccdd57aeef39333ef4fcad51fda104b"
+  },
+  "reports/analytics_reports/top_performing_driver/top_performing_driver.php": {
+    "mtime": 1783707946.1454508,
+    "ast_hash": "61969c898dfbdeb2be8f438cd57ec969",
+    "semantic_hash": "61969c898dfbdeb2be8f438cd57ec969"
+  },
+  "reports/analytics_reports/top_performing_driver/top_performing_driver_data.php": {
+    "mtime": 1783707946.145676,
+    "ast_hash": "ecfed58ed24381799c3b29db4797c8cf",
+    "semantic_hash": "ecfed58ed24381799c3b29db4797c8cf"
+  },
+  "reports/analytics_reports/top_performing_vehicle/top_performing_vehicle.js": {
+    "mtime": 1783707946.1459634,
+    "ast_hash": "daef839bb40f5a62eeaac166a65829ff",
+    "semantic_hash": "daef839bb40f5a62eeaac166a65829ff"
+  },
+  "reports/analytics_reports/top_performing_vehicle/top_performing_vehicle.php": {
+    "mtime": 1783707946.1461759,
+    "ast_hash": "fcde22760d625d25a55486eba29e5ede",
+    "semantic_hash": "fcde22760d625d25a55486eba29e5ede"
+  },
+  "reports/analytics_reports/top_performing_vehicle/top_performing_vehicle_data.php": {
+    "mtime": 1783707946.1463265,
+    "ast_hash": "7f1365f220183264bbbaf71da874734e",
+    "semantic_hash": "7f1365f220183264bbbaf71da874734e"
+  },
+  "reports/executive_reports/business_performance_summary/business_performance_summary.js": {
+    "mtime": 1783707946.1467445,
+    "ast_hash": "caa424c47ef906a275f59c041253534a",
+    "semantic_hash": "caa424c47ef906a275f59c041253534a"
+  },
+  "reports/executive_reports/business_performance_summary/business_performance_summary.php": {
+    "mtime": 1783707946.146988,
+    "ast_hash": "4349c6f895f0d7224e44d6f7595b2e42",
+    "semantic_hash": "4349c6f895f0d7224e44d6f7595b2e42"
+  },
+  "reports/executive_reports/business_performance_summary/business_performance_summary_data.php": {
+    "mtime": 1783707946.1471498,
+    "ast_hash": "d6ddc16fac1a9d1df4fba14dfbd2b8ff",
+    "semantic_hash": "d6ddc16fac1a9d1df4fba14dfbd2b8ff"
+  },
+  "reports/executive_reports/daily_business_snapshot/daily_business_snapshot.js": {
+    "mtime": 1783707946.1474814,
+    "ast_hash": "b2d5af9e3e0b58aeb77b4b24eccfe32d",
+    "semantic_hash": "b2d5af9e3e0b58aeb77b4b24eccfe32d"
+  },
+  "reports/executive_reports/daily_business_snapshot/daily_business_snapshot.php": {
+    "mtime": 1783707946.1476555,
+    "ast_hash": "699ec3385349c4747fa335839a40da36",
+    "semantic_hash": "699ec3385349c4747fa335839a40da36"
+  },
+  "reports/executive_reports/daily_business_snapshot/daily_business_snapshot_data.php": {
+    "mtime": 1783707946.1477945,
+    "ast_hash": "a36a6869af079f5ebfa0a5c2f9066ace",
+    "semantic_hash": "a36a6869af079f5ebfa0a5c2f9066ace"
+  },
+  "reports/financial_reports/cash_flow_statement/cash_flow_statement.js": {
+    "mtime": 1783707946.148192,
+    "ast_hash": "0970319779f730ad9d22d9c896b8e453",
+    "semantic_hash": "0970319779f730ad9d22d9c896b8e453"
+  },
+  "reports/financial_reports/cash_flow_statement/cash_flow_statement.php": {
+    "mtime": 1783707946.1484044,
+    "ast_hash": "f8604008a848a0aeb2f29689ae6e7766",
+    "semantic_hash": "f8604008a848a0aeb2f29689ae6e7766"
+  },
+  "reports/financial_reports/cash_flow_statement/cash_flow_statement_data.php": {
+    "mtime": 1783707946.1485727,
+    "ast_hash": "b6f8aa9bb0d51799170e954cd0d86078",
+    "semantic_hash": "b6f8aa9bb0d51799170e954cd0d86078"
+  },
+  "reports/financial_reports/expense_summary/expense_summary.js": {
+    "mtime": 1783707946.1488376,
+    "ast_hash": "efc3322e5eb960163a7a884056a51d04",
+    "semantic_hash": "efc3322e5eb960163a7a884056a51d04"
+  },
+  "reports/financial_reports/expense_summary/expense_summary.php": {
+    "mtime": 1783707946.149014,
+    "ast_hash": "c093999b46ae526a78ed4297e382516a",
+    "semantic_hash": "c093999b46ae526a78ed4297e382516a"
+  },
+  "reports/financial_reports/expense_summary/expense_summary_data.php": {
+    "mtime": 1783707946.1491637,
+    "ast_hash": "633e66767bece6b2e264369b33c4441c",
+    "semantic_hash": "633e66767bece6b2e264369b33c4441c"
+  },
+  "reports/financial_reports/expense_trend/expense_trend.js": {
+    "mtime": 1783707946.1494467,
+    "ast_hash": "f57092898358298a24aea36aa912b57a",
+    "semantic_hash": "f57092898358298a24aea36aa912b57a"
+  },
+  "reports/financial_reports/expense_trend/expense_trend.php": {
+    "mtime": 1783707946.1496387,
+    "ast_hash": "ebe95f0693981715bf0c1509a58b64fe",
+    "semantic_hash": "ebe95f0693981715bf0c1509a58b64fe"
+  },
+  "reports/financial_reports/expense_trend/expense_trend_data.php": {
+    "mtime": 1783707946.1497917,
+    "ast_hash": "bd38f5f3bd13c9d5e5eafe588b4f6678",
+    "semantic_hash": "bd38f5f3bd13c9d5e5eafe588b4f6678"
+  },
+  "reports/financial_reports/income_vs_expense/income_vs_expense.js": {
+    "mtime": 1783707946.1500745,
+    "ast_hash": "af269f96b8b122ad1411d0557182d621",
+    "semantic_hash": "af269f96b8b122ad1411d0557182d621"
+  },
+  "reports/financial_reports/income_vs_expense/income_vs_expense.php": {
+    "mtime": 1783707946.1502411,
+    "ast_hash": "25be1c73752cdbff5a643387a20c26df",
+    "semantic_hash": "25be1c73752cdbff5a643387a20c26df"
+  },
+  "reports/financial_reports/income_vs_expense/income_vs_expense_data.php": {
+    "mtime": 1783707946.150396,
+    "ast_hash": "eb06ba456734541765354a18e185ebb1",
+    "semantic_hash": "eb06ba456734541765354a18e185ebb1"
+  },
+  "reports/financial_reports/monthly_profit/monthly_profit.js": {
+    "mtime": 1783707946.1506598,
+    "ast_hash": "1c390b52a6e0c1c501fecf533703cccd",
+    "semantic_hash": "1c390b52a6e0c1c501fecf533703cccd"
+  },
+  "reports/financial_reports/monthly_profit/monthly_profit.php": {
+    "mtime": 1783707946.1508734,
+    "ast_hash": "a03de819dbad3739df4bc40d35646784",
+    "semantic_hash": "a03de819dbad3739df4bc40d35646784"
+  },
+  "reports/financial_reports/monthly_profit/monthly_profit_data.php": {
+    "mtime": 1783707946.1510332,
+    "ast_hash": "288ea8f26dfdc6f05e6f04b833752b91",
+    "semantic_hash": "288ea8f26dfdc6f05e6f04b833752b91"
+  },
+  "reports/financial_reports/revenue_trend/revenue_trend.js": {
+    "mtime": 1783707946.1513307,
+    "ast_hash": "392b251d6a73c60586487e0bed9cbeb3",
+    "semantic_hash": "392b251d6a73c60586487e0bed9cbeb3"
+  },
+  "reports/financial_reports/revenue_trend/revenue_trend.php": {
+    "mtime": 1783707946.1517215,
+    "ast_hash": "17bb27d2f6afd7ecd1eb874ac3d7852e",
+    "semantic_hash": "17bb27d2f6afd7ecd1eb874ac3d7852e"
+  },
+  "reports/financial_reports/revenue_trend/revenue_trend_data.php": {
+    "mtime": 1783707946.151926,
+    "ast_hash": "64373166c545957d399bcbfd9e150edd",
+    "semantic_hash": "64373166c545957d399bcbfd9e150edd"
+  },
+  "reports/fleet_reports/fuel_cost_trend/fuel_cost_trend.js": {
+    "mtime": 1783707946.152306,
+    "ast_hash": "0642ad1939fd1c30b095f624a14566e4",
+    "semantic_hash": "0642ad1939fd1c30b095f624a14566e4"
+  },
+  "reports/fleet_reports/fuel_cost_trend/fuel_cost_trend.php": {
+    "mtime": 1783707946.1524882,
+    "ast_hash": "5d6d1b0b035033f6b213f6ce9f76a57e",
+    "semantic_hash": "5d6d1b0b035033f6b213f6ce9f76a57e"
+  },
+  "reports/fleet_reports/fuel_cost_trend/fuel_cost_trend_data.php": {
+    "mtime": 1783707946.1526444,
+    "ast_hash": "018378150699a3069c02edf336de3292",
+    "semantic_hash": "018378150699a3069c02edf336de3292"
+  },
+  "reports/fleet_reports/fuel_efficiency/fuel_efficiency.js": {
+    "mtime": 1783707946.1529148,
+    "ast_hash": "f647e77640db1f311e03519b7db13e33",
+    "semantic_hash": "f647e77640db1f311e03519b7db13e33"
+  },
+  "reports/fleet_reports/fuel_efficiency/fuel_efficiency.php": {
+    "mtime": 1783707946.1531432,
+    "ast_hash": "b0985238e748aec7f8a1643491ad9d5f",
+    "semantic_hash": "b0985238e748aec7f8a1643491ad9d5f"
+  },
+  "reports/fleet_reports/fuel_efficiency/fuel_efficiency_data.php": {
+    "mtime": 1783707946.1533024,
+    "ast_hash": "b38b55e616a7dafd48ec37ba64f814b2",
+    "semantic_hash": "b38b55e616a7dafd48ec37ba64f814b2"
+  },
+  "reports/fleet_reports/mileage_report/mileage_report.js": {
+    "mtime": 1783707946.1535828,
+    "ast_hash": "be492b95c33f5613d42ad1a165ee903d",
+    "semantic_hash": "be492b95c33f5613d42ad1a165ee903d"
+  },
+  "reports/fleet_reports/mileage_report/mileage_report.php": {
+    "mtime": 1783707946.1538155,
+    "ast_hash": "6d98ce3c7ce6a37d4e4e69a8261f1cdd",
+    "semantic_hash": "6d98ce3c7ce6a37d4e4e69a8261f1cdd"
+  },
+  "reports/fleet_reports/mileage_report/mileage_report_data.php": {
+    "mtime": 1783707946.1540432,
+    "ast_hash": "77c1ab7454931b48bc1e4cc17ce1e9a3",
+    "semantic_hash": "77c1ab7454931b48bc1e4cc17ce1e9a3"
+  },
+  "reports/fleet_reports/most_expensive_vehicle/most_expensive_vehicle.js": {
+    "mtime": 1783707946.1543891,
+    "ast_hash": "9b6557ba7c5f8c018a39bfa1aabab463",
+    "semantic_hash": "9b6557ba7c5f8c018a39bfa1aabab463"
+  },
+  "reports/fleet_reports/most_expensive_vehicle/most_expensive_vehicle.php": {
+    "mtime": 1783707946.1545904,
+    "ast_hash": "f685040ae9ef39a3365d04e27971098f",
+    "semantic_hash": "f685040ae9ef39a3365d04e27971098f"
+  },
+  "reports/fleet_reports/most_expensive_vehicle/most_expensive_vehicle_data.php": {
+    "mtime": 1783707946.1547418,
+    "ast_hash": "ff7e8e9807976a102e2586ac22d6ac60",
+    "semantic_hash": "ff7e8e9807976a102e2586ac22d6ac60"
+  },
+  "reports/fleet_reports/vehicle_expense_analysis/vehicle_expense_analysis.js": {
+    "mtime": 1783707946.1550145,
+    "ast_hash": "433033fdd365a0ee25f33420fd905cc5",
+    "semantic_hash": "433033fdd365a0ee25f33420fd905cc5"
+  },
+  "reports/fleet_reports/vehicle_expense_analysis/vehicle_expense_analysis.php": {
+    "mtime": 1783707946.1552353,
+    "ast_hash": "7e7df26b525df5f5e890cf853f4dfb5b",
+    "semantic_hash": "7e7df26b525df5f5e890cf853f4dfb5b"
+  },
+  "reports/fleet_reports/vehicle_expense_analysis/vehicle_expense_analysis_data.php": {
+    "mtime": 1783707946.1553934,
+    "ast_hash": "3ed488ed5f7337ccad45bf607777a2f2",
+    "semantic_hash": "3ed488ed5f7337ccad45bf607777a2f2"
+  },
+  "reports/fleet_reports/vehicle_performance/vehicle_performance.js": {
+    "mtime": 1783707946.1556618,
+    "ast_hash": "5ecb5890e44480fb0f8ccef3d7f2a66d",
+    "semantic_hash": "5ecb5890e44480fb0f8ccef3d7f2a66d"
+  },
+  "reports/fleet_reports/vehicle_performance/vehicle_performance.php": {
+    "mtime": 1783707946.1559737,
+    "ast_hash": "cd30a817aa9ba83aa863418366b6bf35",
+    "semantic_hash": "cd30a817aa9ba83aa863418366b6bf35"
+  },
+  "reports/fleet_reports/vehicle_performance/vehicle_performance_data.php": {
+    "mtime": 1783707946.1561317,
+    "ast_hash": "243043b5b81fa2fcdd538968ee568cc8",
+    "semantic_hash": "243043b5b81fa2fcdd538968ee568cc8"
+  },
+  "reports/fleet_reports/vehicle_utilization/vehicle_utilization.js": {
+    "mtime": 1783707946.1563997,
+    "ast_hash": "0f4c8edb047318c7e8174ed9e7fc02b5",
+    "semantic_hash": "0f4c8edb047318c7e8174ed9e7fc02b5"
+  },
+  "reports/fleet_reports/vehicle_utilization/vehicle_utilization.php": {
+    "mtime": 1783707946.156571,
+    "ast_hash": "7a7d84b67839bbfc22d6f038ec19c728",
+    "semantic_hash": "7a7d84b67839bbfc22d6f038ec19c728"
+  },
+  "reports/fleet_reports/vehicle_utilization/vehicle_utilization_data.php": {
+    "mtime": 1783707946.1566994,
+    "ast_hash": "72c78999db0605f0bbc21a9620a1ce16",
+    "semantic_hash": "72c78999db0605f0bbc21a9620a1ce16"
+  },
+  "reports/general_reports/all_fuel_list/all_fuel_list.js": {
+    "mtime": 1783707946.1571057,
+    "ast_hash": "c4813e5f1eaec1496c91eda8d9d12300",
+    "semantic_hash": "c4813e5f1eaec1496c91eda8d9d12300"
+  },
+  "reports/general_reports/all_fuel_list/all_fuel_list.php": {
+    "mtime": 1783707946.1573045,
+    "ast_hash": "5739817c2836e8ccb6a1f9d4ed43e294",
+    "semantic_hash": "5739817c2836e8ccb6a1f9d4ed43e294"
+  },
+  "reports/general_reports/all_fuel_list/all_fuel_list_data.php": {
+    "mtime": 1783707946.157462,
+    "ast_hash": "d98e05cad2ad319261dff533ff3a8e70",
+    "semantic_hash": "d98e05cad2ad319261dff533ff3a8e70"
+  },
+  "reports/general_reports/business_summary_dashboard/business_summary_dashboard.js": {
+    "mtime": 1783707946.1577377,
+    "ast_hash": "0af9a4d16505f3da88f14e62c17dfb79",
+    "semantic_hash": "0af9a4d16505f3da88f14e62c17dfb79"
+  },
+  "reports/general_reports/business_summary_dashboard/business_summary_dashboard.php": {
+    "mtime": 1783707946.157927,
+    "ast_hash": "afd703d235924afcd864633353f3bf05",
+    "semantic_hash": "afd703d235924afcd864633353f3bf05"
+  },
+  "reports/general_reports/business_summary_dashboard/business_summary_dashboard_data.php": {
+    "mtime": 1783707946.1581402,
+    "ast_hash": "1378fcbbf53d9694ea5a3d7e50545b07",
+    "semantic_hash": "1378fcbbf53d9694ea5a3d7e50545b07"
+  },
+  "reports/general_reports/cash_flow_print/cash_flow_print.js": {
+    "mtime": 1783707946.1584415,
+    "ast_hash": "d4f57cae42ef70907050dd1455e39dfd",
+    "semantic_hash": "d4f57cae42ef70907050dd1455e39dfd"
+  },
+  "reports/general_reports/cash_flow_print/cash_flow_print.php": {
+    "mtime": 1783707946.158636,
+    "ast_hash": "7a1b950b510307bdb3d7d5b18daac8f5",
+    "semantic_hash": "7a1b950b510307bdb3d7d5b18daac8f5"
+  },
+  "reports/general_reports/cash_flow_print/cash_flow_print_data.php": {
+    "mtime": 1783707946.1588318,
+    "ast_hash": "7b20ce227c90bba5e0ebd168486b06d9",
+    "semantic_hash": "7b20ce227c90bba5e0ebd168486b06d9"
+  },
+  "reports/general_reports/cleaner_salary_list/cleaner_salary_list.js": {
+    "mtime": 1783707946.159158,
+    "ast_hash": "82ef2fc0607d6b9a48c0ba4a283ff2c6",
+    "semantic_hash": "82ef2fc0607d6b9a48c0ba4a283ff2c6"
+  },
+  "reports/general_reports/cleaner_salary_list/cleaner_salary_list.php": {
+    "mtime": 1783707946.159491,
+    "ast_hash": "b92c0594035f08dcd4bd662a283c07ee",
+    "semantic_hash": "b92c0594035f08dcd4bd662a283c07ee"
+  },
+  "reports/general_reports/cleaner_salary_list/cleaner_salary_list_data.php": {
+    "mtime": 1783707946.1596608,
+    "ast_hash": "9c4cd6aea83c01d66753a8bf462c0f21",
+    "semantic_hash": "9c4cd6aea83c01d66753a8bf462c0f21"
+  },
+  "reports/general_reports/driver_income_report/driver_income_report.js": {
+    "mtime": 1783707946.1599293,
+    "ast_hash": "6223142d13bcb21befcddb60f0e08520",
+    "semantic_hash": "6223142d13bcb21befcddb60f0e08520"
+  },
+  "reports/general_reports/driver_income_report/driver_income_report.php": {
+    "mtime": 1783707946.160151,
+    "ast_hash": "e51312b66654c87163b9b4cdbdcd30f5",
+    "semantic_hash": "e51312b66654c87163b9b4cdbdcd30f5"
+  },
+  "reports/general_reports/driver_income_report/driver_income_report_data.php": {
+    "mtime": 1783707946.1603646,
+    "ast_hash": "900f556b3d27f06c01a0ca38fd2839ba",
+    "semantic_hash": "900f556b3d27f06c01a0ca38fd2839ba"
+  },
+  "reports/general_reports/driver_salary_list/driver_salary_list.js": {
+    "mtime": 1783707946.1606698,
+    "ast_hash": "beda1c6d9ee33c3c20ebf6897b0970d4",
+    "semantic_hash": "beda1c6d9ee33c3c20ebf6897b0970d4"
+  },
+  "reports/general_reports/driver_salary_list/driver_salary_list.php": {
+    "mtime": 1783707946.160897,
+    "ast_hash": "592d2cdac853edb730a16641d0e76dba",
+    "semantic_hash": "592d2cdac853edb730a16641d0e76dba"
+  },
+  "reports/general_reports/driver_salary_list/driver_salary_list_data.php": {
+    "mtime": 1783707946.1611464,
+    "ast_hash": "54e51a4efcf56d22398a2ef47c2ff2b4",
+    "semantic_hash": "54e51a4efcf56d22398a2ef47c2ff2b4"
+  },
+  "reports/general_reports/driver_salary_summary/driver_salary_summary.js": {
+    "mtime": 1783707946.161488,
+    "ast_hash": "2dd51d853e8d830fc8078cec93061fad",
+    "semantic_hash": "2dd51d853e8d830fc8078cec93061fad"
+  },
+  "reports/general_reports/driver_salary_summary/driver_salary_summary.php": {
+    "mtime": 1783707946.1617074,
+    "ast_hash": "4c3e049b3cc77fa3ec292468fc4b9fd8",
+    "semantic_hash": "4c3e049b3cc77fa3ec292468fc4b9fd8"
+  },
+  "reports/general_reports/driver_salary_summary/driver_salary_summary_data.php": {
+    "mtime": 1783707946.1619174,
+    "ast_hash": "da77962e037fe328dc789b6b8b504fde",
+    "semantic_hash": "da77962e037fe328dc789b6b8b504fde"
+  },
+  "reports/general_reports/fuel_usage_report/fuel_usage_report.js": {
+    "mtime": 1783707946.1622279,
+    "ast_hash": "220ac42802f22d4fa869f2d016c0504d",
+    "semantic_hash": "220ac42802f22d4fa869f2d016c0504d"
+  },
+  "reports/general_reports/fuel_usage_report/fuel_usage_report.php": {
+    "mtime": 1783707946.1624522,
+    "ast_hash": "c5cb1952c6a67ff00123db4c3bd24763",
+    "semantic_hash": "c5cb1952c6a67ff00123db4c3bd24763"
+  },
+  "reports/general_reports/fuel_usage_report/fuel_usage_report_data.php": {
+    "mtime": 1783707946.1626487,
+    "ast_hash": "299d484be9667e22ee15b8c831b8045d",
+    "semantic_hash": "299d484be9667e22ee15b8c831b8045d"
+  },
+  "reports/general_reports/general_expenses_report/general_expenses_report.js": {
+    "mtime": 1783707946.1629639,
+    "ast_hash": "1860df58871a4fcae843b3d8450bdae1",
+    "semantic_hash": "1860df58871a4fcae843b3d8450bdae1"
+  },
+  "reports/general_reports/general_expenses_report/general_expenses_report.php": {
+    "mtime": 1783707946.1631713,
+    "ast_hash": "207be5e2f25c91c32565fd21cbfc9f29",
+    "semantic_hash": "207be5e2f25c91c32565fd21cbfc9f29"
+  },
+  "reports/general_reports/general_expenses_report/general_expenses_report_data.php": {
+    "mtime": 1783707946.1633263,
+    "ast_hash": "4d0e1e2f57a3241085a1bb09a3c1dbe0",
+    "semantic_hash": "4d0e1e2f57a3241085a1bb09a3c1dbe0"
+  },
+  "reports/general_reports/lorry_vs_trips_report/lorry_vs_trips_report.js": {
+    "mtime": 1783707946.163591,
+    "ast_hash": "2e64cc4b6023f0eef214619777a25734",
+    "semantic_hash": "2e64cc4b6023f0eef214619777a25734"
+  },
+  "reports/general_reports/lorry_vs_trips_report/lorry_vs_trips_report.php": {
+    "mtime": 1783707946.1637993,
+    "ast_hash": "2fbe97a8fa973e38cfbedc1b07666c85",
+    "semantic_hash": "2fbe97a8fa973e38cfbedc1b07666c85"
+  },
+  "reports/general_reports/lorry_vs_trips_report/lorry_vs_trips_report_data.php": {
+    "mtime": 1783707946.1639557,
+    "ast_hash": "528af05d50e2404329d7472da65b01c3",
+    "semantic_hash": "528af05d50e2404329d7472da65b01c3"
+  },
+  "reports/general_reports/monthly_income_summary/monthly_income_summary.js": {
+    "mtime": 1783707946.1642256,
+    "ast_hash": "1005da35aa817e88e66d2af126d2c86a",
+    "semantic_hash": "1005da35aa817e88e66d2af126d2c86a"
+  },
+  "reports/general_reports/monthly_income_summary/monthly_income_summary.php": {
+    "mtime": 1783707946.164402,
+    "ast_hash": "5bdbf9a64a36bbe6e2d6248d5c53d7c2",
+    "semantic_hash": "5bdbf9a64a36bbe6e2d6248d5c53d7c2"
+  },
+  "reports/general_reports/monthly_income_summary/monthly_income_summary_data.php": {
+    "mtime": 1783707946.164543,
+    "ast_hash": "5f0cd948a8c516eba7b7b6e0f54e7206",
+    "semantic_hash": "5f0cd948a8c516eba7b7b6e0f54e7206"
+  },
+  "reports/general_reports/running_chart_full_ledger/running_chart_full_ledger.js": {
+    "mtime": 1783707946.1648443,
+    "ast_hash": "601505f12416051acb564cda010dae42",
+    "semantic_hash": "601505f12416051acb564cda010dae42"
+  },
+  "reports/general_reports/running_chart_full_ledger/running_chart_full_ledger.php": {
+    "mtime": 1783707946.1649976,
+    "ast_hash": "0e00ab1b9fcb340284ebbcd9dfed098d",
+    "semantic_hash": "0e00ab1b9fcb340284ebbcd9dfed098d"
+  },
+  "reports/general_reports/running_chart_full_ledger/running_chart_full_ledger_data.php": {
+    "mtime": 1783707946.16516,
+    "ast_hash": "0ae6b8c5d6490850e12b8d09efa51eaf",
+    "semantic_hash": "0ae6b8c5d6490850e12b8d09efa51eaf"
+  },
+  "reports/general_reports/trip_expense_report/trip_expense_report.js": {
+    "mtime": 1783707946.1654413,
+    "ast_hash": "b1bb647e9a55dfbb0822de5052f53289",
+    "semantic_hash": "b1bb647e9a55dfbb0822de5052f53289"
+  },
+  "reports/general_reports/trip_expense_report/trip_expense_report.php": {
+    "mtime": 1783707946.1657443,
+    "ast_hash": "f41161c766de4b383a1e444c824c9a6d",
+    "semantic_hash": "f41161c766de4b383a1e444c824c9a6d"
+  },
+  "reports/general_reports/trip_expense_report/trip_expense_report_data.php": {
+    "mtime": 1783707946.1659393,
+    "ast_hash": "7441a445719aa6ca7a066d254ce45579",
+    "semantic_hash": "7441a445719aa6ca7a066d254ce45579"
+  },
+  "reports/general_reports/vehicle_expenses_report/vehicle_expenses_report.js": {
+    "mtime": 1783707946.166221,
+    "ast_hash": "ee142433d4a96c15830eb359b6d41729",
+    "semantic_hash": "ee142433d4a96c15830eb359b6d41729"
+  },
+  "reports/general_reports/vehicle_expenses_report/vehicle_expenses_report.php": {
+    "mtime": 1783707946.1664329,
+    "ast_hash": "62cde87bddda0a83d33a03957a694a78",
+    "semantic_hash": "62cde87bddda0a83d33a03957a694a78"
+  },
+  "reports/general_reports/vehicle_expenses_report/vehicle_expenses_report_data.php": {
+    "mtime": 1783707946.1666303,
+    "ast_hash": "168c5b4eebdb6f0b9bf1401a167614b3",
+    "semantic_hash": "168c5b4eebdb6f0b9bf1401a167614b3"
+  },
+  "reports/general_reports/vehicle_income_report/vehicle_income_report.js": {
+    "mtime": 1783707946.1669447,
+    "ast_hash": "a87cdf00f4e8d44678589007c37a0ca4",
+    "semantic_hash": "a87cdf00f4e8d44678589007c37a0ca4"
+  },
+  "reports/general_reports/vehicle_income_report/vehicle_income_report.php": {
+    "mtime": 1783707946.1671257,
+    "ast_hash": "0aa3ed165b14c65f5eb4b7223a2c13f0",
+    "semantic_hash": "0aa3ed165b14c65f5eb4b7223a2c13f0"
+  },
+  "reports/general_reports/vehicle_income_report/vehicle_income_report_data.php": {
+    "mtime": 1783707946.1673,
+    "ast_hash": "106841559a2721d86d3a4aa3947cb179",
+    "semantic_hash": "106841559a2721d86d3a4aa3947cb179"
+  },
+  "reports/general_reports/vehicle_profitability_report/vehicle_profitability_report.js": {
+    "mtime": 1783707946.1675785,
+    "ast_hash": "512b9ed735ee250210e717f43177d16b",
+    "semantic_hash": "512b9ed735ee250210e717f43177d16b"
+  },
+  "reports/general_reports/vehicle_profitability_report/vehicle_profitability_report.php": {
+    "mtime": 1783707946.1677892,
+    "ast_hash": "9962d69ee27b407ac44a88ce8a06c309",
+    "semantic_hash": "9962d69ee27b407ac44a88ce8a06c309"
+  },
+  "reports/general_reports/vehicle_profitability_report/vehicle_profitability_report_data.php": {
+    "mtime": 1783707946.1679516,
+    "ast_hash": "3a21278d277fae014e2abf5f8cfe5379",
+    "semantic_hash": "3a21278d277fae014e2abf5f8cfe5379"
+  },
+  "reports/operations_reports/department_revenue/department_revenue.js": {
+    "mtime": 1783707946.168323,
+    "ast_hash": "ea23f71a95fa29b0630e68a5a954875e",
+    "semantic_hash": "ea23f71a95fa29b0630e68a5a954875e"
+  },
+  "reports/operations_reports/department_revenue/department_revenue.php": {
+    "mtime": 1783707946.1684883,
+    "ast_hash": "4f86c550fd4f0f56b2afa9f4f6c3f8fc",
+    "semantic_hash": "4f86c550fd4f0f56b2afa9f4f6c3f8fc"
+  },
+  "reports/operations_reports/department_revenue/department_revenue_data.php": {
+    "mtime": 1783707946.1686559,
+    "ast_hash": "41fdad20a02ff5e4b57a7fe10d4c0d5b",
+    "semantic_hash": "41fdad20a02ff5e4b57a7fe10d4c0d5b"
+  },
+  "reports/operations_reports/item_type_revenue/item_type_revenue.js": {
+    "mtime": 1783707946.1689544,
+    "ast_hash": "6b92176b0053a182956b34e14cd1af67",
+    "semantic_hash": "6b92176b0053a182956b34e14cd1af67"
+  },
+  "reports/operations_reports/item_type_revenue/item_type_revenue.php": {
+    "mtime": 1783707946.169136,
+    "ast_hash": "0df1fc7381db864ee5cb7a3655e30f43",
+    "semantic_hash": "0df1fc7381db864ee5cb7a3655e30f43"
+  },
+  "reports/operations_reports/item_type_revenue/item_type_revenue_data.php": {
+    "mtime": 1783707946.16929,
+    "ast_hash": "1f5e3e42d21575978df74f127cecaaee",
+    "semantic_hash": "1f5e3e42d21575978df74f127cecaaee"
+  },
+  "reports/operations_reports/route_profitability/route_profitability.js": {
+    "mtime": 1783707946.1695628,
+    "ast_hash": "ca5ac27212c8de0a37ac4aa848d6c2ab",
+    "semantic_hash": "ca5ac27212c8de0a37ac4aa848d6c2ab"
+  },
+  "reports/operations_reports/route_profitability/route_profitability.php": {
+    "mtime": 1783707946.1698623,
+    "ast_hash": "400434fe3915f9cdfc69343173e659a2",
+    "semantic_hash": "400434fe3915f9cdfc69343173e659a2"
+  },
+  "reports/operations_reports/route_profitability/route_profitability_data.php": {
+    "mtime": 1783707946.1700213,
+    "ast_hash": "eec6048e697fe78d9a32b2242b44daef",
+    "semantic_hash": "eec6048e697fe78d9a32b2242b44daef"
+  },
+  "reports/operations_reports/trip_frequency/trip_frequency.js": {
+    "mtime": 1783707946.170328,
+    "ast_hash": "43ee17fd1c4537ddeb352afe55877559",
+    "semantic_hash": "43ee17fd1c4537ddeb352afe55877559"
+  },
+  "reports/operations_reports/trip_frequency/trip_frequency.php": {
+    "mtime": 1783707946.170498,
+    "ast_hash": "b64fb2ddcf28a1bb0fc9bf627f405dfe",
+    "semantic_hash": "b64fb2ddcf28a1bb0fc9bf627f405dfe"
+  },
+  "reports/operations_reports/trip_frequency/trip_frequency_data.php": {
+    "mtime": 1783707946.170667,
+    "ast_hash": "cd27efde233cc61950c473ecc7a92292",
+    "semantic_hash": "cd27efde233cc61950c473ecc7a92292"
+  },
+  "reports/operations_reports/trip_revenue/trip_revenue.js": {
+    "mtime": 1783707946.1709297,
+    "ast_hash": "18dc69e116c48aeb894e69fcafef0801",
+    "semantic_hash": "18dc69e116c48aeb894e69fcafef0801"
+  },
+  "reports/operations_reports/trip_revenue/trip_revenue.php": {
+    "mtime": 1783707946.1711054,
+    "ast_hash": "8f9262c8b0acd67bf41942ca166be253",
+    "semantic_hash": "8f9262c8b0acd67bf41942ca166be253"
+  },
+  "reports/operations_reports/trip_revenue/trip_revenue_data.php": {
+    "mtime": 1783707946.1713076,
+    "ast_hash": "2cbc330c442b4f6b4f4dc63e6c5bf114",
+    "semantic_hash": "2cbc330c442b4f6b4f4dc63e6c5bf114"
+  },
+  "reports/payroll_reports/my_advances/my_advances.js": {
+    "mtime": 1783707946.1717143,
+    "ast_hash": "c6e728f32507c73e31ac68cd9cf53931",
+    "semantic_hash": "c6e728f32507c73e31ac68cd9cf53931"
+  },
+  "reports/payroll_reports/my_advances/my_advances.php": {
+    "mtime": 1783707946.1718922,
+    "ast_hash": "dfbcfb3e2b5e5787143706852416da02",
+    "semantic_hash": "dfbcfb3e2b5e5787143706852416da02"
+  },
+  "reports/payroll_reports/my_advances/my_advances_data.php": {
+    "mtime": 1783707946.1720948,
+    "ast_hash": "8f1ee1a38934da9defd7833dd37f9725",
+    "semantic_hash": "8f1ee1a38934da9defd7833dd37f9725"
+  },
+  "reports/payroll_reports/my_earnings/my_earnings.js": {
+    "mtime": 1783707946.172415,
+    "ast_hash": "7770bbcbc6347041d27e0db81ee75bde",
+    "semantic_hash": "7770bbcbc6347041d27e0db81ee75bde"
+  },
+  "reports/payroll_reports/my_earnings/my_earnings.php": {
+    "mtime": 1783707946.1726232,
+    "ast_hash": "8513bce62de2b2abeb1f93caf0b844b9",
+    "semantic_hash": "8513bce62de2b2abeb1f93caf0b844b9"
+  },
+  "reports/payroll_reports/my_earnings/my_earnings_data.php": {
+    "mtime": 1783707946.1727703,
+    "ast_hash": "8f1ee1a38934da9defd7833dd37f9725",
+    "semantic_hash": "8f1ee1a38934da9defd7833dd37f9725"
+  },
+  "reports/payroll_reports/my_loan_status/my_loan_status.js": {
+    "mtime": 1783707946.1730738,
+    "ast_hash": "62e910aa1e502dae0a3d0d2ae222fe79",
+    "semantic_hash": "62e910aa1e502dae0a3d0d2ae222fe79"
+  },
+  "reports/payroll_reports/my_loan_status/my_loan_status.php": {
+    "mtime": 1783707946.1732552,
+    "ast_hash": "5fd2dc11a5040774e16e2093c68e9f21",
+    "semantic_hash": "5fd2dc11a5040774e16e2093c68e9f21"
+  },
+  "reports/payroll_reports/my_loan_status/my_loan_status_data.php": {
+    "mtime": 1783707946.173418,
+    "ast_hash": "8f1ee1a38934da9defd7833dd37f9725",
+    "semantic_hash": "8f1ee1a38934da9defd7833dd37f9725"
+  },
+  "reports/payroll_reports/my_salary_statement/my_salary_statement.js": {
+    "mtime": 1783707946.1736803,
+    "ast_hash": "9274b4b2426767f93ee1fdcd7f449083",
+    "semantic_hash": "9274b4b2426767f93ee1fdcd7f449083"
+  },
+  "reports/payroll_reports/my_salary_statement/my_salary_statement.php": {
+    "mtime": 1783707946.173904,
+    "ast_hash": "de2c65be46b3dd49add74483c71c9f65",
+    "semantic_hash": "de2c65be46b3dd49add74483c71c9f65"
+  },
+  "reports/payroll_reports/my_salary_statement/my_salary_statement_data.php": {
+    "mtime": 1783707946.1740553,
+    "ast_hash": "8f1ee1a38934da9defd7833dd37f9725",
+    "semantic_hash": "8f1ee1a38934da9defd7833dd37f9725"
+  },
+  "reports/payroll_reports/my_trips/my_trips.js": {
+    "mtime": 1783707946.1743543,
+    "ast_hash": "4ebaf37f406904a4d4f8a23bf17927af",
+    "semantic_hash": "4ebaf37f406904a4d4f8a23bf17927af"
+  },
+  "reports/payroll_reports/my_trips/my_trips.php": {
+    "mtime": 1783707946.174541,
+    "ast_hash": "9e1f520364d08bdf3fbf97e3be305666",
+    "semantic_hash": "9e1f520364d08bdf3fbf97e3be305666"
+  },
+  "reports/payroll_reports/my_trips/my_trips_data.php": {
+    "mtime": 1783707946.174698,
+    "ast_hash": "8f1ee1a38934da9defd7833dd37f9725",
+    "semantic_hash": "8f1ee1a38934da9defd7833dd37f9725"
+  },
+  "reports/staff_reports/cleaner_advance_report/cleaner_advance_report.js": {
+    "mtime": 1783707946.175083,
+    "ast_hash": "38527726d3db7fa6cf07291c0a7c665b",
+    "semantic_hash": "38527726d3db7fa6cf07291c0a7c665b"
+  },
+  "reports/staff_reports/cleaner_advance_report/cleaner_advance_report.php": {
+    "mtime": 1783707946.175251,
+    "ast_hash": "7e033accefa82134a477085b4b0dd8d7",
+    "semantic_hash": "7e033accefa82134a477085b4b0dd8d7"
+  },
+  "reports/staff_reports/cleaner_advance_report/cleaner_advance_report_data.php": {
+    "mtime": 1783707946.175455,
+    "ast_hash": "9915d0d7591aaf526caf9be200560e88",
+    "semantic_hash": "9915d0d7591aaf526caf9be200560e88"
+  },
+  "reports/staff_reports/cleaner_loan_report/cleaner_loan_report.js": {
+    "mtime": 1783707946.1757183,
+    "ast_hash": "2b093df0aa326f71d73456fbe442d9fc",
+    "semantic_hash": "2b093df0aa326f71d73456fbe442d9fc"
+  },
+  "reports/staff_reports/cleaner_loan_report/cleaner_loan_report.php": {
+    "mtime": 1783707946.1758847,
+    "ast_hash": "90e1b40085950922ce9100f523f041a9",
+    "semantic_hash": "90e1b40085950922ce9100f523f041a9"
+  },
+  "reports/staff_reports/cleaner_loan_report/cleaner_loan_report_data.php": {
+    "mtime": 1783707946.176037,
+    "ast_hash": "5bbac07980990d7d9ae07df7219e8691",
+    "semantic_hash": "5bbac07980990d7d9ae07df7219e8691"
+  },
+  "reports/staff_reports/cleaner_performance/cleaner_performance.js": {
+    "mtime": 1783707946.1763258,
+    "ast_hash": "9c9fe0fd4e12a6a3d391901a9d5e293a",
+    "semantic_hash": "9c9fe0fd4e12a6a3d391901a9d5e293a"
+  },
+  "reports/staff_reports/cleaner_performance/cleaner_performance.php": {
+    "mtime": 1783707946.176541,
+    "ast_hash": "61b25b167fd3745c3f9ef75c8cb344b1",
+    "semantic_hash": "61b25b167fd3745c3f9ef75c8cb344b1"
+  },
+  "reports/staff_reports/cleaner_performance/cleaner_performance_data.php": {
+    "mtime": 1783707946.1767013,
+    "ast_hash": "4da8d0f7ef92629e0a2800d0cf57f293",
+    "semantic_hash": "4da8d0f7ef92629e0a2800d0cf57f293"
+  },
+  "reports/staff_reports/cleaner_salary_report/cleaner_salary_report.js": {
+    "mtime": 1783707946.1769972,
+    "ast_hash": "83b1bf028e801d001378ee066158b16b",
+    "semantic_hash": "83b1bf028e801d001378ee066158b16b"
+  },
+  "reports/staff_reports/cleaner_salary_report/cleaner_salary_report.php": {
+    "mtime": 1783707946.1771812,
+    "ast_hash": "59f49bd02eeb25898b0927b6efd989af",
+    "semantic_hash": "59f49bd02eeb25898b0927b6efd989af"
+  },
+  "reports/staff_reports/cleaner_salary_report/cleaner_salary_report_data.php": {
+    "mtime": 1783707946.177424,
+    "ast_hash": "6f429ee51930076187e2c2e48639280a",
+    "semantic_hash": "6f429ee51930076187e2c2e48639280a"
+  },
+  "reports/staff_reports/driver_deduction_report/driver_deduction_report.js": {
+    "mtime": 1783707946.1777906,
+    "ast_hash": "784cf22a289e5416068b76f7fd6448b3",
+    "semantic_hash": "784cf22a289e5416068b76f7fd6448b3"
+  },
+  "reports/staff_reports/driver_deduction_report/driver_deduction_report.php": {
+    "mtime": 1783707946.1780243,
+    "ast_hash": "ab834cdcd9f96e49f035ee1446b4d2c3",
+    "semantic_hash": "ab834cdcd9f96e49f035ee1446b4d2c3"
+  },
+  "reports/staff_reports/driver_deduction_report/driver_deduction_report_data.php": {
+    "mtime": 1783707946.1782124,
+    "ast_hash": "6145ecd04feb69cd63b07c6f1067bb22",
+    "semantic_hash": "6145ecd04feb69cd63b07c6f1067bb22"
+  },
+  "reports/staff_reports/driver_earnings/driver_earnings.js": {
+    "mtime": 1783707946.1785276,
+    "ast_hash": "69b04dded4d0dee5a0398c7cc0f70c31",
+    "semantic_hash": "69b04dded4d0dee5a0398c7cc0f70c31"
+  },
+  "reports/staff_reports/driver_earnings/driver_earnings.php": {
+    "mtime": 1783707946.1787698,
+    "ast_hash": "886e096ca3bb895547c39afd51d399a0",
+    "semantic_hash": "886e096ca3bb895547c39afd51d399a0"
+  },
+  "reports/staff_reports/driver_earnings/driver_earnings_data.php": {
+    "mtime": 1783707946.1789281,
+    "ast_hash": "f7511ce71e4a7a802f46fa3f2a39de5d",
+    "semantic_hash": "f7511ce71e4a7a802f46fa3f2a39de5d"
+  },
+  "reports/staff_reports/driver_loan_report/driver_loan_report.js": {
+    "mtime": 1783711237.4549515,
+    "ast_hash": "ff3a9e5f2c751dcbd2c0e8802d47c91c",
+    "semantic_hash": "ff3a9e5f2c751dcbd2c0e8802d47c91c"
+  },
+  "reports/staff_reports/driver_loan_report/driver_loan_report.php": {
+    "mtime": 1783711242.822088,
+    "ast_hash": "70b07630e0be2004d7af54219dd967fa",
+    "semantic_hash": "70b07630e0be2004d7af54219dd967fa"
+  },
+  "reports/staff_reports/driver_loan_report/driver_loan_report_data.php": {
+    "mtime": 1783707946.1795387,
+    "ast_hash": "50848fc847a2a7b5b17ea227c667d7ec",
+    "semantic_hash": "50848fc847a2a7b5b17ea227c667d7ec"
+  },
+  "reports/staff_reports/driver_performance/driver_performance.js": {
+    "mtime": 1783707946.1798005,
+    "ast_hash": "56947c34c12b7e1c168bf4b6f909dbf3",
+    "semantic_hash": "56947c34c12b7e1c168bf4b6f909dbf3"
+  },
+  "reports/staff_reports/driver_performance/driver_performance.php": {
+    "mtime": 1783707946.17996,
+    "ast_hash": "9fd5110eca47814cf6659673c8b678ab",
+    "semantic_hash": "9fd5110eca47814cf6659673c8b678ab"
+  },
+  "reports/staff_reports/driver_performance/driver_performance_data.php": {
+    "mtime": 1783707946.1801088,
+    "ast_hash": "aa88733b456b38d517c4a83bd0761c62",
+    "semantic_hash": "aa88733b456b38d517c4a83bd0761c62"
+  },
+  "reports/staff_reports/driver_salary_sheet/driver_salary_sheet.js": {
+    "mtime": 1783707946.180386,
+    "ast_hash": "4b266cb1aedac7c1e8734aea3d1d64d9",
+    "semantic_hash": "4b266cb1aedac7c1e8734aea3d1d64d9"
+  },
+  "reports/staff_reports/driver_salary_sheet/driver_salary_sheet.php": {
+    "mtime": 1783707946.1805704,
+    "ast_hash": "e76ed1256b111dea04fe41caac22737f",
+    "semantic_hash": "e76ed1256b111dea04fe41caac22737f"
+  },
+  "reports/staff_reports/driver_salary_sheet/driver_salary_sheet_data.php": {
+    "mtime": 1783707946.1807315,
+    "ast_hash": "7b8c9fea023650ffaa05d3f2d2e9f364",
+    "semantic_hash": "7b8c9fea023650ffaa05d3f2d2e9f364"
+  },
+  "reports/staff_reports/employee_advance_report/employee_advance_report.js": {
+    "mtime": 1783707946.1810017,
+    "ast_hash": "e2796a7f823df432b5ecfe3b50b2b89a",
+    "semantic_hash": "e2796a7f823df432b5ecfe3b50b2b89a"
+  },
+  "reports/staff_reports/employee_advance_report/employee_advance_report.php": {
+    "mtime": 1783707946.181172,
+    "ast_hash": "58ccd795c97544b1a960242bebd38f28",
+    "semantic_hash": "58ccd795c97544b1a960242bebd38f28"
+  },
+  "reports/staff_reports/employee_advance_report/employee_advance_report_data.php": {
+    "mtime": 1783707946.18141,
+    "ast_hash": "4a0a81d41b2d68fe48dcfb5194e17b11",
+    "semantic_hash": "4a0a81d41b2d68fe48dcfb5194e17b11"
+  },
+  "settings/api_settings/stg_email_api/stg_email_api.php": {
+    "mtime": 1783707946.1819816,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/api_settings/stg_google_maps/stg_google_maps.js": {
+    "mtime": 1783707946.1822872,
+    "ast_hash": "e6d561ec7e2f812b7557ee425b7fe0f0",
+    "semantic_hash": "e6d561ec7e2f812b7557ee425b7fe0f0"
+  },
+  "settings/api_settings/stg_google_maps/stg_google_maps.php": {
+    "mtime": 1783707946.1824489,
+    "ast_hash": "7de3404462c8c974cbd47be98c98baa8",
+    "semantic_hash": "7de3404462c8c974cbd47be98c98baa8"
+  },
+  "settings/api_settings/stg_google_maps/stg_google_maps_data.php": {
+    "mtime": 1783707946.182611,
+    "ast_hash": "9ac5ae58f2d0ca3e7c55d6146a1fd373",
+    "semantic_hash": "9ac5ae58f2d0ca3e7c55d6146a1fd373"
+  },
+  "settings/api_settings/stg_gps/stg_gps.php": {
+    "mtime": 1783707946.1828654,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/api_settings/stg_payment_gateway/stg_payment_gateway.js": {
+    "mtime": 1783707946.1831284,
+    "ast_hash": "ffb55a6c6d3b00097c0641a8034e4ed3",
+    "semantic_hash": "ffb55a6c6d3b00097c0641a8034e4ed3"
+  },
+  "settings/api_settings/stg_payment_gateway/stg_payment_gateway.php": {
+    "mtime": 1783707946.183285,
+    "ast_hash": "9201c08fb10ffa0ef15880cb857aabe1",
+    "semantic_hash": "9201c08fb10ffa0ef15880cb857aabe1"
+  },
+  "settings/api_settings/stg_payment_gateway/stg_payment_gateway_data.php": {
+    "mtime": 1783707946.183486,
+    "ast_hash": "e2cad4650190c28c27c3b9bf3fdec3e5",
+    "semantic_hash": "e2cad4650190c28c27c3b9bf3fdec3e5"
+  },
+  "settings/api_settings/stg_sms_api/stg_sms_api.php": {
+    "mtime": 1783707946.1837904,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/api_settings/stg_webhooks/stg_webhooks.php": {
+    "mtime": 1783707946.1840713,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/approval_workflow/stg_approval_expenses/stg_approval_expenses.php": {
+    "mtime": 1783707946.1844838,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/approval_workflow/stg_approval_fuel/stg_approval_fuel.php": {
+    "mtime": 1783707946.184766,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/approval_workflow/stg_approval_journal/stg_approval_journal.php": {
+    "mtime": 1783707946.1850674,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/approval_workflow/stg_approval_payroll/stg_approval_payroll.php": {
+    "mtime": 1783707946.1853662,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/approval_workflow/stg_approval_purchase/stg_approval_purchase.php": {
+    "mtime": 1783707946.185634,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/audit_settings/stg_audit_logs/stg_audit_logs.php": {
+    "mtime": 1783707946.1860309,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/audit_settings/stg_delete_logs/stg_delete_logs.php": {
+    "mtime": 1783707946.186319,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/audit_settings/stg_export_logs/stg_export_logs.php": {
+    "mtime": 1783707946.1865747,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/audit_settings/stg_login_history/stg_login_history.php": {
+    "mtime": 1783707946.186835,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/backup/stg_backup/stg_backup.php": {
+    "mtime": 1783707946.187203,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/backup/stg_backup_history/stg_backup_history.php": {
+    "mtime": 1783707946.187468,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/backup/stg_backup_schedule/stg_backup_schedule.php": {
+    "mtime": 1783707946.1877294,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/backup/stg_restore/stg_restore.php": {
+    "mtime": 1783707946.1879869,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/backup_restore/backup_restore.js": {
+    "mtime": 1783707946.1882885,
+    "ast_hash": "378905f7ee3314aee8ed1c9aaa4a45ef",
+    "semantic_hash": "378905f7ee3314aee8ed1c9aaa4a45ef"
+  },
+  "settings/backup_restore/backup_restore.php": {
+    "mtime": 1783707946.188493,
+    "ast_hash": "be6971825edc6c556e00ceb393dc5c13",
+    "semantic_hash": "be6971825edc6c556e00ceb393dc5c13"
+  },
+  "settings/backup_restore/backup_restore_data.php": {
+    "mtime": 1783707946.1886601,
+    "ast_hash": "800edf09140706e4dd8a93ecee9a9f99",
+    "semantic_hash": "800edf09140706e4dd8a93ecee9a9f99"
+  },
+  "settings/company_settings/company_settings.js": {
+    "mtime": 1783707946.1889534,
+    "ast_hash": "049a90818df819868a9f2cb32bdc8126",
+    "semantic_hash": "049a90818df819868a9f2cb32bdc8126"
+  },
+  "settings/company_settings/company_settings.php": {
+    "mtime": 1783707946.1891084,
+    "ast_hash": "0754db7d07bf642b8488b740316667be",
+    "semantic_hash": "0754db7d07bf642b8488b740316667be"
+  },
+  "settings/company_settings/company_settings_data.php": {
+    "mtime": 1783707946.189276,
+    "ast_hash": "d0af3ddbbc4501bcd8585ffb1410e240",
+    "semantic_hash": "d0af3ddbbc4501bcd8585ffb1410e240"
+  },
+  "settings/company_settings/stg_branches/stg_branches.js": {
+    "mtime": 1783707946.189569,
+    "ast_hash": "40c23272b113dc12accb59c166f4cd9c",
+    "semantic_hash": "40c23272b113dc12accb59c166f4cd9c"
+  },
+  "settings/company_settings/stg_branches/stg_branches.php": {
+    "mtime": 1783707946.1897469,
+    "ast_hash": "f1670eaec40f2f5da366b908fb1ebe39",
+    "semantic_hash": "f1670eaec40f2f5da366b908fb1ebe39"
+  },
+  "settings/company_settings/stg_branches/stg_branches_data.php": {
+    "mtime": 1783707946.1899781,
+    "ast_hash": "331072baf37f9ccaa84b96867114f4c0",
+    "semantic_hash": "331072baf37f9ccaa84b96867114f4c0"
+  },
+  "settings/company_settings/stg_branches/stg_branches_print.php": {
+    "mtime": 1783707946.1901846,
+    "ast_hash": "50337f46df71d1d070a343a02e3836a1",
+    "semantic_hash": "50337f46df71d1d070a343a02e3836a1"
+  },
+  "settings/company_settings/stg_branches/stg_branches_search.js": {
+    "mtime": 1783707946.190331,
+    "ast_hash": "d95c5c8aff4f07e894a1db8f8b359b37",
+    "semantic_hash": "d95c5c8aff4f07e894a1db8f8b359b37"
+  },
+  "settings/company_settings/stg_branches/stg_branches_search.php": {
+    "mtime": 1783707946.1904821,
+    "ast_hash": "9eb740fb5b2662f9a4aab9171d092fd8",
+    "semantic_hash": "9eb740fb5b2662f9a4aab9171d092fd8"
+  },
+  "settings/company_settings/stg_company_profile/stg_company_profile.php": {
+    "mtime": 1783707946.1907802,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/company_settings/stg_currency/stg_currency.js": {
+    "mtime": 1783707946.1911018,
+    "ast_hash": "f183026989c01a4fb8161cf9b4e9884e",
+    "semantic_hash": "f183026989c01a4fb8161cf9b4e9884e"
+  },
+  "settings/company_settings/stg_currency/stg_currency.php": {
+    "mtime": 1783707946.1913173,
+    "ast_hash": "7db94f41498a1738c9b998889a063988",
+    "semantic_hash": "7db94f41498a1738c9b998889a063988"
+  },
+  "settings/company_settings/stg_currency/stg_currency_data.php": {
+    "mtime": 1783707946.1914792,
+    "ast_hash": "c0332164c183caa8e217ed9676770070",
+    "semantic_hash": "c0332164c183caa8e217ed9676770070"
+  },
+  "settings/company_settings/stg_currency/stg_currency_print.php": {
+    "mtime": 1783707946.1916568,
+    "ast_hash": "10ff19fc1eaf584ca5abd9d13283cc0c",
+    "semantic_hash": "10ff19fc1eaf584ca5abd9d13283cc0c"
+  },
+  "settings/company_settings/stg_currency/stg_currency_search.js": {
+    "mtime": 1783707946.191807,
+    "ast_hash": "ccdfea4dd1f6b7ba61be7076a9223c9e",
+    "semantic_hash": "ccdfea4dd1f6b7ba61be7076a9223c9e"
+  },
+  "settings/company_settings/stg_currency/stg_currency_search.php": {
+    "mtime": 1783707946.191965,
+    "ast_hash": "7add5da889da6a3cc02b8c2e8149c391",
+    "semantic_hash": "7add5da889da6a3cc02b8c2e8149c391"
+  },
+  "settings/company_settings/stg_departments/stg_departments.php": {
+    "mtime": 1783707946.1922348,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/company_settings/stg_financial_year/stg_financial_year.php": {
+    "mtime": 1783707946.1924994,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/company_settings/stg_timezone/stg_timezone.php": {
+    "mtime": 1783707946.1928425,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/developer_settings/developer_settings.js": {
+    "mtime": 1783707946.1931791,
+    "ast_hash": "ca1313c813987f080e7bfe0c32dfdd03",
+    "semantic_hash": "ca1313c813987f080e7bfe0c32dfdd03"
+  },
+  "settings/developer_settings/developer_settings.php": {
+    "mtime": 1783707946.193342,
+    "ast_hash": "6125c8032782e2af764d677a19bd3ae8",
+    "semantic_hash": "6125c8032782e2af764d677a19bd3ae8"
+  },
+  "settings/developer_settings/developer_settings_data.php": {
+    "mtime": 1783707946.1934962,
+    "ast_hash": "c33e2ce0446d739a094f8e7aa314f376",
+    "semantic_hash": "c33e2ce0446d739a094f8e7aa314f376"
+  },
+  "settings/email_sms/email_sms.js": {
+    "mtime": 1783707946.1937745,
+    "ast_hash": "d3c5587bd41b46a6831e65633efdbbc3",
+    "semantic_hash": "d3c5587bd41b46a6831e65633efdbbc3"
+  },
+  "settings/email_sms/email_sms.php": {
+    "mtime": 1783707946.1939256,
+    "ast_hash": "d176681b858190d4e1d03adbcca4b486",
+    "semantic_hash": "d176681b858190d4e1d03adbcca4b486"
+  },
+  "settings/email_sms/email_sms_data.php": {
+    "mtime": 1783707946.194096,
+    "ast_hash": "cee7177a7a86d872197f93e31f447386",
+    "semantic_hash": "cee7177a7a86d872197f93e31f447386"
+  },
+  "settings/email_sms/stg_email_templates/stg_email_templates.php": {
+    "mtime": 1783707946.1943583,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/email_sms/stg_sms_gateway/stg_sms_gateway.php": {
+    "mtime": 1783707946.1946166,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/email_sms/stg_smtp/stg_smtp.php": {
+    "mtime": 1783707946.1949005,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/email_sms/stg_whatsapp/stg_whatsapp.js": {
+    "mtime": 1783707946.1951833,
+    "ast_hash": "901a0e9a8295766a3820ace864381aaa",
+    "semantic_hash": "901a0e9a8295766a3820ace864381aaa"
+  },
+  "settings/email_sms/stg_whatsapp/stg_whatsapp.php": {
+    "mtime": 1783707946.1953719,
+    "ast_hash": "491b5ab140f3d26ce5f33b17536e153a",
+    "semantic_hash": "491b5ab140f3d26ce5f33b17536e153a"
+  },
+  "settings/email_sms/stg_whatsapp/stg_whatsapp_data.php": {
+    "mtime": 1783707946.195529,
+    "ast_hash": "5340232ce6577fba6025f59256436bab",
+    "semantic_hash": "5340232ce6577fba6025f59256436bab"
+  },
+  "settings/financial_settings/stg_cost_centers/stg_cost_centers.php": {
+    "mtime": 1783707946.195885,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/financial_settings/stg_default_accounts/stg_default_accounts.php": {
+    "mtime": 1783707946.1961613,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/financial_settings/stg_fiscal_periods/stg_fiscal_periods.php": {
+    "mtime": 1783707946.1965349,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/financial_settings/stg_posting_rules/stg_posting_rules.js": {
+    "mtime": 1783707946.1968627,
+    "ast_hash": "a1411611089c0574d33c14d315606d4e",
+    "semantic_hash": "a1411611089c0574d33c14d315606d4e"
+  },
+  "settings/financial_settings/stg_posting_rules/stg_posting_rules.php": {
+    "mtime": 1783707946.1970754,
+    "ast_hash": "d30f90828e421010e5dd1721994329cc",
+    "semantic_hash": "d30f90828e421010e5dd1721994329cc"
+  },
+  "settings/financial_settings/stg_posting_rules/stg_posting_rules_data.php": {
+    "mtime": 1783707946.1973891,
+    "ast_hash": "b57c5e1cc2a8aaa4c81a3cf337d789d6",
+    "semantic_hash": "b57c5e1cc2a8aaa4c81a3cf337d789d6"
+  },
+  "settings/financial_settings/stg_taxes/stg_taxes.php": {
+    "mtime": 1783707946.1976926,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/financial_settings/stg_user_preferences/stg_user_preferences.js": {
+    "mtime": 1783707946.1979942,
+    "ast_hash": "53309619765d3b6fe76bdea6df931e23",
+    "semantic_hash": "53309619765d3b6fe76bdea6df931e23"
+  },
+  "settings/financial_settings/stg_user_preferences/stg_user_preferences.php": {
+    "mtime": 1783707946.1982791,
+    "ast_hash": "4efac75b1d058f42fd49a32294161f10",
+    "semantic_hash": "4efac75b1d058f42fd49a32294161f10"
+  },
+  "settings/financial_settings/stg_user_preferences/stg_user_preferences_data.php": {
+    "mtime": 1783707946.198499,
+    "ast_hash": "815ffe0f20acc9d7cf0f98d7a514957b",
+    "semantic_hash": "815ffe0f20acc9d7cf0f98d7a514957b"
+  },
+  "settings/integrations/integrations.js": {
+    "mtime": 1783707946.1988654,
+    "ast_hash": "dfbf4840c50a5a3cf16ea71352ae42d1",
+    "semantic_hash": "dfbf4840c50a5a3cf16ea71352ae42d1"
+  },
+  "settings/integrations/integrations.php": {
+    "mtime": 1783707946.1990476,
+    "ast_hash": "91f4388383456871a70f63471e6f359b",
+    "semantic_hash": "91f4388383456871a70f63471e6f359b"
+  },
+  "settings/integrations/integrations_data.php": {
+    "mtime": 1783707946.1992297,
+    "ast_hash": "baa0f71f05bea3f68abc25fad6969cb0",
+    "semantic_hash": "baa0f71f05bea3f68abc25fad6969cb0"
+  },
+  "settings/master_data_settings/master_data_settings.js": {
+    "mtime": 1783707946.1994934,
+    "ast_hash": "b26619d924e5ab951a7b0b22d9bd3595",
+    "semantic_hash": "b26619d924e5ab951a7b0b22d9bd3595"
+  },
+  "settings/master_data_settings/master_data_settings.php": {
+    "mtime": 1783707946.1996408,
+    "ast_hash": "a23930d5f3254f3993833a062d479cd8",
+    "semantic_hash": "a23930d5f3254f3993833a062d479cd8"
+  },
+  "settings/master_data_settings/master_data_settings_data.php": {
+    "mtime": 1783707946.1998196,
+    "ast_hash": "99449acf9dab5ec2a481cb38dfec6f97",
+    "semantic_hash": "99449acf9dab5ec2a481cb38dfec6f97"
+  },
+  "settings/modules_mgmt/module_documentation/module_documentation.js": {
+    "mtime": 1783707946.2002013,
+    "ast_hash": "40acb9d0ed1822a8ffddc5aa8f5d309c",
+    "semantic_hash": "40acb9d0ed1822a8ffddc5aa8f5d309c"
+  },
+  "settings/modules_mgmt/module_documentation/module_documentation.php": {
+    "mtime": 1783707946.2003994,
+    "ast_hash": "1f09b1c3855fe168bceeeca96c80b432",
+    "semantic_hash": "1f09b1c3855fe168bceeeca96c80b432"
+  },
+  "settings/modules_mgmt/module_documentation/module_documentation_data.php": {
+    "mtime": 1783707946.2005508,
+    "ast_hash": "5f545bfa2da6195362e32f581ac0b8a1",
+    "semantic_hash": "5f545bfa2da6195362e32f581ac0b8a1"
+  },
+  "settings/modules_mgmt/module_generator/module_generator.js": {
+    "mtime": 1783707946.200885,
+    "ast_hash": "58e83030f3c4acb6596606230e20b219",
+    "semantic_hash": "58e83030f3c4acb6596606230e20b219"
+  },
+  "settings/modules_mgmt/module_generator/module_generator.php": {
+    "mtime": 1783707946.2010553,
+    "ast_hash": "a0f601567e95d8cce05e481311f5810a",
+    "semantic_hash": "a0f601567e95d8cce05e481311f5810a"
+  },
+  "settings/modules_mgmt/module_generator/module_generator_data.php": {
+    "mtime": 1783707946.201253,
+    "ast_hash": "0df6bfdc7aeb809b3ac7f4c2b0e3bd79",
+    "semantic_hash": "0df6bfdc7aeb809b3ac7f4c2b0e3bd79"
+  },
+  "settings/modules_mgmt/module_generator/module_generator_lib.php": {
+    "mtime": 1783707946.201569,
+    "ast_hash": "a37fe576be6b593addb5d85643d59838",
+    "semantic_hash": "a37fe576be6b593addb5d85643d59838"
+  },
+  "settings/modules_mgmt/stg_enable_modules/stg_enable_modules.js": {
+    "mtime": 1783707946.201908,
+    "ast_hash": "01e36d01b3877fb955eefe7b7fb636de",
+    "semantic_hash": "01e36d01b3877fb955eefe7b7fb636de"
+  },
+  "settings/modules_mgmt/stg_enable_modules/stg_enable_modules.php": {
+    "mtime": 1783707946.202141,
+    "ast_hash": "b9b82c1be1388ea0b4d7d83d3f06f75a",
+    "semantic_hash": "b9b82c1be1388ea0b4d7d83d3f06f75a"
+  },
+  "settings/modules_mgmt/stg_enable_modules/stg_enable_modules_data.php": {
+    "mtime": 1783707946.2022865,
+    "ast_hash": "985d54c13e332b984e448a97e27f1b49",
+    "semantic_hash": "985d54c13e332b984e448a97e27f1b49"
+  },
+  "settings/modules_mgmt/stg_license/stg_license.php": {
+    "mtime": 1783707946.2025928,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/notifications/notifications.js": {
+    "mtime": 1783707946.202856,
+    "ast_hash": "f47b5ed96fc5b761efa30c03c510a004",
+    "semantic_hash": "f47b5ed96fc5b761efa30c03c510a004"
+  },
+  "settings/notifications/notifications.php": {
+    "mtime": 1783707946.2030504,
+    "ast_hash": "dee39968f65605ab56b617b1eac4f84e",
+    "semantic_hash": "dee39968f65605ab56b617b1eac4f84e"
+  },
+  "settings/notifications/notifications_data.php": {
+    "mtime": 1783707946.2032402,
+    "ast_hash": "d100b47f5a1d279e6b4bce617e48c602",
+    "semantic_hash": "d100b47f5a1d279e6b4bce617e48c602"
+  },
+  "settings/notifications/stg_email_sms_alerts/stg_email_sms_alerts.php": {
+    "mtime": 1783707946.2035093,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/notifications/stg_financial_alerts/stg_financial_alerts.js": {
+    "mtime": 1783707946.2037997,
+    "ast_hash": "92633e0217946acb7e6a2c4b35f9aca6",
+    "semantic_hash": "92633e0217946acb7e6a2c4b35f9aca6"
+  },
+  "settings/notifications/stg_financial_alerts/stg_financial_alerts.php": {
+    "mtime": 1783707946.2040162,
+    "ast_hash": "ec1a5f31696241f4ade6759641cc0347",
+    "semantic_hash": "ec1a5f31696241f4ade6759641cc0347"
+  },
+  "settings/notifications/stg_financial_alerts/stg_financial_alerts_data.php": {
+    "mtime": 1783707946.204189,
+    "ast_hash": "600c333c9ce22976fd85933efcf2931a",
+    "semantic_hash": "600c333c9ce22976fd85933efcf2931a"
+  },
+  "settings/notifications/stg_financial_alerts/stg_financial_alerts_print.php": {
+    "mtime": 1783707946.2044137,
+    "ast_hash": "615e2ecf764fff575b8270a01371e885",
+    "semantic_hash": "615e2ecf764fff575b8270a01371e885"
+  },
+  "settings/notifications/stg_financial_alerts/stg_financial_alerts_search.js": {
+    "mtime": 1783707946.204607,
+    "ast_hash": "775564b7255514b65d78f65da0c9c189",
+    "semantic_hash": "775564b7255514b65d78f65da0c9c189"
+  },
+  "settings/notifications/stg_financial_alerts/stg_financial_alerts_search.php": {
+    "mtime": 1783707946.2047617,
+    "ast_hash": "1756d579bbc1128fa703686261dc1321",
+    "semantic_hash": "1756d579bbc1128fa703686261dc1321"
+  },
+  "settings/notifications/stg_staff_alerts/stg_staff_alerts.php": {
+    "mtime": 1783707946.2050633,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/notifications/stg_vehicle_alerts/stg_vehicle_alerts.js": {
+    "mtime": 1783707946.2054014,
+    "ast_hash": "8a27a5f9c1e338fbeb2ef0db74ff6e1e",
+    "semantic_hash": "8a27a5f9c1e338fbeb2ef0db74ff6e1e"
+  },
+  "settings/notifications/stg_vehicle_alerts/stg_vehicle_alerts.php": {
+    "mtime": 1783707946.2055688,
+    "ast_hash": "74780427a1551aad5ca0488b7ce94e29",
+    "semantic_hash": "74780427a1551aad5ca0488b7ce94e29"
+  },
+  "settings/notifications/stg_vehicle_alerts/stg_vehicle_alerts_data.php": {
+    "mtime": 1783707946.2057366,
+    "ast_hash": "699accd79ef723166800ae965f2c2220",
+    "semantic_hash": "699accd79ef723166800ae965f2c2220"
+  },
+  "settings/notifications/stg_vehicle_alerts/stg_vehicle_alerts_print.php": {
+    "mtime": 1783707946.2059362,
+    "ast_hash": "eabde6014f304315343c0b357bb0d7c5",
+    "semantic_hash": "eabde6014f304315343c0b357bb0d7c5"
+  },
+  "settings/notifications/stg_vehicle_alerts/stg_vehicle_alerts_search.js": {
+    "mtime": 1783707946.2061791,
+    "ast_hash": "3e58a68b7eb79963290c960deed58fd2",
+    "semantic_hash": "3e58a68b7eb79963290c960deed58fd2"
+  },
+  "settings/notifications/stg_vehicle_alerts/stg_vehicle_alerts_search.php": {
+    "mtime": 1783707946.2063525,
+    "ast_hash": "c791422dcb56f1b8c34b6136a24deca6",
+    "semantic_hash": "c791422dcb56f1b8c34b6136a24deca6"
+  },
+  "settings/number_series/series_overview/series_overview.js": {
+    "mtime": 1783707946.2067745,
+    "ast_hash": "4baa99f56d3dbc07af06151317cd604a",
+    "semantic_hash": "4baa99f56d3dbc07af06151317cd604a"
+  },
+  "settings/number_series/series_overview/series_overview.php": {
+    "mtime": 1783707946.207026,
+    "ast_hash": "ad370a9fbc8d401e2723f79d2f400dff",
+    "semantic_hash": "ad370a9fbc8d401e2723f79d2f400dff"
+  },
+  "settings/number_series/series_overview/series_overview_data.php": {
+    "mtime": 1783707946.2071867,
+    "ast_hash": "d5abb0fc570966f2cd37948c93eb21db",
+    "semantic_hash": "d5abb0fc570966f2cd37948c93eb21db"
+  },
+  "settings/number_series/series_overview/series_overview_print.php": {
+    "mtime": 1783707946.207385,
+    "ast_hash": "ec55ac091bf3fd0838c4fe39e0eeee04",
+    "semantic_hash": "ec55ac091bf3fd0838c4fe39e0eeee04"
+  },
+  "settings/number_series/series_overview/series_overview_search.js": {
+    "mtime": 1783707946.2075922,
+    "ast_hash": "69dbc1ce0ce06ff85f8e567d5191c39a",
+    "semantic_hash": "69dbc1ce0ce06ff85f8e567d5191c39a"
+  },
+  "settings/number_series/series_overview/series_overview_search.php": {
+    "mtime": 1783707946.2077484,
+    "ast_hash": "7a2791d85539937a0b3708ebb2944006",
+    "semantic_hash": "7a2791d85539937a0b3708ebb2944006"
+  },
+  "settings/number_series/stg_invoice_series/stg_invoice_series.php": {
+    "mtime": 1783707946.208017,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/number_series/stg_journal_series/stg_journal_series.php": {
+    "mtime": 1783707946.2083106,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/number_series/stg_purchase_series/stg_purchase_series.php": {
+    "mtime": 1783707946.2085958,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/number_series/stg_receipt_series/stg_receipt_series.php": {
+    "mtime": 1783707946.2088602,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/number_series/stg_trip_series/stg_trip_series.php": {
+    "mtime": 1783707946.2091558,
+    "ast_hash": "d6e2508adc7a7b92287dcf87dc2cef06",
+    "semantic_hash": "d6e2508adc7a7b92287dcf87dc2cef06"
+  },
+  "settings/system_preferences/system_preferences.js": {
+    "mtime": 1783707946.2094853,
+    "ast_hash": "bbefd1c66ab2d1c8f183ff4491348379",
+    "semantic_hash": "bbefd1c66ab2d1c8f183ff4491348379"
+  },
+  "settings/system_preferences/system_preferences.php": {
+    "mtime": 1783707946.209674,
+    "ast_hash": "577fcec336c1a36514ea2802b6f0d6b6",
+    "semantic_hash": "577fcec336c1a36514ea2802b6f0d6b6"
+  },
+  "settings/system_preferences/system_preferences_data.php": {
+    "mtime": 1783707946.2098267,
+    "ast_hash": "af32195f5dd7ed34d6a19fe68fe019ad",
+    "semantic_hash": "af32195f5dd7ed34d6a19fe68fe019ad"
+  }
+}

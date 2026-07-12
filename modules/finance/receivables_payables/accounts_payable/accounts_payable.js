@@ -43,7 +43,7 @@ createApp({
       return this.form.supplier_name.trim() !== '' || this.form.invoice_date !== '';
     },
     financeEnabled() {
-      return this.moduleVisibility.finance !== false;
+      return this.moduleVisibility.finance === true;
     },
     jeTotalAmount() {
       const v = parseFloat(this.form.amount);

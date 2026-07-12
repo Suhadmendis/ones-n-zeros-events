@@ -9,9 +9,9 @@
 
         <div class="d-flex flex-wrap gap-2 mb-4">
           <div class="btn-group" role="group">
-            <button type="button" class="btn btn-primary" @click="onAdd">New</button>
+            <button type="button" class="btn btn-primary" @click="onAdd" v-if="canCreate">New</button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#driverSearchModal">Search</button>
-            <button type="button" class="btn btn-info" @click="onPrint">Print</button>
+            <button type="button" class="btn btn-info" @click="onPrint" v-if="canPrint">Print</button>
             <button type="button" class="btn btn-warning" @click="onCancel">Cancel</button>
             <button type="button" class="btn btn-danger" @click="onClose">Close</button>
           </div>
@@ -100,7 +100,7 @@
       <div class="card-footer d-flex align-items-center">
         <span class="text-danger small" v-if="error">{{ error }}</span>
         <span class="text-success small" v-if="saved">Driver saved successfully.</span>
-        <button type="button" class="btn btn-success btn-lg px-5 ms-auto" @click="onSave" :disabled="!isDirty || saving">
+        <button type="button" class="btn btn-success btn-lg px-5 ms-auto" @click="onSave" :disabled="!isDirty || saving" v-if="canSave">
           <span v-if="saving" class="spinner-border spinner-border-sm me-2" role="status"></span>
           <i v-else class="bi bi-check-lg me-2"></i>Save
         </button>

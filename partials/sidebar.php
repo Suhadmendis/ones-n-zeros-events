@@ -1,15 +1,15 @@
 <?php
-// Build sidebar nav from tms_modules, filtered by user permissions
-require_once __DIR__ . '/../server/general/module_system.php';
+// Build sidebar nav from tms_modules, filtered by effective (enabled AND
+// permitted) access — see server/general/access_engine.php.
+require_once __DIR__ . '/../server/general/access_engine.php';
 
 $_sidebarUser  = current_user();
-$_allowedRefs  = getPermittedModuleRefs($_sidebarUser['ref'] ?? '');
 
 // Group: section → subsection ('' for none) → modules
 $sidebarModules  = [];
 $sectionIcons    = [];
 $subsectionIcons = [];
-foreach (getModules($_allowedRefs) as $row) {
+foreach (access_getModules($_sidebarUser['ref'] ?? '', 'can_view') as $row) {
     if ($row['has_file']) {
         $sub = $row['subsection'] ?: '';
         $sidebarModules[$row['section']][$sub][] = $row;

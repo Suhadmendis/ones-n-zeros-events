@@ -1,7 +1,7 @@
 // js/global-search.js — header search over the section/subsection/module menu hierarchy
 //
-// Reuses the existing /server/general/module_system.php endpoint (same data
-// sidebar.php renders from, already permission-filtered per user) rather than
+// Reuses the /server/general/access_engine.php endpoint (same effective
+// enabled+permitted data partials/sidebar.php renders from) rather than
 // introducing a new backend route.
 
 (() => {
@@ -11,7 +11,7 @@
 
   function loadIndex() {
     if (!indexPromise) {
-      indexPromise = axios.get('/server/general/module_system.php')
+      indexPromise = axios.get('/server/general/access_engine.php')
         .then(res => (res.data || []).filter(m => m.has_file && m.system_name))
         .catch(() => []);
     }
